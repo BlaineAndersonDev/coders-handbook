@@ -156,7 +156,14 @@
       git config --global alias.co checkout
       ```
       * Or you can manually add it to `~/.gitconfig`
-    * (Recommendation): Setup SSH Keys:
+    * (Recommendation): Personal Access Tokens
+      * Presuming you set up two-factor authorization for github (If you haven't shame on you, go do it NOW!), then added a PAT (Personal Access Token) will allow you to push and pull to any associated repo without having to retype your password in the terminal each time.
+      * Go to Github and open settings, then PAT tokens. (Github -> Settings -> Tokens -> Personal access tokens)
+      * Generate a new token and select all the options you require. (I did everything, but I dont leave my computer open for others to use).
+      * Copy the PAT it provides and dont lose it, you'll have to delete it and make a new one if you lose it.
+      * In terminal perform any action that requires credentials (Such as pushing a repo up). Enter your Github Username and instead of your password, enter the Personal Access Token.
+        * You should now be able to perform any action on any repo without having to enter the damn user and password now!
+    * (IF YOUR NOT USING Personal Access Tokens): Setup SSH Keys:
       * Check to see if you already have an SSH key (If you just flattened your OS, you shouldn't): `cd ~/.ssh `
       * If it replies with “No such file or directory” proceed with the following steps:
         * `ssh-keygen -t rsa -C "your_email@domain.com"`
