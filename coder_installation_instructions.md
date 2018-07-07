@@ -1,4 +1,4 @@
-# Coder Installation Guide
+# Coder's Installation Handbook
 ##### This Guide focus' on Rails & ReactJS + all associated technologies.
 
 ##### Authors Note:
