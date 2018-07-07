@@ -198,6 +198,21 @@
     * `git config --global user.name "Your Actual Name"`
     * `git config --global user.email "Your Actual Email"`
     * Make sure they are correct: `git config -l`
+    * (Recommendation): Setup Autocomplete':
+      * This will allow you to press `tab` to autocomplete a branch name or git based command.
+      * Go to your root directory and open `.git-completion.bash`. If you don't have this file, create it.
+        * Paste in the code provided [HERE](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash).
+        * Do not make changes without doing research!
+        * This code provides "Bash Profile" all the mechanics to autocomplete Git queries.
+      * Now go to your root directory and open `.bash_profile`.
+        * Paste in the following code at the top of the file:
+        ```
+        if [ -f ~/.git-completion.bash ]; then
+          . ~/.git-completion.bash
+        fi
+        ```
+        * Close and reopen your terminal for the changes to take effect.
+        * Go and create a new branch in any project and use `tab` to autocomplete the name. Voila!
     * (Recommendation): Setup Alias':
       * An Alias is a 'shortcut' command such as `git co <Branch_Name>` instead of typing out `git checkout <Branch_Name>`
       * You can add an Alias using a command (Edit to fit your need alias)
