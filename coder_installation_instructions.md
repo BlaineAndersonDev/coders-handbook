@@ -75,12 +75,13 @@
           ```
           * Note that you can alter this file to your liking.
           * The provided code will show the branch with a symbol and color based on its current status:
-          COLOR | SYMBOL | DESCRIPTION
-          *GRAY* | __>__ | The file is currently unaltered.
-          *RED* | __*__ | The file has been altered & `git add` __has not__ been used.
-          *YELLOW* | __+__ | The file has been altered & `git add` __has__ been used.
-          *MAGENTA* | __$__ | There are stashed changes.
-          *CYAN* | __%__ | A file was created that `.gitignore` will not allow to be comitted.
+            COLOR | SYMBOL | DESCRIPTION
+            *GRAY* | __>__ | The file is currently unaltered.
+            *RED* | __*__ | The file has been altered & `git add` __has not__ been used.
+            *YELLOW* | __+__ | The file has been altered & `git add` __has__ been used.
+            *MAGENTA* | __$__ | There are stashed changes.
+            *CYAN* | __%__ | A file was created that `.gitignore` will not allow to be comitted.
+          * I will also note I prefer to have a static name instead of my user or host name on the command line. I replace `$__user_and_host` with `\[\e[1;93mBlaines_Mac\]`
 
   * __Install__: [Atom](https://atom.io/)
     * After installation install the shell commands. I.E. `atom .` (Atom -> Install Shell Commands)
