@@ -14,7 +14,13 @@
   * __Update__: Make sure your OS is fully updated via the App Store.
 
   * __Install__: [Iterm2](https://www.iterm2.com/)
-    * (Recommendation): Alter text & colors on the command line.
+    * (Recommendation): Update Terminal Display Name
+      * Set `sudo scutil --set ComputerName <new_name>`
+      * Set `sudo scutil --set LocalHostName <new_name>`
+      * Set `sudo scutil --set HostName <new_name>`
+      * Perform `dscacheutil -flushcache`
+      * Restart Mac before continuing.
+    * (Recommendation): Alter text & colors on the command line. (After Git Installation)
       * After installation you can make some edits to the colors and text provided in the shell. For example, you can have the line tell you the current Git status, or provide your HostName at the beginning of the line.
       * You'll need to alter two files using Atom (using `open <file-name>` won't work on one of the files we have to alter).
         * Go to your root directory and open `.git_prompt.sh`. If you don't have this file, create it.
@@ -182,19 +188,12 @@
       ```
       * Based on the `.gitignore` provided by [Octocat](https://gist.github.com/octocat/9257657)
 
-  * __Install__: HomeBrew
+  * __Install__: [HomeBrew](https://brew.sh/)
     * `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
     * Check that HomeBrew is functional: `brew doctor`
 
-  * __Update__ {Not Required}: Terminal Display Name
-    * `sudo scutil --set ComputerName new_name`
-    * `sudo scutil --set LocalHostName new_name`
-    * `sudo scutil --set HostName new_name`
-    * `dscacheutil -flushcache`
-    * Restart Mac before continuing.
-
 ### Git Guide:
-  * __Install__: [Git]()
+  * __Install__: [Git](https://git-scm.com/)
     * `brew install git`
     * `git config --global user.name "Your Actual Name"`
     * `git config --global user.email "Your Actual Email"`
