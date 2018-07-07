@@ -26,7 +26,7 @@
 
         ```
 
-        Test Line 
+        Test Line 2
         * Your computers username(`\u`) will be displayed in Bold(`\e[1m`) Yellow(`\e[93m`). I.E. (`\e[1;93m\u`)
         * Your current directory(`\w`) will be displayed in Non-Bold(`\e[0`) purple(`\e[35m`). I.E. (`\e[0;35m\w`)
         * Your current Git Branch(`(parse_git_branch)`) will be displayed in blue(`\e[0;34m\$(parse_git_branch)`)
