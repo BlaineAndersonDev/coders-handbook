@@ -20,6 +20,11 @@
       * Set `sudo scutil --set HostName <new_name>`
       * Perform `dscacheutil -flushcache`
       * Restart Mac before continuing.
+    * (Recommendation): Make Bash case-insensitive
+      * Paste `if [ ! -a ~/.inputrc ]; then echo '$include /etc/inputrc' > ~/.inputrc; fi` into your terminal.
+      * Paste `echo 'set completion-ignore-case On' >> ~/.inputrc`
+      * Close and reopen your terminal.
+      * Bash should be case-insensitive now!
     * (Recommendation): Alter text & colors on the command line. (After Git Installation)
       * After installation you can make some edits to the colors and text provided in the shell. For example, you can have the line tell you the current Git status, or provide your HostName at the beginning of the line.
       * You'll need to alter two files using Atom (using `open <file-name>` won't work on one of the files we have to alter).
