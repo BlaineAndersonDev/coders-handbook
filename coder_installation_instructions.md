@@ -15,25 +15,72 @@
 
   * __Install__: [Iterm2](https://www.iterm2.com/)
     * (Recommendation): Alter text & colors on the command line.
-      * After installation you can make some edits to the colors and text provided in the shell. For example, you can change what the line says and color code the users name vs. the directory your in.
-      * Go to your root directory and open `.bash_profile`.
-      * Add the following code at the bottom of the page:
-        ```
-      parse_git_branch() {
-           git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-      }
-      export PS1="\e[1;93m\u \[\033[32m\]\w\[\033[34m\]\$(parse_git_branch)\[\033[00m\] $ "
+      * After installation you can make some edits to the colors and text provided in the shell. For example, you can have the line tell you the current Git status, or provide your HostName at the beginning of the line.
+      * You'll need to alter two files using Atom (using `open <file-name>` won't work on one of the files we have to alter).
+        * Go to your root directory and open `.git_prompt.sh`. If you don't have this file, create it.
+          * Paste in the code provided [HERE](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh).
+          * Do not make changes without doing research!
+          * This code provides "Bash Profile" all the mechanics to show Git status.
+        * Now go to your root directory and open `.bash_profile`.
+          * Paste in the following code at the bottom of the file:
+          ```
 
-        ```
+          # store colors
+          MAGENTA="\[\033[0;35m\]"
+          YELLOW="\[\033[01;32m\]"
+          BLUE="\[\033[00;34m\]"
+          LIGHT_GRAY="\[\033[0;37m\]"
+          CYAN="\[\033[0;36m\]"
+          GREEN="\[\033[00m\]"
+          RED="\[\033[0;31m\]"
+          VIOLET='\[\033[01;35m\]'
+          # Additional color options: https://misc.flogisoft.com/bash/tip_colors_and_formatting#terminals_compatibility
 
-        Test Line 2
-        * Your computers username(`\u`) will be displayed in Bold(`\e[1m`) Yellow(`\e[93m`). I.E. (`\e[1;93m\u`)
-        * Your current directory(`\w`) will be displayed in Non-Bold(`\e[0`) purple(`\e[35m`). I.E. (`\e[0;35m\w`)
-        * Your current Git Branch(`(parse_git_branch)`) will be displayed in blue(`\e[0;34m\$(parse_git_branch)`)
-        * Where your actual terminal input starts is marked with a "$" (You can change the color of the "$" if you so choose).
-        * The current cursor location will also be yellow. I.E. (`\e[\033[00m\]$ `)
-        * At the end of the PS1 we have a (`\n`). This moves your actual typing to the next line to prevent your typing from overwriting the lines we just made.
-        * These colors are easily changed by referring to a [Bash Color Source](https://misc.flogisoft.com/bash/tip_colors_and_formatting#terminals_compatibility) (Specifically its "Foreground").
+          function color_my_prompt {
+            local __user_and_host="$GREEN\u@\h"
+            local __cur_location="$BLUE\W"           # capital 'W': current directory, small 'w': full file path
+            local __git_branch_color="$GREEN"
+            local __prompt_tail="$VIOLET$"
+            local __user_input_color="$GREEN"
+            local __git_branch='$(__git_ps1)';
+
+            # colour branch name depending on state
+            if [[ "$(__git_ps1)" =~ "*" ]]; then     # if repository is dirty
+                __git_branch_color="$RED"
+            elif [[ "$(__git_ps1)" =~ "$" ]]; then   # if there is something stashed
+                __git_branch_color="$MAGENTA"
+            elif [[ "$(__git_ps1)" =~ "%" ]]; then   # if there are only untracked files
+                __git_branch_color="$CYAN"
+            elif [[ "$(__git_ps1)" =~ "+" ]]; then   # if there are staged files
+                __git_branch_color="$YELLOW"
+            fi
+
+            # Build the PS1 (Prompt String)
+            PS1="$__user_and_host $__cur_location$__git_branch_color$__git_branch $__prompt_tail$__user_input_color "
+          }
+
+          # configure PROMPT_COMMAND which is executed each time before PS1
+          export PROMPT_COMMAND=color_my_prompt
+
+          # if .git-prompt.sh exists, set options and execute it
+          if [ -f ~/.git-prompt.sh ]; then
+            GIT_PS1_SHOWDIRTYSTATE=true
+            GIT_PS1_SHOWSTASHSTATE=true
+            GIT_PS1_SHOWUNTRACKEDFILES=true
+            GIT_PS1_SHOWUPSTREAM="auto"
+            GIT_PS1_HIDE_IF_PWD_IGNORED=true
+            GIT_PS1_SHOWCOLORHINTS=true
+            . ~/.git-prompt.sh
+          fi
+          ```
+          * Note that you can alter this file to your liking.
+          * The provided code will show the branch with a symbol and color based on its current status:
+          COLOR | SYMBOL | DESCRIPTION
+          *GRAY* | __>__ | The file is currently unaltered.
+          *RED* | __*__ | The file has been altered & `git add` __has not__ been used.
+          *YELLOW* | __+__ | The file has been altered & `git add` __has__ been used.
+          *MAGENTA* | __$__ | There are stashed changes.
+          *CYAN* | __%__ | A file was created that `.gitignore` will not allow to be comitted.
 
   * __Install__: [Atom](https://atom.io/)
     * After installation install the shell commands. I.E. `atom .` (Atom -> Install Shell Commands)
