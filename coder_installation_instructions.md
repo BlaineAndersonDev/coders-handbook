@@ -199,9 +199,13 @@
 
   * __Install__: [PostgreSQL](https://www.postgresql.org/download/macosx/)
     * This is a replacement for SQLite3 (which is generally pre-installed with Rails Apps)
-    * Previously, I had installed this manually and it seemed to be a chore to make it function properly with my codebase. Installing it through HomeBrew made it work in less than a minute. So I recommend the HomeBrew way:
-    * `brew install postgresql`
-    * Done!
+    * In my case (I'm not sure this is the 'normal' case) I had to install both the App version AS WELL AS the HomeBrew vesion to make it function properly. My instructions will be based on that.
+      * PostgreSQL App: Download and Install the PostgreSQL App from its website supplied above.
+        * This should alreay be setup with all the information and ports required.
+        * All you need to do is 'start' the postgresql server.
+      * PostgreSQL HomeBrew:
+        * `brew install postgresql`
+      * Done!
 
 ### Git Guide:
   * __Install__: [Git](https://git-scm.com/)
