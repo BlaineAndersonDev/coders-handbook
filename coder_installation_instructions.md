@@ -345,3 +345,8 @@
       * Test ngrok:
         * Make sure ngrok is working properly by trying `./ngrok http 80`
         * You should be up and running now!
+        * Note: you'll have to create an alias for ngrok OR point to the correct folder where it was installed.
+          * I.E. `../../ngrok http 80`
+        * Note: Be aware you have a wonderful debugger available with ngrok at `http://localhost:4040`
+  * __[MacPorts](https://www.macports.org/install.php)__
+    * Follow the instructions here and it should blow right through :)
