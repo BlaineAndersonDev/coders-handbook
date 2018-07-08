@@ -329,3 +329,19 @@
   * [ReactJS P2](https://www.codecademy.com/learn/react-102)
   * [Node/SQLite](https://www.codecademy.com/learn/learn-node-sqlite)
   * [JQuery](https://www.codecademy.com/learn/learn-jquery)
+
+### Addtional Technologies (As I require them)
+  * __[ngrok](https://dashboard.ngrok.com)__
+    * ngrok is a technology that allows your localhost to be available over the internet.
+    * This is normally used for testing WebHooks (which is what I am using it for).
+    * To use ngrok, follow these steps or follow the instructions on the website:
+      * Download ngrok:
+      * unzip ngrok via the terminal (from your User folder specifically):
+        * While in your 'User' directory, use: `unzip Downloads/ngrok-stable-darwin-amd64.zip`
+        * This allows you to use ngrok for all your projects if required.
+      * Authenticate ngrok:
+        * Get your 'authtoken' from ngrok's website.
+        * Now from your User directory type: `./ngrok authtoken XXXX-XXXX-XXXX`
+      * Test ngrok:
+        * Make sure ngrok is working properly by trying `./ngrok http 80`
+        * You should be up and running now!
