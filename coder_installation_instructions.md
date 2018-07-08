@@ -197,6 +197,12 @@
     * `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
     * Check that HomeBrew is functional: `brew doctor`
 
+  * __Install__: [PostgreSQL](https://www.postgresql.org/download/macosx/)
+    * This is a replacement for SQLite3 (which is generally pre-installed with Rails Apps)
+    * Previously, I had installed this manually and it seemed to be a chore to make it function properly with my codebase. Installing it through HomeBrew made it work in less than a minute. So I recommend the HomeBrew way:
+    * `brew install postgresql`
+    * Done!
+
 ### Git Guide:
   * __Install__: [Git](https://git-scm.com/)
     * `brew install git`
