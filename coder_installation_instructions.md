@@ -350,3 +350,13 @@
         * Note: Be aware you have a wonderful debugger available with ngrok at `http://localhost:4040`
   * __[MacPorts](https://www.macports.org/install.php)__
     * Follow the instructions here and it should blow right through :)
+  * __[ImageMagick](https://www.imagemagick.org/script/download.php)__
+    * I used the MacPorts version of the installation process. It took about 5 minutes to get through.
+  * __[HerokuCLI](https://devcenter.heroku.com/articles/heroku-cli)__
+    * I used the HomeBrew installer: `brew install heroku/brew/heroku`
+    * Verify it installed properly with `heroku --version`
+    * Once it's properly installed, run the login command: `heroku login` and use your credentials.
+    * Now open this [Deployment Guide](https://devcenter.heroku.com/articles/git) if you want to follow along.
+      * Create a Heroku empty application using `heroku create` inside the application you want to push up.
+      * Confirm that a remote has been created with `git remote -v`.
+      * Now you can push your code up to Heroku using `git push heroku master`.
