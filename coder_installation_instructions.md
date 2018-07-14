@@ -360,3 +360,6 @@
       * Create a Heroku empty application using `heroku create` inside the application you want to push up.
       * Confirm that a remote has been created with `git remote -v`.
       * Now you can push your code up to Heroku using `git push heroku master`.
+      * Note: If you want to update the url name of your project, you'll need to change the name on heroku in the 'settings' section.
+      * You'll need to also remove the current heroku remote from your project with `git remote rm heroku`
+      * Then you will need to copy that name you created and paste it in this command: `heroku git:remote -a newname`
