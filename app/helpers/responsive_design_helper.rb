@@ -1,0 +1,2 @@
+module ResponsiveDesignHelper
+end
