@@ -3,4 +3,4 @@
 
 # Guides included in this Repository:
   * [Coder Installation Instructions](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/coder_installation_instructions.md)
-  * [Rails Refresher]()
+  * [Rails Refresher](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/rails_refresher.md)
