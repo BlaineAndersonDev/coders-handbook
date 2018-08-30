@@ -6,6 +6,7 @@ body, html{
   margin: 0;
   padding: 0;
 }
+// Media Query Source: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
 
 // ===> MEDIA QUERY ONLY SECTION BEGIN <===
 // Media Queries Base (Uncomment, Then Copy & Paste).
@@ -106,6 +107,12 @@ body, html{
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
       border: 1px yellow solid;
+      min-width: 768px;
+      max-width: 1024px;
+      min-height: 150px;
+      max-height: 250px;
+      margin-bottom: 15px;
+      border-bottom: 3px
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
@@ -135,6 +142,8 @@ body, html{
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
       border: 1px yellow solid;
+      font-size: 1.5em;
+      text-shadow: 2px 2px 8px black;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
@@ -164,6 +173,8 @@ body, html{
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
       border: 1px yellow solid;
+      font-size: 1.5em;
+      text-shadow: 2px 2px 8px black;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
@@ -202,6 +213,14 @@ body, html{
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
       border: 1px yellow solid;
+      min-width: 200px;
+      max-width: 250px;
+      min-height: 50px;
+      max-height: 50px;
+      line-height: 50px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
