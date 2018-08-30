@@ -121,12 +121,16 @@ body, html{
       max-width: 1280px;
       min-height: 150px;
       max-height: 250px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       border-bottom: 3px
     }
   // Desktops
     @media (min-width: 1281px) {
       border: 1px orange solid;
+      min-width: 1281px;
+      min-height: 150px;
+      margin-bottom: 25px;
+      border-bottom: 3px
     }
 }
 .rs_media_page_overview{
@@ -160,6 +164,8 @@ body, html{
   // Desktops
     @media (min-width: 1281px) {
       border: 1px orange solid;
+      font-size: 3em;
+      text-shadow: 2px 2px 8px black;
     }
 }
 .rs_media_page_text{
@@ -193,6 +199,8 @@ body, html{
   // Desktops
     @media (min-width: 1281px) {
       border: 1px orange solid;
+      font-size: 4em;
+      text-shadow: 2px 2px 8px black;
     }
 }
 .rs_media_group_title_item{
@@ -248,6 +256,15 @@ body, html{
   // Desktops
     @media (min-width: 1281px) {
       border: 1px orange solid;
+      min-width: 350px;
+      max-width: 550px;
+      min-height: 70px;
+      max-height: 70px;
+      line-height: 70px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      font-size: 3em;
     }
 }
 
