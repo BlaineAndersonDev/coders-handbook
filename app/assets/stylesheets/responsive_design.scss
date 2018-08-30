@@ -9,7 +9,7 @@ body, html{
 
 
 // Code WITH Comments: (UNcomment to see in action.)
-// #rs_wrapper{
+// #rs_flex_wrapper{
 //   // Regular CSS:
 //   text-align: center;
 //   background: #323232;
@@ -35,7 +35,7 @@ body, html{
 //     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-5
 //       flex-flow: column wrap;
 // }
-// .rs_group_container{
+// .rs_flex_group_container{
 //   // Regular CSS:
 //   width: 100%;
 //   height: 100%;
@@ -66,19 +66,19 @@ body, html{
 //     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-5
 //       flex-flow: row nowrap;
 // }
-// .rs_group_title_item{
+// .rs_flex_group_title_item{
 //   // Using 'margin' & 'flex' to have a set number of items per row is explained here:
 //   // https://stackoverflow.com/a/45384426/10090036
 //   // Regular CSS:
 //     border: 1px lightgreen solid;
 //     margin: 5px;
 //   // Flex-box example:
-//     // This use of flex allows the "Title-#" boxes to adjust naturally until it reaches less than 360px width.
-//       flex: 1 0 30%;
+//     // I've used a calculation to get the needed amount divided from 100% width, minus a set amount for margin.
+// flex: 1 0 calc(100% * (1/3) - 15px);
 // }
 
 // Code WITHOUT Comments:
-#rs_wrapper{
+#rs_flex_wrapper{
   text-align: center;
   background: #323232;
   color: white;
@@ -89,7 +89,7 @@ body, html{
   align-items: center;
   flex-flow: column wrap;
 }
-.rs_group_container{
+.rs_flex_group_container{
   width: 100%;
   height: 100%;
   flex: 1 0 5%;
@@ -99,8 +99,16 @@ body, html{
   flex-flow: row wrap;
   border: 3px white solid;
 }
-.rs_group_title_item{
+.rs_flex_page_text{
+  text-shadow: 2px 2px 8px black;
+}
+.rs_flex_group_title_item{ //
   border: 1px lightgreen solid;
   margin: 5px;
-  flex: 1 0 30%;
+  flex: 1 0 calc(100% * (1/3) - 15px);
+}
+.rs_flex_group_color_item{ //
+  border: 1px lightblue solid;
+  margin: 2px;
+  flex: 1 0 calc(100% * (1/5) - 10px);
 }
