@@ -1,6 +1,6 @@
 class ResponsiveDesignController < ApplicationController
 
-  def show
+  def flex_only_show
   end
 
 end
