@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'responsive_design#flex_only_show'
+  get 'flex_only' => 'responsive_design#flex_only'
+  get 'media_only' => 'responsive_design#media_only'
+  root 'responsive_design#overview'
 
 end

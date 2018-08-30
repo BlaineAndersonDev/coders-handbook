@@ -1,0 +1,81 @@
+<div id="rs_media_wrapper">
+  <h1 class="rs_media_page_overview">This page shows the use of only Media Queries.</h1>
+  <h1 class="rs_media_page_overview">It took me approximately ____ to build.</h1>
+
+  <hr />
+  <p class="rs_media_page_text">Basic Text</p>
+  <div class="rs_media_group_container">
+    <!-- Media Query Example One -->
+    <p class="rs_media_group_title_item">Title-1</p>
+    <p class="rs_media_group_title_item">Title-2</p>
+    <p class="rs_media_group_title_item">Title-3</p>
+    <p class="rs_media_group_title_item">Title-4</p>
+    <p class="rs_media_group_title_item">Title-5</p>
+    <p class="rs_media_group_title_item">Title-6</p>
+    <p class="rs_media_group_title_item">Title-7</p>
+    <p class="rs_media_group_title_item">Title-8</p>
+    <p class="rs_media_group_title_item">Title-9</p>
+  </div><!-- END id="rs_media_group_container" -->
+
+  <hr />
+  <p class="rs_media_page_text">Color Boxes</p>
+  <div class="rs_media_group_container">
+    <!-- Flex-box Example Two -->
+    <p class="rs_media_group_color_item" style="background-color: red;">1</p>
+    <p class="rs_media_group_color_item" style="background-color: blue;">2</p>
+    <p class="rs_media_group_color_item" style="background-color: green;">3</p>
+    <p class="rs_media_group_color_item" style="background-color: yellow;">4</p>
+    <p class="rs_media_group_color_item" style="background-color: brown;">5</p>
+    <p class="rs_media_group_color_item" style="background-color: white; color: black;">6</p>
+    <p class="rs_media_group_color_item" style="background-color: black;">7</p>
+    <p class="rs_media_group_color_item" style="background-color: purple;">8</p>
+    <p class="rs_media_group_color_item" style="background-color: orange;">9</p>
+  </div><!-- END id="rs_media_group_contaier" -->
+
+  <p class="rs_media_page_text">Large Images (No Credit)</p>
+  <div class="rs_media_group_container">
+    <!-- Flex-box Example Three -->
+    <%= image_tag 'dogs_01.jpg', class: 'rs_media_group_dog_item' %>
+    <%= image_tag 'dogs_02.jpg', class: 'rs_media_group_dog_item' %>
+    <%= image_tag 'dogs_03.jpg', class: 'rs_media_group_dog_item' %>
+    <%= image_tag 'dogs_04.jpg', class: 'rs_media_group_dog_item' %>
+    <%= image_tag 'dogs_05.jpg', class: 'rs_media_group_dog_item' %>
+    <%= image_tag 'dogs_06.jpg', class: 'rs_media_group_dog_item' %>
+    <%= image_tag 'dogs_07.jpg', class: 'rs_media_group_dog_item' %>
+    <%= image_tag 'dogs_08.jpeg', class: 'rs_media_group_dog_item' %>
+    <%= image_tag 'dogs_09.jpg', class: 'rs_media_group_dog_item' %>
+  </div><!-- END id="rs_media_group_container" -->
+
+  <p class="rs_media_page_text">Small Images (Linked to source)</p>
+  <div class="rs_media_group_container">
+    <!-- Flex-box Example Three -->
+    <%= link_to "http://www.doneding.com/image/cache/catalog/12%20halloween/Dogs-500x500.jpg", class: 'rs_media_group_dog_item_small_link' do %>
+      <%= image_tag 'dogs_01.jpg', class: 'rs_media_group_dog_item_small' %>
+    <% end %>
+    <%= link_to "http://www.bterrier.com/wp-content/uploads/2012/05/funny-boston-terrier-picture-of-dog-with-crazy-goggles.jpg", class: 'rs_media_group_dog_item_small_link' do %>
+      <%= image_tag 'dogs_02.jpg', class: 'rs_media_group_dog_item_small' %>
+    <% end %>
+    <%= link_to "https://i.ebayimg.com/images/g/qyMAAOSwT6pVrolN/s-l500.jpg", class: 'rs_media_group_dog_item_small_link' do %>
+      <%= image_tag 'dogs_03.jpg', class: 'rs_media_group_dog_item_small' %>
+    <% end %>
+    <%= link_to "https://3milliondogs.com/blog-assets-two/2013/11/shopping-dogs.jpg", class: 'rs_media_group_dog_item_small_link' do %>
+      <%= image_tag 'dogs_04.jpg', class: 'rs_media_group_dog_item_small' %>
+    <% end %>
+    <%= link_to "https://data.whicdn.com/images/203387228/original.jpg", class: 'rs_media_group_dog_item_small_link' do %>
+      <%= image_tag 'dogs_05.jpg', class: 'rs_media_group_dog_item_small' %>
+    <% end %>
+    <%= link_to "https://i.pinimg.com/736x/2a/ce/f1/2acef176ebd5d86eae02d6c3af79f0de--fashion-blogs-boo-dog.jpg", class: 'rs_media_group_dog_item_small_link' do %>
+      <%= image_tag 'dogs_06.jpg', class: 'rs_media_group_dog_item_small' %>
+    <% end %>
+    <%= link_to "http://images6.fanpop.com/image/photos/33500000/Cute-Dog-dogs-33531468-500-500.jpg", class: 'rs_media_group_dog_item_small_link' do %>
+      <%= image_tag 'dogs_07.jpg', class: 'rs_media_group_dog_item_small' %>
+    <% end %>
+    <%= link_to "https://i.chzbgr.com/full/8820613376/hC2A18E4E/", class: 'rs_media_group_dog_item_small_link' do %>
+      <%= image_tag 'dogs_08.jpeg', class: 'rs_media_group_dog_item_small' %>
+    <% end %>
+    <%= link_to "http://www.doseoffunny.com/wp-content/uploads/2014/10/funny-pet-halloween-costumes31.jpg", class: 'rs_media_group_dog_item_small_link' do %>
+      <%= image_tag 'dogs_09.jpg', class: 'rs_media_group_dog_item_small' %>
+    <% end %>
+  </div><!-- END id="rs_media_group_container" -->
+
+</div><!-- END id="rs_media_wrapper" -->

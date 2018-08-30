@@ -1,6 +1,12 @@
 class ResponsiveDesignController < ApplicationController
 
-  def flex_only_show
+  def overview
+  end
+
+  def flex_only
+  end
+
+  def media_only
   end
 
 end
