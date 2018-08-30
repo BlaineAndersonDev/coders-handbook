@@ -5,6 +5,11 @@
 body, html{
   margin: 0;
   padding: 0;
+  text-align: center;
+  background: #323232;
+  color: white;
+  height: 100%;
+  width: 100%;
 }
 // Media Query Source: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
 
@@ -45,9 +50,6 @@ body, html{
 // @media (min-width: 1281px) {...}
 
 #rs_media_wrapper{
-  text-align: center;
-  background: #323232;
-  color: white;
 }
 .rs_media_group_container{
   // Most Smartphones Mobiles (Portrait)
@@ -55,7 +57,6 @@ body, html{
       min-width: 320px;
       max-width: 480px;
       min-height: 50px;
-      max-height: 75px;
       margin-bottom: 15px;
       border-bottom: 3px
     }
@@ -64,7 +65,6 @@ body, html{
       min-width: 481px;
       max-width: 767px;
       min-height: 75px;
-      max-height: 200px;
       margin-bottom: 15px;
       border-bottom: 3px
     }
@@ -238,7 +238,91 @@ body, html{
       font-size: 3em;
     }
 }
-
+.rs_media_group_image_container{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      min-width: 320px;
+      max-width: 480px;
+      height: auto;
+      margin-bottom: 35px;
+      border-bottom: 3px
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      min-width: 481px;
+      max-width: 767px;
+      height: auto;
+      margin-bottom: 35px;
+      border-bottom: 3px
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      min-width: 768px;
+      max-width: 1024px;
+      height: auto;
+      margin-bottom: 35px;
+      border-bottom: 3px
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      min-width: 1025px;
+      max-width: 1280px;
+      height: auto;
+      margin-bottom: 35px;
+      border-bottom: 3px
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      min-width: 1281px;
+      height: auto;
+      margin-bottom: 35px;
+      border-bottom: 3px
+    }
+}
+.rs_media_group_dog_item{
+  border: 3px gray solid;
+  border-radius: 20px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 300px;
+      max-height: 300px;
+      margin: 5px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      min-width: 450px;
+      max-width: 450px;
+      min-height: 450px;
+      max-height: 450px;
+      margin: 5px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      min-width: 300px;
+      max-width: 350px;
+      min-height: 300px;
+      max-height: 350px;
+      margin: 5px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      min-width: 475px;
+      max-width: 475px;
+      min-height: 475px;
+      max-height: 475px;
+      margin: 5px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      min-width: 500px;
+      max-width: 500px;
+      min-height: 500px;
+      max-height: 500px;
+      margin: 5px;
+    }
+}
 
 
 
