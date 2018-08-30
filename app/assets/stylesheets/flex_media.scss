@@ -11,54 +11,225 @@ body, html{
   height: 100%;
   width: 100%;
 }
+
+//
+// // Most Smartphones Mobiles (Portrait)
+//   @media (min-width: 320px) and (max-width: 480px) {
+//     border: 1 px red solid;
+//   }
+// // Low Resolution Tablets, Mobiles (Landscape)
+//   @media (min-width: 481px) and (max-width: 767px) {
+//     border: 1px blue solid;
+//   }
+// // Tablets, Ipads (portrait)
+//   @media (min-width: 768px) and (max-width: 1024px) {
+//     border: 1px yellow solid;
+//   }
+// // Laptops, Desktops
+//   @media (min-width: 1025px) and (max-width: 1280px) {
+//     border: 1px purple solid;
+//   }
+// // Desktops
+//   @media (min-width: 1281px) {
+//     border: 1px orange soild;
+//   }
+
 #rs_fm_wrapper{
   text-align: center;
   background: #323232;
   color: white;
-  min-height: 100vh;
-  min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+    }
 }
 .rs_fm_group_container_row{
   width: 100%;
   height: 100%;
-  flex: 1 0 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   border-bottom: 3px white solid;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 5px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      padding: 5px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding: 5px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      padding: 20px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      padding: 20px;
+    }
 }
 .rs_fm_group_container_column{
   width: 100%;
   height: 100%;
-  flex: 1 0 5%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  border-bottom: 3px white solid;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      margin-bottom: 20px;
+      padding: 20px;
+    }
 }
 .rs_fm_page_overview_small{
-  font-size: 3em;
   text-shadow: 2px 2px 8px black;
   margin-bottom: 10px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1em;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.5em;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2em;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 3em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 3.6em;
+    }
 }
 .rs_fm_page_overview_large{
-  font-size: 3.5em;
   text-shadow: 2px 2px 8px black;
   margin-bottom: 5px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.3em;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.8em;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2.5em;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 3.4em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 4.2em;
+    }
 }
 .rs_fm_page_text{
-  font-size: 2em;
   text-shadow: 2px 2px 8px black;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.4em;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.7em;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2em;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 2.6em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 3em;
+    }
 }
 .rs_fm_group_title_item{ //
-  border: 1px lightgreen solid;
-  margin: 5px;
-  flex: 1 0 calc(100% * (1/3) - 15px);
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      border: 1px red solid;
+      flex: 1 0 calc(100% * (1/3) - 30px);
+      margin: 5px;
+      padding: 5px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      border: 1px blue solid;
+      flex: 1 0 calc(100% * (1/4) - 40px);
+      margin: 5px;
+      padding: 5px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      border: 1px yellow solid;
+      flex: 1 0 calc(100% * (1/5) - 60px);
+      margin: 7px;
+      padding: 10px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      border: 1px purple solid;
+      flex: 1 0 calc(100% * (1/3) - 80px);
+      margin: 7px;
+      padding: 10px;
+      font-size: 2em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      border: 1px orange solid;
+      flex: 1 0 calc(100% * (1/5) - 80px);
+      margin: 10px;
+      padding: 12px;
+      font-size: 2.5em;
+    }
 }
 .rs_fm_group_color_item{ //
   border: 1px lightblue solid;
