@@ -9,4 +9,7 @@ class ResponsiveDesignController < ApplicationController
   def media_only
   end
 
+  def flex_media
+  end
+
 end
