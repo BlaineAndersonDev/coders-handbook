@@ -1,3 +1,18 @@
 <h1>This is the overview</h1>
-<h1><%= link_to 'Flexbox Only', flex_only_path %></h1>
-<h1><%= link_to 'Media Queries Only', media_only_path %></h1>
+
+
+<div id="overview_wrapper">
+
+  <div class="overview_container_column">
+    <p></p>
+    <p>Responsive Design</p>
+    <p>One Developer's journey into the depths of many articles, stackoverflows, and... opinions.</p>
+    <p>After considering for some time which method for responsive design was optimal, I decided to </p>
+  </div>
+
+  <div class="overview_container_row">
+    <%= link_to 'Flexbox Only', flex_only_path, class: "overview_link" %>
+    <%= link_to 'Media Queries Only', media_only_path, class: "overview_link" %>
+  </div>
+
+</div>
