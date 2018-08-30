@@ -323,7 +323,34 @@ body, html{
       margin: 5px;
     }
 }
-
+.rs_media_group_dog_item_small_link{
+  min-height: 75px;
+  min-width: 75px;
+  max-height: 150px;
+  max-width: 150px;
+}
+.rs_media_group_dog_item_small_link:hover{
+  animation: shine2 1.5s ease-in-out;
+}
+  @keyframes shine2 {
+    0% {
+      filter:contrast(100%);
+    }
+    20% {
+      filter:contrast(300%);
+    }
+    100% {
+      filter:contrast(100%);
+    }
+  }
+.rs_media_group_dog_item_small{
+  min-height: 75px;
+  min-width: 75px;
+  max-height: 150px;
+  max-width: 150px;
+  border: 1px gray solid;
+  border-radius: 20px;
+}
 
 
 
