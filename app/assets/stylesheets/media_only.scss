@@ -1,0 +1,344 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #323232;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+// Media Query Source: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
+
+// Media Queries Base (Uncomment, Then Copy & Paste).
+// =-=-=-=-= Desktop First =-=-=-=-=
+// // Desktops
+// // Active between 1281px+
+// @media (min-width: 1281px) {...}
+// // Laptops, Desktops
+// // Active between 1025px to 1280px
+// @media (min-width: 1025px) and (max-width: 1280px) {...}
+// // Tablets, Ipads (portrait)
+// // Active between 768px to 1024px
+// @media (min-width: 768px) and (max-width: 1024px) {...}
+// // Low Resolution Tablets, Mobiles (Landscape)
+// // Active between 481px to 767px
+// @media (min-width: 481px) and (max-width: 767px) {...}
+// // Most Smartphones Mobiles (Portrait)
+// // Active between 320px to 479px
+// @media (min-width: 320px) and (max-width: 480px) {...}
+
+// =-=-=-=-= Mobile First =-=-=-=-=
+// // Most Smartphones Mobiles (Portrait)
+// // Active between 320px to 479px
+// @media (min-width: 320px) and (max-width: 480px) {...}
+// // Low Resolution Tablets, Mobiles (Landscape)
+// // Active between 481px to 767px
+// @media (min-width: 481px) and (max-width: 767px) {...}
+// // Tablets, Ipads (portrait)
+// // Active between 768px to 1024px
+// @media (min-width: 768px) and (max-width: 1024px) {...}
+// // Laptops, Desktops
+// // Active between 1025px to 1280px
+// @media (min-width: 1025px) and (max-width: 1280px) {...}
+// // Desktops
+// // Active between 1281px+
+// @media (min-width: 1281px) {...}
+
+#rs_media_wrapper{
+}
+.rs_media_group_container{
+  border-bottom: 3px white solid;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      min-width: 320px;
+      max-width: 480px;
+      min-height: 50px;
+      margin-bottom: 15px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      min-width: 481px;
+      max-width: 767px;
+      min-height: 75px;
+      margin-bottom: 15px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      min-width: 768px;
+      max-width: 1024px;
+      min-height: 150px;
+      max-height: 250px;
+      margin-bottom: 15px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      min-width: 1025px;
+      max-width: 1280px;
+      min-height: 150px;
+      max-height: 250px;
+      margin-bottom: 20px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      min-width: 1281px;
+      min-height: 150px;
+      margin-bottom: 25px;
+    }
+}
+.rs_media_page_overview{
+  text-shadow: 2px 2px 8px black;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1em;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.2em;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.5em;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 3em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 3em;
+    }
+}
+.rs_media_page_text{
+  text-shadow: 2px 2px 8px black;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1em;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.2em;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.5em;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 3em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 4em;
+    }
+}
+.rs_media_group_title_item{
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 5px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      border: 1px red solid;
+      min-width: 100px;
+      max-width: 150px;
+      height: auto;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      border: 1px blue solid;
+      min-width: 150px;
+      max-width: 200px;
+      min-height: 30px;
+      max-height: 30px;
+      line-height: 30px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      border: 1px yellow solid;
+      min-width: 200px;
+      max-width: 250px;
+      min-height: 50px;
+      max-height: 50px;
+      line-height: 50px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      border: 1px purple solid;
+      min-width: 300px;
+      max-width: 450px;
+      min-height: 70px;
+      max-height: 70px;
+      line-height: 70px;
+      font-size: 3em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      border: 1px orange solid;
+      min-width: 350px;
+      max-width: 550px;
+      min-height: 70px;
+      max-height: 70px;
+      line-height: 70px;
+      font-size: 3em;
+    }
+}
+.rs_media_group_color_item{
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px gray solid;
+  margin: 5px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      min-width: 100px;
+      max-width: 150px;
+      height: auto;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      min-width: 150px;
+      max-width: 200px;
+      min-height: 30px;
+      max-height: 30px;
+      line-height: 30px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      min-width: 200px;
+      max-width: 250px;
+      min-height: 50px;
+      max-height: 50px;
+      line-height: 50px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      min-width: 300px;
+      max-width: 450px;
+      min-height: 70px;
+      max-height: 70px;
+      line-height: 70px;
+      font-size: 3em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      min-width: 350px;
+      max-width: 550px;
+      min-height: 70px;
+      max-height: 70px;
+      line-height: 70px;
+      font-size: 3em;
+    }
+}
+.rs_media_group_image_container{
+    border-bottom: 3px white solid;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      min-width: 320px;
+      max-width: 480px;
+      height: auto;
+      margin-bottom: 35px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      min-width: 481px;
+      max-width: 767px;
+      height: auto;
+      margin-bottom: 35px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      min-width: 768px;
+      max-width: 1024px;
+      height: auto;
+      margin-bottom: 35px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      min-width: 1025px;
+      max-width: 1280px;
+      height: auto;
+      margin-bottom: 35px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      min-width: 1281px;
+      height: auto;
+      margin-bottom: 35px;
+    }
+}
+.rs_media_group_dog_item{
+  border: 3px gray solid;
+  border-radius: 20px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      min-width: 300px;
+      max-width: 300px;
+      min-height: 300px;
+      max-height: 300px;
+      margin: 5px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      min-width: 450px;
+      max-width: 450px;
+      min-height: 450px;
+      max-height: 450px;
+      margin: 5px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      min-width: 300px;
+      max-width: 350px;
+      min-height: 300px;
+      max-height: 350px;
+      margin: 5px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      min-width: 475px;
+      max-width: 475px;
+      min-height: 475px;
+      max-height: 475px;
+      margin: 5px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      min-width: 500px;
+      max-width: 500px;
+      min-height: 500px;
+      max-height: 500px;
+      margin: 5px;
+    }
+}
+.rs_media_group_dog_item_small_link{
+  min-height: 75px;
+  min-width: 75px;
+  max-height: 150px;
+  max-width: 150px;
+}
+.rs_media_group_dog_item_small_link:hover{
+  animation: shine2 1.5s ease-in-out;
+}
+  @keyframes shine2 {
+    0% {
+      filter:contrast(100%);
+    }
+    20% {
+      filter:contrast(300%);
+    }
+    100% {
+      filter:contrast(100%);
+    }
+  }
+.rs_media_group_dog_item_small{
+  min-height: 75px;
+  min-width: 75px;
+  max-height: 150px;
+  max-width: 150px;
+  border: 1px gray solid;
+  border-radius: 20px;
+}
