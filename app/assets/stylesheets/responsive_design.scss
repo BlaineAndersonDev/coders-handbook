@@ -6,3 +6,101 @@ body, html{
   margin: 0;
   padding: 0;
 }
+
+
+// Code WITH Comments: (UNcomment to see in action.)
+// #rs_wrapper{
+//   // Regular CSS:
+//   text-align: center;
+//   background: #323232;
+//   color: white;
+//   min-height: 100vh;
+//   min-width: 100%;
+//   // Flex-box example:
+//     // Activates all Flex based CSS options.
+//       display: flex;
+//     // Horizontal Center Alignment for all objects inside this container.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-6
+//       justify-content: center;
+//     // Vertical Center Alignment for all objects inside this container.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-7
+//       align-items: center;
+//     // This defines the direction that Flex items move in.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-3
+//       // flex-direction: [ row || column || row-reverse || column-reverse ] ;
+//     // By default, Flex items will all try to fit onto one line. This alters that.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-5
+//       // flex-wrap: [ wrap || nowrap || wrap-reverse ] ;
+//     // This is a shorthand flex-direction and flex-wrap properties.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-5
+//       flex-flow: column wrap;
+// }
+// .rs_group_container{
+//   // Regular CSS:
+//   width: 100%;
+//   height: 100%;
+//   // Flex-box example:
+//     // This allows the item to grow as needed to fill the empty space around it.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-10
+//       // flex-grow: 1;{}
+//     // This allows the item to shrink as needed to allow space for other items around it.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-13
+//       // flex-shrink: 1;
+//     // This defines the default size of an element before the remaining space is distributed.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-13
+//       // flex-basis: 1;
+//     // This is the shorthand for flex-grow, flex-shrink and flex-basis combined.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-13
+//     // flex: <flex-grow> <flex-shrink> <flex-basis>;
+//       flex: 1 1 5%;
+//     // NOTE: Keep in mind that if you have to add Flex as the display for EACH container that will be Flexing items.
+//     // Activates all Flex based CSS options.
+//       display: flex;
+//     // Horizontal Center Alignment for all objects inside this container.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-6
+//       justify-content: center;
+//     // Vertical Center Alignment for all objects inside this container.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-7
+//       align-items: center;
+//     // This is a shorthand flex-direction and flex-wrap properties.
+//     // https://css-tricks.com/snippets/css/a-guide-to-flexbox/#article-header-id-5
+//       flex-flow: row nowrap;
+// }
+// .rs_group_title_item{
+//   // Using 'margin' & 'flex' to have a set number of items per row is explained here:
+//   // https://stackoverflow.com/a/45384426/10090036
+//   // Regular CSS:
+//     border: 1px lightgreen solid;
+//     margin: 5px;
+//   // Flex-box example:
+//     // This use of flex allows the "Title-#" boxes to adjust naturally until it reaches less than 360px width.
+//       flex: 1 0 30%;
+// }
+
+// Code WITHOUT Comments:
+#rs_wrapper{
+  text-align: center;
+  background: #323232;
+  color: white;
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.rs_group_container{
+  width: 100%;
+  height: 100%;
+  flex: 1 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border: 3px white solid;
+}
+.rs_group_title_item{
+  border: 1px lightgreen solid;
+  margin: 5px;
+  flex: 1 0 30%;
+}
