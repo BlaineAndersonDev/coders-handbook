@@ -1,6 +1,7 @@
 # Responsive Design Experiment Examples:
-### Copy & Paste Options:
+ > See it in action: [Heroku](https://responsive-design-experiment.herokuapp.com/) 
 
+## Copy & Paste Options:
 #### Blank Copy & Pastes:
   * A __Blank__ *Flex* & *Media Query* block:
   ```
