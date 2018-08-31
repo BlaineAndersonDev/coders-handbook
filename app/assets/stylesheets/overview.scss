@@ -61,28 +61,113 @@ body, html{
   justify-content: center;
   align-items: center;
 }
-.ov_divider{
+.ov_divider_intro{
   width: 100%;
   border-bottom: 3px white solid;
-  border-top: 3px white solid;
   margin: 5px 0 5px 0;
   padding: 10px;
+}
+.ov_text_m_intro{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.4em;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.5em;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.8em;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 2.4em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 2.4em;
+    }
+}
+.ov_text_s_intro{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.1em;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.2em;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.2em;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 1.3em;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 1.3em;
+    }
+}
+.ov_divider_text{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 80%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      border-radius: 20px;
+      padding: 0 20px 0 20px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      width: 80%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      border-radius: 20px;
+      padding: 0 20px 0 20px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 80%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      border-radius: 20px;
+      padding: 0 20px 0 20px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      width: 70%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      border-radius: 20px;
+      padding: 0 20px 0 20px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      width: 70%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      border-radius: 20px;
+      padding: 0 20px 0 20px;
+    }
 }
 .ov_text_l{
   // Most Smartphones Mobiles (Portrait)
     @media (min-width: 320px) and (max-width: 480px) {
       font-size: 1.8em;
-      padding: 5px;
+      padding: 10px;
     }
   // Low Resolution Tablets, Mobiles (Landscape)
     @media (min-width: 481px) and (max-width: 767px) {
       font-size: 2em;
-      padding: 8px;
+      padding: 12px;
     }
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
       font-size: 2.5em;
-      padding: 10px;
+      padding: 15px;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
@@ -104,12 +189,12 @@ body, html{
   // Low Resolution Tablets, Mobiles (Landscape)
     @media (min-width: 481px) and (max-width: 767px) {
       font-size: 1.5em;
-      padding: 8px;
+      padding: 12px;
     }
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
       font-size: 1.8em;
-      padding: 8px;
+      padding: 15px;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
@@ -126,12 +211,12 @@ body, html{
   // Most Smartphones Mobiles (Portrait)
     @media (min-width: 320px) and (max-width: 480px) {
       font-size: 1.1em;
-      padding: 5px;
+      padding-bottom: 10px;
     }
   // Low Resolution Tablets, Mobiles (Landscape)
     @media (min-width: 481px) and (max-width: 767px) {
       font-size: 1.2em;
-      padding: 7px;
+      padding: 9px;
     }
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
@@ -161,30 +246,27 @@ body, html{
   align-items: center;
   // Most Smartphones Mobiles (Portrait)
     @media (min-width: 320px) and (max-width: 480px) {
-      border: 1px red solid;
+      flex-flow: column wrap;
     }
   // Low Resolution Tablets, Mobiles (Landscape)
     @media (min-width: 481px) and (max-width: 767px) {
-      border: 1px blue solid;
+      flex-flow: column wrap;
     }
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
-      border: 1px yellow solid;
+      flex-flow: row wrap;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
-      border: 1px purple solid;
+      flex-flow: row wrap;
     }
   // Desktops
     @media (min-width: 1281px) {
-      border: 1px orange soild;
+      flex-flow: row wrap;
     }
 }
 .overview_link{
-  font-size: 2em;
   text-decoration: none;
-  margin: 10px;
-  padding: 10px;
   border: 2px white solid;
   color: white;
   transition:
@@ -192,26 +274,100 @@ body, html{
     color 0.5s ease;
   // Most Smartphones Mobiles (Portrait)
     @media (min-width: 320px) and (max-width: 480px) {
-      border: 1px red solid;
+      font-size: 2em;
+      margin: 10px;
+      padding: 10px;
     }
   // Low Resolution Tablets, Mobiles (Landscape)
     @media (min-width: 481px) and (max-width: 767px) {
-      border: 1px blue solid;
+      font-size: 2em;
+      margin: 10px;
+      padding: 10px;
     }
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
-      border: 1px yellow solid;
+      font-size: 2em;
+      margin: 10px;
+      padding: 10px;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
-      border: 1px purple solid;
+      font-size: 2em;
+      margin: 10px;
+      padding: 10px;
     }
   // Desktops
     @media (min-width: 1281px) {
-      border: 1px orange soild;
+      font-size: 2em;
+      margin: 10px;
+      padding: 10px;
     }
 }
 .overview_link:hover{
   color: lightblue;
   border: 2px lightblue solid;
+}
+.ov_divider_link_text{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 80%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      margin: 20px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      width: 80%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      margin: 20px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 80%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      margin: 20px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      width: 70%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      margin: 20px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      width: 70%;
+      border-bottom: 3px white solid;
+      border-top: 3px white solid;
+      margin: 20px;
+    }
+}
+.ov_text_m_link{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.4em;
+      padding: 8px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.5em;
+      padding: 12px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.8em;
+      padding: 15px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 2em;
+      padding: 10px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 2.4em;
+      padding: 10px;
+    }
 }
