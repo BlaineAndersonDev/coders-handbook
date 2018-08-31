@@ -11,19 +11,61 @@ body, html{
   height: 100%;
   width: 100%;
 }
+
+//
+// // Most Smartphones Mobiles (Portrait)
+//   @media (min-width: 320px) and (max-width: 480px) {
+//     border: 1 px red solid;
+//   }
+// // Low Resolution Tablets, Mobiles (Landscape)
+//   @media (min-width: 481px) and (max-width: 767px) {
+//     border: 1px blue solid;
+//   }
+// // Tablets, Ipads (portrait)
+//   @media (min-width: 768px) and (max-width: 1024px) {
+//     border: 1px yellow solid;
+//   }
+// // Laptops, Desktops
+//   @media (min-width: 1025px) and (max-width: 1280px) {
+//     border: 1px purple solid;
+//   }
+// // Desktops
+//   @media (min-width: 1281px) {
+//     border: 1px orange soild;
+//   }
+
 #overview_wrapper{
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
-.overview_container_row{
+.overview_container_text{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
-.overview_container_column{
+.ov_divider{
+  width: 100%;
+  border-bottom: 3px white solid;
+  border-top: 3px white solid;
+  margin: 5px 0 5px 0;
+  padding: 10px;
+}
+.ov_text_l{
+  font-size: 1.8em;
+  padding: 5px;
+}
+.ov_text_m{
+  font-size: 1.4em;
+  padding: 8px;
+}
+.ov_text_s{
+  font-size: 1.1em;
+  padding: 5px;
+}
+.overview_container_links{
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -39,7 +81,8 @@ body, html{
   transition:
     border 0.5s ease,
     color 0.5s ease;
-}.overview_link:hover{
+}
+.overview_link:hover{
   color: lightblue;
   border: 2px lightblue solid;
 }
