@@ -365,3 +365,86 @@ body, html{
   border: 1px gray solid;
   border-radius: 20px;
 }
+.github_media_links_container{
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  border-bottom: 3px white solid;
+  border-radius: 20px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin: 5px;
+      padding: 10px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      margin: 5px;
+      padding: 25px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin: 5px;
+      padding: 25px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      margin: 5px;
+      padding: 35px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      margin: 5px;
+      padding: 45px;
+    }
+}
+.github_media_link{
+  text-decoration: none;
+  border: 2px white solid;
+  color: white;
+  transition:
+    border 0.5s ease,
+    color 0.5s ease;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1em;
+      min-width: 60px;
+      max-width: 100px;
+      padding: 3px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1em;
+      min-width: 60px;
+      max-width: 100px;
+      margin: 3px;
+      padding: 5px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.5em;
+      min-width: 100px;
+      max-width: 150px;
+      margin: 5px;
+      padding: 10px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 2em;
+      min-width: 100px;
+      max-width: 150px;
+      margin: 7px;
+      padding: 12px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 2em;
+      min-width: 100px;
+      max-width: 150px;
+      margin: 7px;
+      padding: 15px;
+    }
+}
+.github_media_link:hover{
+  color: lightblue;
+  border: 2px lightblue solid;
+}
