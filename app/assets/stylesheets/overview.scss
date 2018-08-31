@@ -6,16 +6,15 @@ body, html{
   margin: 0;
   padding: 0;
   text-align: center;
-  background: #323232;
   color: white;
   height: 100%;
   width: 100%;
 }
 
-//
+
 // // Most Smartphones Mobiles (Portrait)
 //   @media (min-width: 320px) and (max-width: 480px) {
-//     border: 1 px red solid;
+//     border: 1px red solid;
 //   }
 // // Low Resolution Tablets, Mobiles (Landscape)
 //   @media (min-width: 481px) and (max-width: 767px) {
@@ -39,6 +38,22 @@ body, html{
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  position: relative;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 1;
+}
+.opacity_div{
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url('espresso_01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
 }
 .overview_container_text{
   display: flex;
@@ -54,22 +69,116 @@ body, html{
   padding: 10px;
 }
 .ov_text_l{
-  font-size: 1.8em;
-  padding: 5px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.8em;
+      padding: 5px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 2em;
+      padding: 8px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2.5em;
+      padding: 10px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 3.2em;
+      padding: 10px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 3.5em;
+      padding: 10px;
+    }
 }
 .ov_text_m{
-  font-size: 1.4em;
-  padding: 8px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.4em;
+      padding: 8px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.5em;
+      padding: 8px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.8em;
+      padding: 8px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 2.4em;
+      padding: 10px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 2.4em;
+      padding: 10px;
+    }
 }
 .ov_text_s{
-  font-size: 1.1em;
-  padding: 5px;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.1em;
+      padding: 5px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.2em;
+      padding: 7px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 1.3em;
+      padding: 10px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 1.3em;
+      padding: 10px;
+    }
 }
+
+
+
+
+
 .overview_container_links{
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      border: 1px red solid;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      border: 1px blue solid;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      border: 1px yellow solid;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      border: 1px purple solid;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      border: 1px orange soild;
+    }
 }
 .overview_link{
   font-size: 2em;
@@ -81,6 +190,26 @@ body, html{
   transition:
     border 0.5s ease,
     color 0.5s ease;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      border: 1px red solid;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      border: 1px blue solid;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      border: 1px yellow solid;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      border: 1px purple solid;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      border: 1px orange soild;
+    }
 }
 .overview_link:hover{
   color: lightblue;
