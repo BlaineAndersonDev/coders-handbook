@@ -380,33 +380,33 @@ body, html{
   flex-flow: row nowrap;
   // Most Smartphones Mobiles (Portrait)
     @media (min-width: 320px) and (max-width: 480px) {
-    margin: 5px;
-    padding: 20px;
-    width: 90%;
+      margin: 5px;
+      padding: 20px;
+      width: 90%;
     }
   // Low Resolution Tablets, Mobiles (Landscape)
     @media (min-width: 481px) and (max-width: 767px) {
-    margin: 5px;
-    padding: 20px;
-    width: 80%;
+      margin: 5px;
+      padding: 20px;
+      width: 80%;
     }
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
-    margin: 5px;
-    padding: 20px;
-    width: 70%;
+      margin: 5px;
+      padding: 20px;
+      width: 70%;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
-    margin: 5px;
-    padding: 20px;
-    width: 70%;
+      margin: 5px;
+      padding: 20px;
+      width: 70%;
     }
   // Desktops
     @media (min-width: 1281px) {
-    margin: 5px;
-    padding: 25px;
-    width: 70%;
+      margin: 5px;
+      padding: 25px;
+      width: 70%;
     }
 }
 .github_flex_media_link{
