@@ -6,8 +6,8 @@
 > I recommend Copy Pasting this worksheet into your local machine, or using [Repl.it](Repl.it) to test each problem.
 
   <details>
-    <summary>Q1: What is the best Language in the World? </summary>
-     A1: JavaScript
+    <summary>Answer</summary>
+     `#=> test`
   </details>
 
   <details>
