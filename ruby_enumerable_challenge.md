@@ -7,20 +7,20 @@
 #### String Enumerable Examples
   * [Ruby-Docs: String Enumerables](https://ruby-doc.org/core-2.5.1/String.html)
 
-  * [.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)
-  ```
-  "hello".capitalize    #=> "Hello"
-  "HELLO".capitalize    #=> "Hello"
-  "123ABC".capitalize   #=> "123abc"
-  ```
+    * [.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)
+    ```
+    "hello".capitalize    #=> "Hello"
+    "HELLO".capitalize    #=> "Hello"
+    "123ABC".capitalize   #=> "123abc"
+    ```
 
-  * [.chars](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)
-    * Returns an array of characters in str. This is a shorthand for `str.each_char.to_a`.
-  ```
-  "hello".chars    #=> ["h", "e", "l", "l", "o"]
-  "HELLO".chars    #=> ["H", "E", "L", "L", "O"]
-  "123ABC".chars   #=> ["1", "2", "3", "A", "B", "C"]
-  ```
+    * [.chars](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)
+      * Returns an array of characters in str. This is a shorthand for `str.each_char.to_a`.
+    ```
+    "hello".chars    #=> ["h", "e", "l", "l", "o"]
+    "HELLO".chars    #=> ["H", "E", "L", "L", "O"]
+    "123ABC".chars   #=> ["1", "2", "3", "A", "B", "C"]
+    ```
 
 #### Array Enumerable Examples
   * [Ruby-Docs: Array Enumerables](http://ruby-doc.org/core-2.5.1/Array.html)
