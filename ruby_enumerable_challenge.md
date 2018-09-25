@@ -11,12 +11,11 @@
     "hello".capitalize    #=> "Hello"
     "HELLO".capitalize    #=> "Hello"
     "123ABC".capitalize   #=> "123abc"
-
     # Using '.capitalize!' will returns nil if no changes are made. Use with caution.
     "Hello".capitalize!   #=> nil
     ```
 
-  * __[.chars](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
+  * __[.chars](http://ruby-doc.org/core-2.5.1/String.html#method-i-chars)__
     ```
     # Returns an array of characters in str. This is a shorthand for `str.each_char.to_a`.
     "hello".chars    #=> ["h", "e", "l", "l", "o"]
@@ -33,7 +32,6 @@
     "hello\r\n".chomp            #=> "hello"
     "hello\n\r".chomp            #=> "hello\n"
     "hello".chomp("llo")         #=> "he"
-
     # Using '.chomp!' will returns nil if no changes are made. Use with caution.
     "hello".chomp!               #=> nil
     ```
@@ -47,22 +45,37 @@
     "hello\n".chop     #=> "hello"
     "hello".chop       #=> "hell"
     "x".chop           #=> ""
+    # Using '.chop!' will returns nil if no changes are made (I.E. The string is empty). Use with caution.
+    "".chop!          #=> nil
     ```
 
-  * __[.chars](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
+  * __[.concat](http://ruby-doc.org/core-2.5.1/String.html#method-i-concat)__
     ```
-    # Returns an array of characters in str. This is a shorthand for `str.each_char.to_a`.
-    "hello".chars    #=> ["h", "e", "l", "l", "o"]
-    "HELLO".chars    #=> ["H", "E", "L", "L", "O"]
-    "123ABC".chars   #=> ["1", "2", "3", "A", "B", "C"]
+    # Concatenates the given object(s) to str. If an object is an Integer, it is considered a [codepoint (unicode symbols)](https://www.unicode.org/charts/) and converted to a character before concatenation.
+    # UTF-8 is the default encoding implemented in Ruby since version 2.0.0. All codepoints are based off this assumption.
+    a = "hello "
+    a.concat("world", 33)      #=> "hello world!"
+    a                          #=> "hello world!"
+
+    b = "sn"
+    b.concat("_", b, "_", b)   #=> "sn_sn_sn"
+
+    # Side note: For a fun list of UTF-8 characters, use the following and run it :) (Based on this [post](https://stackoverflow.com/a/36375301/10090036)). Warning: This is a large list.
+    [*32..65535].map do |e|
+      e.chr(Encoding::UTF_8).tap do |char|
+        char =~ /\p{Alnum}|\p{Punct}/ || raise
+      end rescue nil # rescuing both conversion and self-raised
+    end.compact
     ```
 
-  * __[.chars](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
+  * __[.count](http://ruby-doc.org/core-2.5.1/String.html#method-i-count)__
     ```
-    # Returns an array of characters in str. This is a shorthand for `str.each_char.to_a`.
-    "hello".chars    #=> ["h", "e", "l", "l", "o"]
-    "HELLO".chars    #=> ["H", "E", "L", "L", "O"]
-    "123ABC".chars   #=> ["1", "2", "3", "A", "B", "C"]
+    # Returns the number of matching characters based on the parameter. No spaces or delimiters required.
+    a = "hello world"
+    a.count("o")                   #=> 2
+    a.count("H")                   #=> 1
+    a.count("l")                   #=> 3
+    a.count("lo")                  #=> 5
     ```
 
 #### Array Enumerable Examples
