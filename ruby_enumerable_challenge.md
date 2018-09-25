@@ -4,11 +4,11 @@
 ## Enumerable Examples:
 > I've included a full set of examples here, as well as a number of different worksheets in the [worksheets]() folder. They can also be accessed via the table below:
 
-
-| Difficulty | Enumerable Type | Worksheet |
+| Difficulty | Type | Worksheet |
 | --- | --- | --- |
 | __Beginner__ | String | [string_01](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/worksheets/string_01.md) |
 
+___
 
 #### [String Enumerable](https://ruby-doc.org/core-2.5.1/String.html) Examples:
   * __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
