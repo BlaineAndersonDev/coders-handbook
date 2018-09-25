@@ -1,10 +1,8 @@
 # worksheet_string_01
 ###### Ruby Enumerable Challenge Worksheet
-> This is one of a number of worksheets created by [Blaine Anderson](https://github.com/BlaineAndersonDev) to upkeep his enumerable skills.
+> This is one of a number of worksheets created by [Blaine Anderson](https://github.com/BlaineAndersonDev) to upkeep his enumerable skills. For a full list of Common Enumerables, Examples & other Worksheets click [here](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/ruby_enumerable_challenge.md). I recommend Copy Pasting this worksheet into your local machine, or using [Repl.it](Repl.it) to test each problem.
 
-> For a full list of Common Enumerables, Examples & other Worksheets click [here](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/ruby_enumerable_challenge.md).
-
-> I recommend Copy Pasting this worksheet into your local machine, or using [Repl.it](Repl.it) to test each problem.
+> This worksheet is leveled: __Beginner__
 
 ___
 
@@ -15,12 +13,10 @@ ___
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
     "hello".capitalize    #=> "Hello"
-    "HELLO".capitalize    #=> "Hello"
-    "123ABC".capitalize   #=> "123abc"
 
   </p></details>
 
-  ___
+___
 
 * 1.) Use an Enumerable to Capitalize the sentence below:
     > `"hello world"`
