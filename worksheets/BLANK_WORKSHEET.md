@@ -1,5 +1,5 @@
-# worksheet_BLANK
-###### Ruby Enumerable Challenge Worksheet
+# Worksheet BLANK_NUMBER
+###### Ruby Enumerable Challenge:
 > This is one of a number of worksheets created by [Blaine Anderson](https://github.com/BlaineAndersonDev) to upkeep his enumerable skills. For a full list of Common Enumerables, Examples & other Worksheets click [here](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/ruby_enumerable_challenge.md).
 
 > There is an answer-free section of this worksheet intended for Copy Pasting it into your local machine, or using [Repl.it](Repl.it) to work through it entirely.
@@ -21,7 +21,7 @@ ___
 
   </p></details>
 
-## Local/Repl.it Answer Free Worksheet:
+## Local/[Repl.it](Repl.it) Answer Free Worksheet:
 
   ```
   # 1.) Question

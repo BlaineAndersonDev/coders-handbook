@@ -337,7 +337,7 @@ ___
 
 ___
 
-## Local/Repl.it Answer Free Worksheet:
+## Local/[Repl.it](Repl.it) Answer Free Worksheet:
 
 ```
 # 1.) Use an Enumerable to Capitalize the sentence below:
