@@ -6,6 +6,7 @@
 
 > I recommend Copy Pasting this worksheet into your local machine, or using [Repl.it](Repl.it) to test each problem.
 <!-- ================================== -->
+
 * 1.) Use an Enumerable to Capitalize the sentence below:
 
      `"hello world"`
