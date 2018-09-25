@@ -6,11 +6,9 @@
 > I recommend Copy Pasting this worksheet into your local machine, or using [Repl.it](Repl.it) to test each problem.
 
   <details><summary>Answer:</summary><p>
-
       "hello".capitalize    #=> "Hello"
       "HELLO".capitalize    #=> "Hello"
       "123ABC".capitalize   #=> "123abc"
-
   </p></details>
 
   * 1.) __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
