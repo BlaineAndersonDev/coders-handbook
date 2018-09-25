@@ -7,7 +7,18 @@
 
   <details>
     <summary>__Answer__</summary>
+
     <p>
+      ```java
+      code block
+      ```
+    </p>
+  </details>
+
+  <details>
+    <summary>__Answer__</summary>
+    <p>
+    
       ```java
       code block
       ```
