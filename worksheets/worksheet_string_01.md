@@ -9,8 +9,7 @@ ___
 1.) Use an Enumerable to Capitalize the sentence below:
 
    `"hello world"`
-
-   Goal: `"Hello"`
+   > Goal: `"Hello"`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
@@ -23,8 +22,7 @@ ___
 1.) Use an Enumerable to divide the sentence below into an array of characters:
 
    `"hello world"`
-
-    Goal: `["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"]`
+   > Goal: `["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"]`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
@@ -37,22 +35,7 @@ ___
 1.) Use an Enumerable to _______ the sentence below:
 
    `"hello world"`
-
-   Goal: `"Hello"`
-
-  <details><summary>Answer:</summary><p><!-- Spacing Required -->
-
-    "hello"._____    #=> "Hello"
-
-  </p></details>
-
-___
-
-1.) Use an Enumerable to _______ the sentence below:
-
-   `"hello world"`
-
-   Goal: `"Hello"`
+   > Goal: `"Hello"`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
@@ -65,22 +48,7 @@ ___
 1.) Use an Enumerable to _______ the sentence below:
 
    `"hello world"`
-
-   Goal: `"Hello"`
-
-  <details><summary>Answer:</summary><p><!-- Spacing Required -->
-
-    "hello"._____    #=> "Hello"
-
-  </p></details>
-
-___
-
-1.) Use an Enumerable to _______ the sentence below:
-
-   `"hello world"`
-
-   Goal: `"Hello"`
+   > Goal: `"Hello"`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
@@ -93,8 +61,33 @@ ___
 1.) Use an Enumerable to _______ the sentence below:
 
    `"hello world"`
+   > Goal: `"Hello"`
 
-   Goal: `"Hello"`
+  <details><summary>Answer:</summary><p><!-- Spacing Required -->
+
+    "hello"._____    #=> "Hello"
+
+  </p></details>
+
+___
+
+1.) Use an Enumerable to _______ the sentence below:
+
+   `"hello world"`
+   > Goal: `"Hello"`
+
+  <details><summary>Answer:</summary><p><!-- Spacing Required -->
+
+    "hello"._____    #=> "Hello"
+
+  </p></details>
+
+___
+
+1.) Use an Enumerable to _______ the sentence below:
+
+   `"hello world"`
+   > Goal: `"Hello"`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
