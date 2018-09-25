@@ -9,29 +9,33 @@
     <summary>Answer</summary>
      `#=> test`
   </details>
-
+  
   <details>
-    <summary>
-    Q1: What is the best Language in the World?
-    checking for multi line capibility
-    </summary>
-     A1: JavaScript
-  </details>
+    <summary>stuff with *mark* **down**</summary>
+    <p>
+  <!-- the above p cannot start right at the beginning of the line and is mandatory for everything else to work -->
+  ##*formatted* **heading** with [a](link)
+  ```java
+  code block
+  ```
 
-  <details>
-    <summary>
-    Q1: What is the best Language in the World?
-    checking for multi line capibility
-    And Code:
-    ```
-     BLAH BLAH
-    ```
-    </summary>
+    <details>
+      <summary><small>nested</small> stuff</summary><p>
+  <!-- alternative placement of p shown above -->
+
+  * list
+  * with
+
+   1. nested
+   1. items
+
+      ```java
+      // including code
       ```
-       BLAH BLAH
-      ```
-     A1: JavaScript
-  </details>
+   1. blocks
+
+    </p></details>
+  </p></details>
 
 
   * 1.) __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
