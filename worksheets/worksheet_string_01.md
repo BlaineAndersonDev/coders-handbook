@@ -5,7 +5,8 @@
 > For a full list of Common Enumerables, Examples & other Worksheets click [here](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/ruby_enumerable_challenge.md).
 
 > I recommend Copy Pasting this worksheet into your local machine, or using [Repl.it](Repl.it) to test each problem.
-<!-- ================================== -->
+
+___
 
 1.) Use an Enumerable to Capitalize the sentence below:
 
@@ -19,7 +20,8 @@
 
   </p></details>
 
-<!-- ================================== -->
+  ___
+
 * 1.) Use an Enumerable to Capitalize the sentence below:
     > `"hello world"`
 
