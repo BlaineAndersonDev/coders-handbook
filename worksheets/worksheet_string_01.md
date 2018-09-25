@@ -19,7 +19,7 @@
     <summary>__Answer__</summary>
     <p>
 
-      ```java
+      ```
       code block
       ```
 
