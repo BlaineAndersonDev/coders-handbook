@@ -136,10 +136,86 @@
     "hello".gsub!("b")                            #=> nil
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.include?](http://ruby-doc.org/core-2.5.1/String.html#method-i-include-3F)__
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # Returns true if str contains the given string or character.
+    "hello".include?("e")   #=> true
+    "hello".include?("lo")   #=> true
+    "hello".include?("b")   #=> false
+    "hello".include?("ol")   #=> false
+    ```
+
+  * __[.index](http://ruby-doc.org/core-2.5.1/String.html#method-i-index)__
+    ```
+    # Returns the index of the first occurrence of the given substring or pattern (regexp) in str.
+    # Returns nil if not found.
+    # If the second parameter is present, it specifies the position in the string to begin the search.
+    # .index can be used with Regex.
+    "hello".index('e')             #=> 1
+    "hello".index('lo')            #=> 3
+    "hello".index('a')             #=> nil
+    "hello".index(?e)              #=> 1
+    "hello".index(/[aeiou]/, -3)   #=> 4
+    ```
+
+  * __[.insert](http://ruby-doc.org/core-2.5.1/String.html#method-i-insert)__
+    ```
+    # Inserts other_str before the character at the given index, modifying str.
+    # Negative indices count from the end of the string, and insert after the given character.
+    "abcd".insert(0, 'X')    #=> "Xabcd"
+    "abcd".insert(3, 'X')    #=> "abcXd"
+    "abcd".insert(4, 'X')    #=> "abcdX"
+    "abcd".insert(-3, 'X')   #=> "abXcd"
+    "abcd".insert(-1, 'X')   #=> "abcdX"
+    ```
+
+  * __[.length](http://ruby-doc.org/core-2.5.1/String.html#method-i-length)__
+    ```
+    # Returns the character length of str.
+    "Hello".length             #=> 5
+    "Hello World".length       #=> 11
+    " ".length                 #=> 1
+    "Hello...World!".length    #=> 14
+    ```
+
+  * __[.match](http://ruby-doc.org/core-2.5.1/String.html#method-i-match)__
+    ```
+    # Converts pattern to a Regexp (if it isn't already one), then invokes its match method on str.
+    # If the second parameter is present, it specifies the position in the string to begin the search.
+    'hello'.match('(.)\1')      #=> #<MatchData "ll" 1:"l">
+    'hello'.match('(.)\1')[0]   #=> "ll"
+    'hello'.match(/(.)\1/)[0]   #=> "ll"
+    'hello'.match(/(.)\1/, 3)   #=> nil
+    'hello'.match('xx')         #=> nil
+    ```
+
+  * __[.match?](http://ruby-doc.org/core-2.5.1/String.html#method-i-match-3F)__
+    ```
+    # Converts pattern to a Regexp (if it isn't already one), then returns a true or false indicates whether the regexp is matched str or not without updating $~ and other related variables.
+    # If the second parameter is present, it specifies the position in the string to begin the search.
+    "Ruby".match?(/R.../)    #=> true
+    "Ruby".match?(/R.../, 1) #=> false
+    "Ruby".match?(/P.../)    #=> false
+    $&                       #=> nil
+    ```
+
+  * __[.replace](http://ruby-doc.org/core-2.5.1/String.html#method-i-replace)__
+    ```
+    # Replaces the contents and taintedness of str with the corresponding values in other_str.
+    s = "hello"         #=> "hello"
+    s.replace "world"   #=> "world"
+    ```
+
+  * __[.reverse](http://ruby-doc.org/core-2.5.1/String.html#method-i-reverse)__
+    ```
+    # Returns a new string with the characters from str in reverse order.
+    "stressed".reverse      #=> "desserts"
+    "mom".reverse           #=> "mom"
+    # Using '.reverse!' will overwrite the original word or variable. Use with caution.
+    variable = "stressed"
+    variable               #=> "stressed"
+    variable.reverse!      #=> "desserts"
+    variable               #=> "desserts"
     ```
 
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
