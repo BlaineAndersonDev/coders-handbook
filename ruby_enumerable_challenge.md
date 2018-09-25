@@ -78,6 +78,36 @@
     a.count("lo")                  #=> 5
     ```
 
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
 #### Array Enumerable Examples
   * [Ruby-Docs: Array Enumerables](http://ruby-doc.org/core-2.5.1/Array.html)
 
