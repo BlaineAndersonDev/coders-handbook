@@ -276,7 +276,7 @@
     "hello".swapcase!               #=> nil
     ```
 
-    * __[.upcase](http://ruby-doc.org/core-2.5.1/String.html#method-i-upcase)__
+  * __[.upcase](http://ruby-doc.org/core-2.5.1/String.html#method-i-upcase)__
     ```
     # Returns a copy of str with all lowercase letters replaced with their uppercase counterparts.
     "hEllO".upcase   #=> "HELLO"
