@@ -1,4 +1,4 @@
-# worksheet_string_01
+# String 01
 ###### Ruby Enumerable Challenge Worksheet
 > This is one of a number of worksheets created by [Blaine Anderson](https://github.com/BlaineAndersonDev) to upkeep his enumerable skills. For a full list of Common Enumerables, Examples & other Worksheets click [here](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/ruby_enumerable_challenge.md).
 
