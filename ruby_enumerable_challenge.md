@@ -4,9 +4,7 @@
 ## Enumerable Examples:
 > I've included a full set of examples above, as well as a few different BLANK worksheets underneath. I recommend Copy Pasting into your local machine, or using [Repl.it](Repl.it) to test each problem.
 
-#### String Enumerable Examples
-  * [Ruby-Docs: String Enumerables](https://ruby-doc.org/core-2.5.1/String.html)
-
+#### [String Enumerable](https://ruby-doc.org/core-2.5.1/String.html) Examples:
   * __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
     ```
     # Returns a copy of str with the first character converted to uppercase and the remainder to lowercase.
