@@ -11,7 +11,7 @@
     "hello".capitalize    #=> "Hello"
     "HELLO".capitalize    #=> "Hello"
     "123ABC".capitalize   #=> "123abc"
-    # Using '.capitalize!' will returns nil if no changes are made. Use with caution.
+    # Using '.capitalize!' will return nil if no changes are made. Use with caution.
     "Hello".capitalize!   #=> nil
     ```
 
@@ -32,7 +32,7 @@
     "hello\r\n".chomp            #=> "hello"
     "hello\n\r".chomp            #=> "hello\n"
     "hello".chomp("llo")         #=> "he"
-    # Using '.chomp!' will returns nil if no changes are made. Use with caution.
+    # Using '.chomp!' will return nil if no changes are made. Use with caution.
     "hello".chomp!               #=> nil
     ```
 
@@ -45,7 +45,7 @@
     "hello\n".chop     #=> "hello"
     "hello".chop       #=> "hell"
     "x".chop           #=> ""
-    # Using '.chop!' will returns nil if no changes are made (I.E. The string is empty). Use with caution.
+    # Using '.chop!' will return nil if no changes are made (I.E. The string is empty). Use with caution.
     "".chop!          #=> nil
     ```
 
@@ -83,12 +83,18 @@
     # Returns a copy of str with all characters in the intersection of its arguments deleted.
     "hello".delete("l","lo")        #=> "heo"
     "hello".delete("lo")            #=> "he"
+    # Using '.delete!' will return nil if no changes are made. Use with caution.
+    "hello".delete!("b")            #=> nil
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.downcase](http://ruby-doc.org/core-2.5.1/String.html#method-i-downcase)__
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # Returns a copy of str with all uppercase letters replaced with their lowercase counterparts.
+    "hEllO".downcase                #=> "hello"
+    "Hello".downcase                #=> "hello"
+    "HeLlO".downcase                #=> "hello"
+    # Using '.downcase!' will return nil if no changes are made. Use with caution.
+    "hello".downcase!               #=> nil
     ```
 
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
