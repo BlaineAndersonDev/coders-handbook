@@ -15,7 +15,7 @@
     ```
 
     * [.chars](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)
-    Returns an array of characters in str. This is a shorthand for `str.each_char.to_a`.
+    * Returns an array of characters in str. This is a shorthand for `str.each_char.to_a`.
     ```
     "hello".chars    #=> ["h", "e", "l", "l", "o"]
     "HELLO".chars    #=> ["H", "E", "L", "L", "O"]
