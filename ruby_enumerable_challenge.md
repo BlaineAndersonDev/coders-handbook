@@ -182,6 +182,7 @@
     ```
     # Converts pattern to a Regexp (if it isn't already one), then invokes its match method on str.
     # If the second parameter is present, it specifies the position in the string to begin the search.
+    '123hello'.match(/(hello)/) #=> "hello"
     'hello'.match('(.)\1')      #=> #<MatchData "ll" 1:"l">
     'hello'.match('(.)\1')[0]   #=> "ll"
     'hello'.match(/(.)\1/)[0]   #=> "ll"
@@ -193,10 +194,11 @@
     ```
     # Converts pattern to a Regexp (if it isn't already one), then returns a true or false indicates whether the regexp is matched str or not without updating $~ and other related variables.
     # If the second parameter is present, it specifies the position in the string to begin the search.
-    "Ruby".match?(/R.../)    #=> true
-    "Ruby".match?(/R.../, 1) #=> false
-    "Ruby".match?(/P.../)    #=> false
-    $&                       #=> nil
+    '123hello'.match?(/(hello)/) #=> true
+    "Ruby".match?(/R.../)        #=> true
+    "Ruby".match?(/R.../, 1)     #=> false
+    "Ruby".match?(/P.../)        #=> false
+    $&                           #=> nil
     ```
 
   * __[.replace](http://ruby-doc.org/core-2.5.1/String.html#method-i-replace)__
@@ -284,17 +286,6 @@
     "cYbEr_PuNk11".upcase   #=> "CYBER_PUNK11"
     # Using '.upcase!' will return nil if no changes are made. Use with caution.
     "hello".upcase!               #=> nil
-    ```
-
-  * __[.to_f](http://ruby-doc.org/core-2.5.1/String.html#method-i-to_f)__
-    ```
-    # Returns the result of interpreting leading characters in str as a floating point number.
-    # Extraneous characters past the end of a valid number are ignored.
-    # If there is not a valid number at the start of str, 0.0 is returned.
-    # This method never raises an exception.
-    "123.45e1".to_f        #=> 1234.5
-    "45.67 degrees".to_f   #=> 45.67
-    "thx1138".to_f         #=> 0.0
     ```
 
   * __[.to_i](http://ruby-doc.org/core-2.5.1/String.html#method-i-to_i)__
