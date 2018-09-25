@@ -126,6 +126,7 @@
     ```
     # Returns a copy of str with all occurrences of pattern substituted for the second argument.
     # .gsub is usually used with Regex.
+    "hello world".gsub("h", '')                   #=> "ello world"
     "hello".gsub(/[aeiou]/, '*')                  #=> "h*ll*"
     "hello".gsub(/([aeiou])/, '<\1>')             #=> "h<e>ll<o>"
     "hello".gsub(/./) {|s| s.ord.to_s + ' '}      #=> "104 101 108 108 111 "

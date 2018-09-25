@@ -112,105 +112,105 @@ ___
 
 ___
 
-1.) Use an Enumerable to _______ the sentence below:
+9.) Use an Enumerable to 'print' every character the sentence below:
 
-   `"hello world"`
-   > Goal: `"Hello"`
+   `"hello"`
+   > Goal: `h e l l o`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    "hello"._____    #=> "Hello"
+    "hello".each_char {|char| print char, ' ' }    #=> h e l l o
 
   </p></details>
 
 ___
 
-1.) Use an Enumerable to _______ the sentence below:
+10.) Use an Enumerable to check if the sentence below is empty:
 
-   `"hello world"`
-   > Goal: `"Hello"`
+   `"hello"`
+   > Goal: `false`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    "hello"._____    #=> "Hello"
+    "hello".empty?    #=> false
 
   </p></details>
 
 ___
 
-1.) Use an Enumerable to _______ the sentence below:
+11.) Use an Enumerable to see if the sentence below is equal to "hello world":
 
    `"hello world"`
-   > Goal: `"Hello"`
+   > Goal: `true`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    "hello"._____    #=> "Hello"
+    "hello world".eql?("hello world")    #=> true
 
   </p></details>
 
 ___
 
-1.) Use an Enumerable to _______ the sentence below:
+12.) Use an Enumerable to remove the "h" from the sentence below and replace it with nothing:
 
    `"hello world"`
-   > Goal: `"Hello"`
+   > Goal: `"ello world"`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    "hello"._____    #=> "Hello"
+    "hello world".gsub("h", '')    #=> "ello world"
 
   </p></details>
 
 ___
 
-1.) Use an Enumerable to _______ the sentence below:
+13.) Use an Enumerable to see if the sentence below includes the letter "b":
 
    `"hello world"`
-   > Goal: `"Hello"`
+   > Goal: `false`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    "hello"._____    #=> "Hello"
+    "hello world".include?("b")    #=> false
 
   </p></details>
 
 ___
 
-1.) Use an Enumerable to _______ the sentence below:
+14.) Use an Enumerable to find the letter index number of the letter "e" in the sentence below:
 
    `"hello world"`
-   > Goal: `"Hello"`
+   > Goal: `1`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    "hello"._____    #=> "Hello"
+    "hello".index("e")    #=> 1
 
   </p></details>
 
 ___
 
-1.) Use an Enumerable to _______ the sentence below:
+15.) Use an Enumerable to add the letter "X" in front of the sentence below:
 
-   `"hello world"`
-   > Goal: `"Hello"`
+   `"hello"`
+   > Goal: `"Xhello"`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    "hello"._____    #=> "Hello"
+    "hello".insert(0, "X")    #=> "Xhello"
 
   </p></details>
 
 ___
 
-1.) Use an Enumerable to _______ the sentence below:
+16.) Use an Enumerable to find how many characters are in the sentence below:
 
    `"hello world"`
-   > Goal: `"Hello"`
+   > Goal: `11`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    "hello"._____    #=> "Hello"
+    "hello world".length    #=> 11
 
   </p></details>
 
