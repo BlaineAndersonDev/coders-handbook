@@ -1,12 +1,42 @@
-# Ruby Enumerable Challenge
-> A small Ruby Enumerable worksheet I created to test myself daily for a few weeks, until I have all the common enumerable memorized (or at least committed to memory enough that I can mostly recall how to use them properly).
+# Ruby Enumerable Challenge: String Worksheet 01
+> This is one of a number of worksheets created by [Blaine Anderson](https://github.com/BlaineAndersonDev) to upkeep his enumerable skills.
 
-## Enumerable Examples:
-> I've included a full set of examples here, as well as a number of different BLANK worksheets in the [worksheets]() folder. I recommend Copy Pasting into your local machine, or using [Repl.it](Repl.it) to test each problem.
+> For a full list of Common Enumerables, Examples & other Worksheets click [here](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/ruby_enumerable_challenge.md).
 
-#### [String Enumerable](https://ruby-doc.org/core-2.5.1/String.html) Examples:
-  * __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
+> I recommend Copy Pasting this worksheet into your local machine, or using [Repl.it](Repl.it) to test each problem.
+
+  <details>
+    <summary>Q1: What is the best Language in the World? </summary>
+     A1: JavaScript
+  </details>
+
+  <details>
+    <summary>
+    Q1: What is the best Language in the World?
+    checking for multi line capibility
+    </summary>
+     A1: JavaScript
+  </details>
+
+  <details>
+    <summary>
+    Q1: What is the best Language in the World?
+    checking for multi line capibility
+    And Code:
     ```
+     BLAH BLAH
+    ```
+    </summary>
+      ```
+       BLAH BLAH
+      ```
+     A1: JavaScript
+  </details>
+
+
+  * 1.) __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
+    ```
+
     # Returns a copy of str with the first character converted to uppercase and the remainder to lowercase.
     "hello".capitalize    #=> "Hello"
     "HELLO".capitalize    #=> "Hello"
