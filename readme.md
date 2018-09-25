@@ -1,4 +1,4 @@
-# Coders Notebook
+# Coders Handbook
 > A Guide for lost coders & cheatsheet searchers alike.
 
 # Guides included in this Repository:
