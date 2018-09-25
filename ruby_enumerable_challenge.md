@@ -113,7 +113,7 @@
     "".empty?        #=> true
     ```
 
-  * __[.eql?](http://ruby-doc.org/core-2.5.1/String.html#method-i-eql-3F)__ [Deeper Explanation](https://stackoverflow.com/a/7157051/10090036)
+  * __[.eql?](http://ruby-doc.org/core-2.5.1/String.html#method-i-eql-3F)__       _[Deeper Explanation](https://stackoverflow.com/a/7157051/10090036)_
     ```
     # Two strings are equal if they have the same length and content.
     # NOTE: This does not work the same on integers.
