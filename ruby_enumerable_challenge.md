@@ -9,13 +9,16 @@
 
   * __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
     ```
+    # Returns a copy of str with the first character converted to uppercase and the remainder to lowercase.
     "hello".capitalize    #=> "Hello"
     "HELLO".capitalize    #=> "Hello"
     "123ABC".capitalize   #=> "123abc"
+
+    # Using '.capitalize!' will returns nil if no changes are made.
+    "Hello".capitalize    #=> nil
     ```
 
-  > __[.chars](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
-  
+  * __[.chars](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
     ```
     # Returns an array of characters in str. This is a shorthand for `str.each_char.to_a`.
     "hello".chars    #=> ["h", "e", "l", "l", "o"]
