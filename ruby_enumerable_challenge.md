@@ -218,7 +218,7 @@
     variable               #=> "desserts"
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.slice](http://ruby-doc.org/core-2.5.1/String.html#method-i-slice)__
     ```
     # If passed a single index, returns a substring of one character at that index.
     # If passed a start index and a length, returns a substring containing length characters starting at the start index.
@@ -234,6 +234,70 @@
     string.slice!(/s.*t/)   #=> "sa st"
     string.slice!("r")      #=> "r"
     string                  #=> "thing"
+    ```
+
+  * __[.split](http://ruby-doc.org/core-2.5.1/String.html#method-i-split)__
+    ```
+    # Divides str into substrings based on a delimiter, returning an array of these substrings.
+    " now's  the time".split        #=> ["now's", "the", "time"]
+    " now's  the time".split(' ')   #=> ["now's", "the", "time"]
+    " now's  the time".split(/ /)   #=> ["", "now's", "", "the", "time"]
+    "1, 2.34,56, 7".split(%r{,\s*}) #=> ["1", "2.34", "56", "7"]
+    "hello".split(//)               #=> ["h", "e", "l", "l", "o"]
+    "hello".split(//, 3)            #=> ["h", "e", "llo"]
+    "hi mom".split(%r{\s*})         #=> ["h", "i", "m", "o", "m"]
+
+    "mellow yellow".split("ello")   #=> ["m", "w y", "w"]
+    "1,2,,3,4,,".split(',')         #=> ["1", "2", "", "3", "4"]
+    "1,2,,3,4,,".split(',', 4)      #=> ["1", "2", "", "3,4,,"]
+    "1,2,,3,4,,".split(',', -4)     #=> ["1", "2", "", "3", "4", "", ""]
+
+    "1:2:3".split(/(:)()()/, 2)     #=> ["1", ":", "", "", "2:3"]
+
+    "".split(',', -1)               #=> []
+    ```
+
+  * __[.strip](http://ruby-doc.org/core-2.5.1/String.html#method-i-strip)__
+    ```
+    # Returns a copy of str with leading and trailing whitespace removed.
+    # Whitespace is defined as any of the following characters: null, horizontal tab, line feed, vertical tab, form feed, carriage return, space.
+    "    hello    ".strip         #=> "hello"
+    "\tgoodbye\r\n".strip         #=> "goodbye"
+    "\x00\t\n\v\f\r ".strip       #=> ""
+    # Using '.strip!' will return nil if no changes are made. Use with caution.
+    "hello".strip!                #=> nil
+    ```
+
+  * __[.swapcase](http://ruby-doc.org/core-2.5.1/String.html#method-i-swapcase)__
+    ```
+    # Returns a copy of str with uppercase alphabetic characters converted to lowercase and lowercase characters converted to uppercase.
+    "Hello".swapcase          #=> "hELLO"
+    "cYbEr_PuNk11".swapcase   #=> "CyBeR_pUnK11"
+    ```
+
+    * __[.upcase](http://ruby-doc.org/core-2.5.1/String.html#method-i-upcase)__
+    ```
+    # Returns a copy of str with all lowercase letters replaced with their uppercase counterparts.
+    "hEllO".upcase   #=> "HELLO"
+    "cYbEr_PuNk11".upcase   #=> "CYBER_PUNK11"
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
     ```
 
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
