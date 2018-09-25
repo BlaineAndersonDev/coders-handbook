@@ -97,6 +97,44 @@
     "hello".downcase!               #=> nil
     ```
 
+  * __[.each_char](http://ruby-doc.org/core-2.5.1/String.html#method-i-each_char)__
+    ```
+    # Passes each character in str to the given block, or returns an enumerator if no block is given.
+    # combines the use of .split and .each .
+    "hello".each_char {|c| print c, ' ' }     #=> h e l l o
+    "hello world".each_char {|c| print c, ' ' }     #=> h e l l o
+    ```
+
+  * __[.empty?](http://ruby-doc.org/core-2.5.1/String.html#method-i-empty-3F)__
+    ```
+    # Returns true if str has a length of zero.
+    "hello".empty?   #=> false
+    " ".empty?       #=> false
+    "".empty?        #=> true
+    ```
+
+  * __[.eql?](http://ruby-doc.org/core-2.5.1/String.html#method-i-eql-3F)__ [Deeper Explanation](https://stackoverflow.com/a/7157051/10090036)
+    ```
+    # Two strings are equal if they have the same length and content.
+    # NOTE: This does not work the same on integers.
+    "a".eql?("a")              #=> true
+    "test".eql?("test")        #=> true
+    "a".eql?("b")              #=> false
+    "test".eql?("not test")    #=> false
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
     ```
     # ENUM_DESCRIPT
