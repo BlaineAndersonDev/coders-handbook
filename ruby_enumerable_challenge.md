@@ -220,8 +220,20 @@
 
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # If passed a single index, returns a substring of one character at that index.
+    # If passed a start index and a length, returns a substring containing length characters starting at the start index.
+    # If passed a range, its beginning and end are interpreted as offsets delimiting the substring to be returned.
+
+    string = "this is a string"
+    string.slice(0)        #=> "t"
+    string.slice(4..6)     #=> " is "
+    string.slice(-2)       #=> "n"
+    # Using '.slice!' will overwrite the original word or variable. Use with caution.
+    string.slice!(2)        #=> "i"
+    string.slice!(3..6)     #=> " is "
+    string.slice!(/s.*t/)   #=> "sa st"
+    string.slice!("r")      #=> "r"
+    string                  #=> "thing"
     ```
 
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
