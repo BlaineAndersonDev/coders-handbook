@@ -9,28 +9,11 @@
     <summary>__Answer__</summary>
     <p>
 
-      code block
+      "hello".capitalize    #=> "Hello"
+      "HELLO".capitalize    #=> "Hello"
+      "123ABC".capitalize   #=> "123abc"
 
   </p></details>
-    <details>
-      <summary>__Answer__</summary>
-
-        ```
-        code block
-        ```
-
-    </details>
-
-  <details>
-    <summary>__Answer__</summary>
-    <p>
-
-      ```
-      code block
-      ```
-
-  </p></details>
-
 
   * 1.) __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
     ```
