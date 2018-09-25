@@ -17,6 +17,7 @@
     "123ABC".capitalize   #=> "123abc"
 
   </p></details>
+
 <!-- ================================== -->
 * 1.) Use an Enumerable to Capitalize the sentence below:
     * `"hello world"`
@@ -28,6 +29,7 @@
     "123ABC".capitalize   #=> "123abc"
 
   </p></details>
+  
 <!-- ================================== -->
 * 1.) Use an Enumerable to Capitalize the sentence below:
 
