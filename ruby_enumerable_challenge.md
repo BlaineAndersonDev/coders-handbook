@@ -78,10 +78,11 @@
     a.count("lo")                  #=> 5
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.delete](http://ruby-doc.org/core-2.5.1/String.html#method-i-delete)__
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # Returns a copy of str with all characters in the intersection of its arguments deleted.
+    "hello".delete("l","lo")        #=> "heo"
+    "hello".delete("lo")            #=> "he"
     ```
 
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
