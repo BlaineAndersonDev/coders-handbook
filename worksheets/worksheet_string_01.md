@@ -8,8 +8,9 @@
 
 > This worksheet is leveled: __Beginner__.
 
-### Github Worksheet with Answers:
 ___
+
+## Github Worksheet with Answers:
 
 1.) Use an Enumerable to Capitalize the sentence below:
 
@@ -336,9 +337,7 @@ ___
 
 ___
 
-### Local/Repl.it Answer Free Worksheet:
-
-___
+## Local/Repl.it Answer Free Worksheet:
 
 ```
 # 1.) Use an Enumerable to Capitalize the sentence below:
