@@ -5,9 +5,7 @@
 
 > I recommend Copy Pasting this worksheet into your local machine, or using [Repl.it](Repl.it) to test each problem.
 
-  <details>
-    <summary>__Answer__</summary>
-    <p>
+  <details><summary>Answer:</summary><p>
 
       "hello".capitalize    #=> "Hello"
       "HELLO".capitalize    #=> "Hello"
