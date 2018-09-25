@@ -113,7 +113,7 @@
     "".empty?        #=> true
     ```
 
-  * __[.eql?](http://ruby-doc.org/core-2.5.1/String.html#method-i-eql-3F)__       _[Deeper Explanation](https://stackoverflow.com/a/7157051/10090036)_
+  * __[.eql?](http://ruby-doc.org/core-2.5.1/String.html#method-i-eql-3F)__ [Deeper Explanation](https://stackoverflow.com/a/7157051/10090036)
     ```
     # Two strings are equal if they have the same length and content.
     # NOTE: This does not work the same on integers.
@@ -123,10 +123,17 @@
     "test".eql?("not test")    #=> false
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.gsub](http://ruby-doc.org/core-2.5.1/String.html#method-i-gsub)__ [Regex Tutorial](http://www.rubyguides.com/2015/06/ruby-regex/) [Regex Editor](http://rubular.com/)
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # Returns a copy of str with all occurrences of pattern substituted for the second argument.
+    # .gsub is usually used with Regex.
+    "hello".gsub(/[aeiou]/, '*')                  #=> "h*ll*"
+    "hello".gsub(/([aeiou])/, '<\1>')             #=> "h<e>ll<o>"
+    "hello".gsub(/./) {|s| s.ord.to_s + ' '}      #=> "104 101 108 108 111 "
+    "hello".gsub(/(?<foo>[aeiou])/, '{\k<foo>}')  #=> "h{e}ll{o}"
+    'hello'.gsub(/[eo]/, 'e' => 3, 'o' => '*')    #=> "h3ll*"
+    # Using '.gsub!' will return nil if no substitutions are made. Use with caution.
+    "hello".gsub!("b")                            #=> nil
     ```
 
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
