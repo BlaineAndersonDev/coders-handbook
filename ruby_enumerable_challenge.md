@@ -90,9 +90,8 @@
   * __[.downcase](http://ruby-doc.org/core-2.5.1/String.html#method-i-downcase)__
     ```
     # Returns a copy of str with all uppercase letters replaced with their lowercase counterparts.
-    "hEllO".downcase                #=> "hello"
-    "Hello".downcase                #=> "hello"
-    "HeLlO".downcase                #=> "hello"
+    "hEllO".downcase   #=> "hello"
+    "cYbEr_PuNk11".downcase   #=> "cyber_punk11"
     # Using '.downcase!' will return nil if no changes are made. Use with caution.
     "hello".downcase!               #=> nil
     ```
@@ -273,6 +272,8 @@
     # Returns a copy of str with uppercase alphabetic characters converted to lowercase and lowercase characters converted to uppercase.
     "Hello".swapcase          #=> "hELLO"
     "cYbEr_PuNk11".swapcase   #=> "CyBeR_pUnK11"
+    # Using '.swapcase!' will return nil if no changes are made. Use with caution.
+    "hello".swapcase!               #=> nil
     ```
 
     * __[.upcase](http://ruby-doc.org/core-2.5.1/String.html#method-i-upcase)__
@@ -280,42 +281,52 @@
     # Returns a copy of str with all lowercase letters replaced with their uppercase counterparts.
     "hEllO".upcase   #=> "HELLO"
     "cYbEr_PuNk11".upcase   #=> "CYBER_PUNK11"
+    # Using '.upcase!' will return nil if no changes are made. Use with caution.
+    "hello".upcase!               #=> nil
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.to_f](http://ruby-doc.org/core-2.5.1/String.html#method-i-to_f)__
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # Returns the result of interpreting leading characters in str as a floating point number.
+    # Extraneous characters past the end of a valid number are ignored.
+    # If there is not a valid number at the start of str, 0.0 is returned.
+    # This method never raises an exception.
+    "123.45e1".to_f        #=> 1234.5
+    "45.67 degrees".to_f   #=> 45.67
+    "thx1138".to_f         #=> 0.0
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.to_i](http://ruby-doc.org/core-2.5.1/String.html#method-i-to_i)__
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # Returns the result of interpreting leading characters in str as an integer.
+    # If there is not a valid number at the start of str, 0 is returned.
+    "12345".to_i             #=> 12345
+    "99 red balloons".to_i   #=> 99
+    "0a".to_i                #=> 0
+    "0a".to_i(16)            #=> 10
+    "hello".to_i             #=> 0
+    "1100101".to_i(2)        #=> 101
+    "1100101".to_i(8)        #=> 294977
+    "1100101".to_i(10)       #=> 1100101
+    "1100101".to_i(16)       #=> 17826049
     ```
 
 #### Array Enumerable Examples
   * [Ruby-Docs: Array Enumerables](http://ruby-doc.org/core-2.5.1/Array.html)
 
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
 #### Math Enumerable Examples
   * [Ruby-Docs: Math Enumerables](http://ruby-doc.org/core-2.5.1/Math.html)
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
 
 ## Enumerable Worksheet 01:
