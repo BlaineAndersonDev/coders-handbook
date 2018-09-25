@@ -19,7 +19,7 @@ ___
 
 ___
 
-1.) Use an Enumerable to divide the sentence below into an array of characters:
+2.) Use an Enumerable to divide the sentence below into an array of characters:
 
    `"hello world"`
    > Goal: `["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"]`
