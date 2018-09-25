@@ -6,36 +6,13 @@
 > I recommend Copy Pasting this worksheet into your local machine, or using [Repl.it](Repl.it) to test each problem.
 
   <details>
-    <summary>Answer</summary>
-     `#=> test`
-  </details>
-  
-  <details>
-    <summary>stuff with *mark* **down**</summary>
+    <summary>__Answer__</summary>
     <p>
-  <!-- the above p cannot start right at the beginning of the line and is mandatory for everything else to work -->
-  ##*formatted* **heading** with [a](link)
-  ```java
-  code block
-  ```
-
-    <details>
-      <summary><small>nested</small> stuff</summary><p>
-  <!-- alternative placement of p shown above -->
-
-  * list
-  * with
-
-   1. nested
-   1. items
-
       ```java
-      // including code
+      code block
       ```
-   1. blocks
-
-    </p></details>
-  </p></details>
+    </p>
+  </details>
 
 
   * 1.) __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
