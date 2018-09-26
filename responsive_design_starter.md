@@ -1,5 +1,5 @@
-# Responsive Design Experiment Examples:
- > See it in action: [Heroku](https://responsive-design-experiment.herokuapp.com/) 
+# Responsive Design Experiment:
+ > See it in action: [Heroku]() 
 
 ## Copy & Paste Options:
 #### Blank Copy & Pastes:

@@ -1,7 +1,6 @@
-# Developer Notes & Examples:
+# ReactJS Refresher
 
 ### Creating a ReactJS App:
-
 #### Step 1: create-react-app
   * [create-react-app github](https://github.com/facebook/create-react-app)
   * In your terminal use `create-react-app example-app-name`.

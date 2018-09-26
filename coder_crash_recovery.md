@@ -1,4 +1,4 @@
-# Coder Installation Instructions
+# Coder Crash Recovery
 ##### This Guide focus' on Rails & ReactJS + all associated technologies.
 
 ##### Authors Note:

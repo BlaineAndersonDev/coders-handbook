@@ -1,4 +1,4 @@
-# Ruby Enumerable Challenge
+# Ruby Enumerable Challenges
 > A small Ruby Enumerable worksheet I created to test myself daily for a few weeks, until I have all the common enumerable memorized (or at least committed to memory enough that I can mostly recall how to use them properly).
 
 ## Enumerable Examples:
