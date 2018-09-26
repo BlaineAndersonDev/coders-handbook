@@ -858,7 +858,7 @@
 
 
 /* Handbook */
-.handbook-wrapper{
+#guide_wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -867,7 +867,7 @@
   flex-flow: column wrap;
   width: 100%;
 }
-  .handbook-intro{
+  .guide_intro{
     color: white;
     width: 80%;
     margin: 0 auto;
@@ -877,7 +877,7 @@
     text-align: center;
     flex-flow: column wrap;
   }
-  .handbook-title{
+  .guide_title{
     border-bottom: 2px white solid;
     border-radius: 0 0 20px 20px;
     // Most Smartphones Mobiles (Portrait)
@@ -906,63 +906,73 @@
         width: 40%;
       }
   }
-  .handbook-text{
-    font-size: 1.3em;
-    margin-bottom: 15px;
+  .guide_top_border{
+    border-top: 2px white solid;
+  }
+  .guide_text{
     // Most Smartphones Mobiles (Portrait)
       @media (min-width: 320px) and (max-width: 480px) {
-        font-size: 1em;
+        font-size: 1.3em;
+        padding: 5px;
       }
     // Low Resolution Tablets, Mobiles (Landscape)
       @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 1em;
+        font-size: 1.5em;
+        padding: 5px;
       }
     // Tablets, Ipads (portrait)
       @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 1em;
+        font-size: 1.7em;
+        padding: 8px;
       }
     // Laptops, Desktops
       @media (min-width: 1025px) and (max-width: 1280px) {
-        font-size: 1.2em;
+        font-size: 1.9em;
+        padding: 12px;
       }
     // Desktops
       @media (min-width: 1281px) {
-        font-size: 1.2em;
+        font-size: 2.1em;
+        padding: 12px;
       }
   }
-  .handbook-link-container{
+  .guide_link-container{
     display: flex;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
     text-align: center;
-    margin-top: 30px;
     // Most Smartphones Mobiles (Portrait)
       @media (min-width: 320px) and (max-width: 480px) {
         flex-flow: column wrap;
+        padding: 5px;
       }
     // Low Resolution Tablets, Mobiles (Landscape)
       @media (min-width: 481px) and (max-width: 767px) {
         flex-flow: row wrap;
+        padding: 15px;
       }
     // Tablets, Ipads (portrait)
       @media (min-width: 768px) and (max-width: 1024px) {
         flex-flow: row wrap;
+        padding: 15px;
       }
     // Laptops, Desktops
       @media (min-width: 1025px) and (max-width: 1280px) {
         flex-flow: row wrap;
+        padding: 15px;
       }
     // Desktops
       @media (min-width: 1281px) {
         flex-flow: row wrap;
+        padding: 15px;
       }
   }
-  .handbook-link{
+  .guide_link{
     color: white;
     text-decoration: none;
     color: rgba(175, 175, 175, 0.5);
-    background-color: rgba(162, 162, 162, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
     display: flex;
@@ -972,9 +982,9 @@
     text-align: center;
     // Most Smartphones Mobiles (Portrait)
       @media (min-width: 320px) and (max-width: 480px) {
-        padding: 10px;
+        padding: 15px;
         margin: 10px;
-        font-size: 1.2em;
+        font-size: 1.1em;
         box-shadow: 5px 5px 3px #000000;
         min-width: 125px;
         max-width: 125px;
@@ -983,7 +993,7 @@
       }
     // Low Resolution Tablets, Mobiles (Landscape)
       @media (min-width: 481px) and (max-width: 767px) {
-        padding: 10px;
+        padding: 15px;
         margin: 10px;
         font-size: 1.3em;
         box-shadow: 5px 5px 3px #000000;
@@ -994,7 +1004,7 @@
       }
     // Tablets, Ipads (portrait)
       @media (min-width: 768px) and (max-width: 1024px) {
-        padding: 10px;
+        padding: 15px;
         margin: 10px;
         font-size: 1.3em;
         box-shadow: 5px 5px 3px #000000;
@@ -1006,7 +1016,7 @@
       }
     // Laptops, Desktops
       @media (min-width: 1025px) and (max-width: 1280px) {
-        padding: 10px;
+        padding: 15px;
         margin: 10px;
         font-size: 1.3em;
         box-shadow: 5px 5px 3px #000000;
@@ -1018,18 +1028,19 @@
       }
     // Desktops
       @media (min-width: 1281px) {
-        padding: 10px;
+        padding: 18px;
         margin: 10px;
-        font-size: 1.3em;
+        font-size: 1.5em;
         min-width: 150px;
         max-width: 150px;
         min-height: 50px;
         max-height: 50px;
         flex: 1 1 25%;
       }
-  }.handbook-link:hover{
-    color: rgba(221, 221, 221, 1);
-    background-color: rgba(162, 162, 162, 0.8);
+  }.guide_link:hover{
+    color: white;
+    background-color: rgba(127, 162, 146, 0.8);
     text-shadow: 1px 1px black;
-    box-shadow: 5px 5px 3px #000000;
+    // box-shadow: 5px 5px 3px rgb(38, 38, 38);
+    box-shadow: 5px 5px 3px black;
   }

@@ -26,6 +26,8 @@ body, html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Lora', serif; */
 }
 #site_container{
    min-height: 100%;
