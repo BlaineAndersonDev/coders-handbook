@@ -6,11 +6,15 @@
   align-items: center;
   text-align: center;
   color: white;
-  background: rgba(65, 65, 63, 1);
   bottom: 0;
   width: 100%;
-  height: 150px;
+  height: 200px;
   border-top: 3px black solid;
+  background: url('portfolio_background_01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #foot_items{
   display: flex;
