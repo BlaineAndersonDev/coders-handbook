@@ -6,16 +6,12 @@
   align-items: center;
   text-align: center;
   color: white;
-  background: rgba(65, 65, 63, 1);
+  background: rgba(65, 65, 63, 0.2);
   width: 100%;
   height: 100px;
-  position: relative;
-}
-#nav_opacity{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  position: fixed;
+  border-bottom: 3px black solid;
+  z-index: 10;
 }
 #nav_items{
   position: relative;

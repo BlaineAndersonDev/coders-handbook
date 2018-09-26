@@ -15,11 +15,16 @@
  */
 
 *{
-  transition:all .5s ease-in-out;
+  transition:all 1s ease-in-out;
 }
 body, html {
   margin:0;
   padding:0;
+  background: url('portfolio_background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #site_container{
    min-height:100%;
