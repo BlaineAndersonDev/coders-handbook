@@ -836,30 +836,201 @@
     border-top: 1px black solid;
     width: 100%;
     padding: 10px;
-      // Most Smartphones Mobiles (Portrait)
-        @media (min-width: 320px) and (max-width: 480px) {
-          font-size: 1em;
-        }
-      // Low Resolution Tablets, Mobiles (Landscape)
-        @media (min-width: 481px) and (max-width: 767px) {
-          font-size: 1em;
-        }
-      // Tablets, Ipads (portrait)
-        @media (min-width: 768px) and (max-width: 1024px) {
-          font-size: 1em;
-        }
-      // Laptops, Desktops
-        @media (min-width: 1025px) and (max-width: 1280px) {
-          font-size: 1.2em;
-        }
-      // Desktops
-        @media (min-width: 1281px) {
-          font-size: 1.2em;
-        }
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 1em;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 1em;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1em;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        font-size: 1.2em;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        font-size: 1.2em;
+      }
   }
-  .project-divider{
+
+
+/* Handbook */
+.handbook-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  flex-flow: column wrap;
+  width: 100%;
+}
+  .handbook-intro{
+    color: white;
+    width: 80%;
     margin: 0 auto;
-    border-bottom: 1px solid white;
-    margin-bottom: 6px;
-    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column wrap;
+  }
+  .handbook-title{
+    border-bottom: 2px white solid;
+    border-radius: 0 0 20px 20px;
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 2em;
+        width: 50%;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 2.4em;
+        width: 45%;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 2.6em;
+        width: 40%;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        font-size: 2.8em;
+        width: 40%;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        font-size: 3em;
+        width: 40%;
+      }
+  }
+  .handbook-text{
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 1em;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 1em;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1em;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        font-size: 1.2em;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        font-size: 1.2em;
+      }
+  }
+  .handbook-link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 30px;
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        flex-flow: column wrap;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        flex-flow: row wrap;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        flex-flow: row wrap;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        flex-flow: row wrap;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        flex-flow: row wrap;
+      }
+  }
+  .handbook-link{
+    color: white;
+    text-decoration: none;
+    color: rgba(175, 175, 175, 0.5);
+    background-color: rgba(162, 162, 162, 0.3);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.2em;
+        box-shadow: 5px 5px 3px #000000;
+        min-width: 125px;
+        max-width: 125px;
+        min-height: 40px;
+        max-height: 40px;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.3em;
+        box-shadow: 5px 5px 3px #000000;
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 50px;
+        max-height: 50px;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.3em;
+        box-shadow: 5px 5px 3px #000000;
+        min-width: 165px;
+        max-width: 165px;
+        min-height: 55px;
+        max-height: 55px;
+        flex: 1 1 25%;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.3em;
+        box-shadow: 5px 5px 3px #000000;
+        min-width: 165px;
+        max-width: 165px;
+        min-height: 55px;
+        max-height: 55px;
+        flex: 1 1 25%;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        padding: 10px;
+        margin: 10px;
+        font-size: 1.3em;
+        box-shadow: 5px 5px 3px #000000;
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 50px;
+        max-height: 50px;
+        flex: 1 1 25%;
+      }
+  }.handbook-link:hover{
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(162, 162, 162, 0.8);
   }
