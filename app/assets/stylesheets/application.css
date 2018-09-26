@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+*{
+  transition:all .5s ease-in-out;
+}
+body, html {
+  margin:0;
+  padding:0;
+}
+#site_container{
+   min-height:100%;
+   position:relative;
+   color: white;
+}

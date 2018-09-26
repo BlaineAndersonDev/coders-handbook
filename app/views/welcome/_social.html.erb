@@ -1,0 +1,37 @@
+<!-- Social Media -->
+<div id="social-wrapper" class="scrunched-container">
+  <!-- Email -->
+  <div class="stacked-container social-container">
+    <% email_subject = "Wanted to talk about a Engineering opportunity!" %>
+    <% email_body = "Hello Blaine!" %>
+    <% email_summery = "[Insert your message for me here!]" %>
+    <% email_funny = " ♪┏(°.°)┛┗(°.°)┓┗(°.°)┛┏(°.°)┓ ♪ " %>
+    <%= link_to "mailto:BlaineAndersonDev@Gmail.com?subject=#{email_subject}&body=#{email_body}%0D%0A%0D%0A#{email_summery}%0D%0A%0D%0A#{email_funny}", :class => 'social-link' do %>
+    <%= image_tag("Email_512_512.png", :alt => "Social_Media_Email_Image", :class => "social-image") %>
+    <% end %>
+    <p class="text social-text">BlaineAndersonDev@Gmail.com</p>
+  </div>
+  <!-- LinkedIn -->
+  <div class="stacked-container social-container">
+    <% linkedin_url = "https://www.linkedin.com/in/blaineandersondev/"%>
+    <%= link_to "#{linkedin_url}", target: :_blank, :class => 'social-link' do %>
+      <%= image_tag("Linkedin_512_512.png", :alt => "Social_Media_LinkedIn_Image", :class => "social-image") %>
+    <% end %>
+    <p class="text social-text">linkedin.com/in/blaineandersondev/</p>
+  </div>
+  <!-- Github -->
+  <div class="stacked-container social-container">
+    <% guthub_url = "https://github.com/BlaineAndersonDev"%>
+    <%= link_to "#{guthub_url}", target: :_blank, :class => 'social-link' do %>
+      <%= image_tag("Github_512_512.png", :alt => "Social_Media_Github_Image", :class => "social-image") %>
+    <% end %>
+    <p class="text social-text">github.com/BlaineAndersonDev</p>
+  </div>
+  <!-- Phone -->
+  <div class="stacked-container social-container">
+    <% phone_number = "4803053307"%>
+    <%= image_tag("Phone_512_512.png", :alt => "Social_Media_Phone_Image", :class => "social-image") %>
+    <p class="text social-text">480-305-3307</p>
+  </div>
+  <div class="show-off"></div>
+</div>
