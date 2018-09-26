@@ -1,3 +1,6 @@
+.page_wrapper{
+  padding-top: 100px;
+}
 #welcome_wrapper{
   display: flex;
   flex-flow: column nowrap;
@@ -6,7 +9,6 @@
   position: relative;
   width: 100%;
   z-index: 1;
-  padding-top: 100px;
 }
 .welcome_container_text{
   display: flex;
@@ -581,4 +583,283 @@
     100% {
       filter:brightness(100%);
     }
+  }
+
+
+/* Projects Partial */
+#projects-wrapper{
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      flex-flow: column wrap;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      flex-flow: column wrap;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex-flow: column wrap;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      flex-flow: column wrap;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      flex-flow: row wrap;
+    }
+}
+.project-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  text-align: center;
+  flex-flow: column wrap;
+  background-color: rgba(116, 116, 116, 0.3);
+  border: 1px black solid;
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        padding: 5px;
+        margin: 10px;
+        box-shadow: 7px 7px 5px #000000;
+        width: 90%;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 7px 7px 5px #000000;
+        width: 90%;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 10px;
+        margin: 15px;
+        box-shadow: 10px 10px 7px #000000;
+        width: 80%;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        padding: 10px;
+        margin: 20px;
+        box-shadow: 10px 10px 7px #000000;
+        width: 70%;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        padding: 10px;
+        margin: 20px 10px 20px 10px;
+        box-shadow: 10px 10px 7px #000000;
+        width: 45%;
+        min-height: 400px;
+        max-height: 400px;
+      }
+}
+.project-item-over{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  text-align: center;
+  flex-flow: row nowrap;
+}
+.project-item-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+}
+  .project-image{
+    border: 1px black solid;
+    border-radius: 25%;
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        max-width: 100px;
+        min-width: 100px;
+        max-height: 100px;
+        min-height: 100px;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        max-width: 125px;
+        min-width: 125px;
+        max-height: 125px;
+        min-height: 125px;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        max-width: 150px;
+        min-width: 150px;
+        max-height: 150px;
+        min-height: 150px;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        max-width: 175px;
+        min-width: 175px;
+        max-height: 175px;
+        min-height: 175px;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-width: 200px;
+        min-width: 200px;
+        max-height: 200px;
+        min-height: 200px;
+      }
+  }
+  .project-image:hover{
+    animation: shine2 1.5s ease-in-out;
+  }
+
+  @keyframes shine2 {
+    0% {
+      filter:contrast(100%);
+    }
+    20% {
+      filter:contrast(300%);
+    }
+    100% {
+      filter:contrast(100%);
+    }
+  }
+
+.project-item-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  flex-direction: column;
+  padding: 10px;
+}
+  .project-name{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 1.6em;
+        text-shadow: 1px 1px gray;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 1.8em;
+        text-shadow: 1px 1px gray;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 2em;
+        text-shadow: 1px 1px gray;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        font-size: 2.3em;
+        text-shadow: 1px 1px gray;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        font-size: 2.6em;
+        text-shadow: 1px 1px gray;
+      }
+  }
+  .project-name:hover{
+    color: lightblue;
+  }
+  .project-name-nohover{
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 1px 1px gray;
+    transition: color 0.5s;
+  }
+  .project-github{
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-shadow: 1px 1px gray;
+    transition: color 0.5s;
+  }
+  .project-github:hover{
+    color: lightblue;
+  }
+  .project-about{
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        font-size: 1.1em;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 1.2em;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.2em;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        font-size: 1.4em;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        font-size: 1.4em;
+      }
+  }
+.project-item-under{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+}
+  .project-tech{
+    border-top: 1px black solid;
+    width: 100%;
+    padding: 10px;
+      // Most Smartphones Mobiles (Portrait)
+        @media (min-width: 320px) and (max-width: 480px) {
+          font-size: 1em;
+        }
+      // Low Resolution Tablets, Mobiles (Landscape)
+        @media (min-width: 481px) and (max-width: 767px) {
+          font-size: 1em;
+        }
+      // Tablets, Ipads (portrait)
+        @media (min-width: 768px) and (max-width: 1024px) {
+          font-size: 1em;
+        }
+      // Laptops, Desktops
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          font-size: 1.2em;
+        }
+      // Desktops
+        @media (min-width: 1281px) {
+          font-size: 1.2em;
+        }
+  }
+  .project-divider{
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    margin-bottom: 6px;
+    width: 75%;
   }
