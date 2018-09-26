@@ -1,6 +1,4 @@
-.page_wrapper{
-  padding-top: 100px;
-}
+
 #welcome_wrapper{
   display: flex;
   flex-flow: column nowrap;
@@ -1023,7 +1021,6 @@
         padding: 10px;
         margin: 10px;
         font-size: 1.3em;
-        box-shadow: 5px 5px 3px #000000;
         min-width: 150px;
         max-width: 150px;
         min-height: 50px;
@@ -1031,6 +1028,8 @@
         flex: 1 1 25%;
       }
   }.handbook-link:hover{
-    color: rgba(85, 85, 85, 1);
+    color: rgba(221, 221, 221, 1);
     background-color: rgba(162, 162, 162, 0.8);
+    text-shadow: 1px 1px black;
+    box-shadow: 5px 5px 3px #000000;
   }

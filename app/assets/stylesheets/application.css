@@ -20,6 +20,7 @@
 body, html {
   margin:0;
   padding:0;
+  height: 100%;
   background: url('portfolio_background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -27,7 +28,29 @@ body, html {
   background-size: cover;
 }
 #site_container{
-   min-height:100%;
-   position:relative;
-   color: white;
+   min-height: 100%;
+   position: relative;
+}
+#site_nav_container{
+
+}
+#site_body_container{
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+#site_foot_container{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-top: 3px black solid;
+   background: url('portfolio_background_01.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
 }
