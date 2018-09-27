@@ -21,17 +21,20 @@ body, html {
   margin:0;
   padding:0;
   height: 100%;
-  background: url('portfolio_background.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   /* font-family: 'Playfair Display', serif; */
   /* font-family: 'Lora', serif; */
 }
 #site_container{
    min-height: 100%;
    position: relative;
+   /* This forces all background images to load beforehand, preventing a flicker when changing backgrounds using JQuery. */
+   background: url('espresso_01.jpg') no-repeat center center fixed;
+   background: url('portfolio_background_02.jpg') no-repeat center center fixed;
+   background: url('portfolio_background.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 #site_nav_container{
 

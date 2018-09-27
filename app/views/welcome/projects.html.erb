@@ -20,6 +20,24 @@
     <div class="project-item">
       <div class="project-item-over">
         <div class="project-item-left">
+          <%= link_to overview_path, target: :_blank, class: 'project-name' do %>
+              <%= image_tag("dogs_09.jpg", class: "project-image") %>
+          <% end %>
+        </div>
+        <div class="project-item-right">
+          <%= link_to 'Responsive Design Experiment', overview_path, target: :_blank, class: 'project-name' %>
+          <%= link_to 'Project Github', "https://github.com/BlaineAndersonDev/coders-handbook", target: :_blank, class: 'project-github' %>
+          <p class="project-about">A small project that explores website design by showing a number of Responsive Design Techniques side by side. All Stylesheets & html.erb files are provided.</p>
+        </div>
+      </div>
+      <div class="project-item-under">
+        <p class="project-tech">Technologies: Rails, Media Queries, HTML, CSS3 </p>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-item-over">
+        <div class="project-item-left">
           <%= link_to "https://dungeons-battle-simulator.herokuapp.com/", target: :_blank, class: 'project-name' do %>
               <%= image_tag("dungeons_logo.jpg", class: "project-image") %>
           <% end %>

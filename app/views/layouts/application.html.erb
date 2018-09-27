@@ -7,13 +7,50 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
 
   <body>
-    <div id="site_container">
+    <div id="site_container" class="about_jquery">
       <div id="site_nav_container"><%= render 'navigation/show' %></div>
       <div id="site_body_container"><%= yield %></div>
       <div id="site_foot_container"><%= render 'footer/show' %></div>
     </div>
   </body>
 </html>
+
+<script>
+
+//
+// $( document ).ready(function() {
+//     console.log( "ready!" );
+//     if ($('#site_container').hasClass("about_jquery")) {
+//       console.log( "ABOUT CLASS" )
+//     }
+//     else if ($('#site_container').hasClass( "guides_jquery" )) {
+//       console.log( "GUIDE CLASS" )
+//     }
+//     else if ($('#site_container').hasClass( "projects_jquery" )) {
+//       console.log( "Project CLASS" )
+//     }
+//       // $('#site_container').css("background-image", "url('assets/espress_01.jpg')");
+// });
+//
+// $( ".about_class" ).on( "click", function() {
+//   console.log("ABOUT CLICK")
+//   $('#site_container').removeClass().addClass('about_jquery')
+// });
+//
+// $( ".guides_class" ).on( "click", function() {
+//   console.log("GUIDES CLICK")
+//   $('#site_container').removeClass().addClass('guides_jquery')
+// });
+//
+// $( ".projects_class" ).on( "click", function() {
+//   console.log("PROJECTS CLICK")
+//   $('#site_container').removeClass().addClass('projects_jquery')
+// });
+
+
+
+</script>
