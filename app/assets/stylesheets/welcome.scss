@@ -1,4 +1,174 @@
 
+// STANDARDS
+.partial_container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  background: white;
+  color: black;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      flex-flow: column wrap;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      flex-flow: column wrap;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      flex-flow: row wrap;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      flex-flow: row wrap;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      flex-flow: row wrap;
+    }
+}
+.base_wrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.opacity_layer{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content_container{
+  z-index: 10;
+}
+.text_container{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 0 20px 0 20px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      padding: 0 20px 0 20px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding: 0 20px 0 20px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      padding: 0 20px 0 20px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      padding: 0 20px 0 20px;
+    }
+}
+.text_l{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.8em;
+      padding: 10px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 2em;
+      padding: 12px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2.5em;
+      padding: 15px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 3.2em;
+      padding: 10px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 3.5em;
+      padding: 10px;
+    }
+}
+.text_m{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.4em;
+      padding: 8px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.5em;
+      padding: 12px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.8em;
+      padding: 15px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 2.4em;
+      padding: 10px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 2.4em;
+      padding: 10px;
+    }
+}
+.text_s{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      font-size: 1.1em;
+      padding-bottom: 10px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 1.2em;
+      padding: 9px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 1.3em;
+      padding: 10px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      font-size: 1.3em;
+      padding: 10px;
+    }
+}
+
+// Welcome
 #welcome_wrapper{
   display: flex;
   flex-flow: column nowrap;
@@ -392,6 +562,29 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.social_container{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      height: 500px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      height: 500px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      height: 500px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      height: 500px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      height: 600px;
+    }
+}
+
 #social_wrapper{
   display: flex;
   justify-content: center;
@@ -1044,3 +1237,169 @@
     // box-shadow: 5px 5px 3px rgb(38, 38, 38);
     box-shadow: 5px 5px 3px black;
   }
+
+
+//  SKILLS
+#skills_wrapper{
+  height: 100%;
+  color: white;
+  background: url('espresso_02.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#tech_img_container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.tech_img_l{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 3px;
+      margin: 2px;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid black;
+      box-shadow: 3px 3px 2px #000000;
+      min-width: 30px;
+      max-width: 30px;
+      min-height: 30px;
+      max-height: 30px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      padding: 5px;
+      margin: 3px;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid black;
+      box-shadow: 4px 4px 2px #000000;
+      min-width: 40px;
+      max-width: 40px;
+      min-height: 40px;
+      max-height: 40px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding: 8px;
+      margin: 5px;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid black;
+      box-shadow: 5px 5px 3px #000000;
+      min-width: 60px;
+      max-width: 60px;
+      min-height: 60px;
+      max-height: 60px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      padding: 10px;
+      margin: 5px;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid black;
+      box-shadow: 7px 7px 5px #000000;
+      min-width: 80px;
+      max-width: 80px;
+      min-height: 80px;
+      max-height: 80px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      padding: 12px;
+      margin: 7px;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid black;
+      box-shadow: 7px 7px 5px #000000;
+      min-width: 100px;
+      max-width: 100px;
+      min-height: 100px;
+      max-height: 100px;
+    }
+}
+.tech_img_s{
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        padding: 2px;
+        margin: 2px;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 2px 2px 1px #000000;
+        min-width: 20px;
+        max-width: 20px;
+        min-height: 20px;
+        max-height: 20px;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        padding: 3px;
+        margin: 3px;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 2px 2px 1px #000000;
+        min-width: 25px;
+        max-width: 25px;
+        min-height: 25px;
+        max-height: 25px;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        padding: 5px;
+        margin: 3px;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 4px 4px 2px #000000;
+        min-width: 35px;
+        max-width: 35px;
+        min-height: 35px;
+        max-height: 35px;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        padding: 8px;
+        margin: 4px;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 4px 4px 2px #000000;
+        min-width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        padding: 10px;
+        margin: 6px;
+        border: 2px solid black;
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 5px 5px 3px #000000;
+        min-width: 45px;
+        max-width: 45px;
+        min-height: 45px;
+        max-height: 45px;
+      }
+}
+.skills_container{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      height: 300px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      height: 300px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      height: 450px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      height: 550px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      height: 600px;
+    }
+}
