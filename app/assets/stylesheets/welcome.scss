@@ -930,6 +930,7 @@
       }
   }
   .guide_link{
+    border: 2px rgba(175, 175, 175, 0.5) solid;
     color: white;
     text-decoration: none;
     color: rgba(175, 175, 175, 0.5);
@@ -1004,6 +1005,7 @@
     text-shadow: 1px 1px black;
     // box-shadow: 5px 5px 3px rgb(38, 38, 38);
     box-shadow: 5px 5px 3px black;
+    border: 2px black solid;
   }
 
 
