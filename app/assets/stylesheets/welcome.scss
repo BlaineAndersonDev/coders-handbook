@@ -12,32 +12,22 @@
   color: black;
   // Most Smartphones Mobiles (Portrait)
     @media (min-width: 320px) and (max-width: 480px) {
-      margin-top: 30px;
-      margin-bottom: 30px;
       flex-flow: column wrap;
     }
   // Low Resolution Tablets, Mobiles (Landscape)
     @media (min-width: 481px) and (max-width: 767px) {
-      margin-top: 30px;
-      margin-bottom: 30px;
       flex-flow: column wrap;
     }
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
-      margin-top: 30px;
-      margin-bottom: 30px;
       flex-flow: row wrap;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
-      margin-top: 30px;
-      margin-bottom: 30px;
       flex-flow: row wrap;
     }
   // Desktops
     @media (min-width: 1281px) {
-      margin-top: 30px;
-      margin-bottom: 30px;
       flex-flow: row wrap;
     }
 }
@@ -554,228 +544,6 @@
           min-height: 350px;
         }
 }
-
-/* Social Media */
-#wel_social_container{
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.social_container{
-  // Most Smartphones Mobiles (Portrait)
-    @media (min-width: 320px) and (max-width: 480px) {
-      height: 500px;
-    }
-  // Low Resolution Tablets, Mobiles (Landscape)
-    @media (min-width: 481px) and (max-width: 767px) {
-      height: 500px;
-    }
-  // Tablets, Ipads (portrait)
-    @media (min-width: 768px) and (max-width: 1024px) {
-      height: 500px;
-    }
-  // Laptops, Desktops
-    @media (min-width: 1025px) and (max-width: 1280px) {
-      height: 500px;
-    }
-  // Desktops
-    @media (min-width: 1281px) {
-      height: 600px;
-    }
-}
-
-#social_wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  // Most Smartphones Mobiles (Portrait)
-    @media (min-width: 320px) and (max-width: 480px) {
-      flex-flow: column wrap;
-    }
-  // Low Resolution Tablets, Mobiles (Landscape)
-    @media (min-width: 481px) and (max-width: 767px) {
-      flex-flow: row wrap;
-      width: 80%;
-    }
-  // Tablets, Ipads (portrait)
-    @media (min-width: 768px) and (max-width: 1024px) {
-      flex-flow: row wrap;
-      width: 80%;
-    }
-  // Laptops, Desktops
-    @media (min-width: 1025px) and (max-width: 1280px) {
-      flex-flow: row nowrap;
-      width: 100%;
-    }
-  // Desktops
-    @media (min-width: 1281px) {
-      flex-flow: row nowrap;
-      width: 100%;
-    }
-}
-  .soc_item{
-    // Most Smartphones Mobiles (Portrait)
-      @media (min-width: 320px) and (max-width: 480px) {
-        flex: 1 1 95%;
-      }
-    // Low Resolution Tablets, Mobiles (Landscape)
-      @media (min-width: 481px) and (max-width: 767px) {
-        flex: 1 1 45%;
-      }
-    // Tablets, Ipads (portrait)
-      @media (min-width: 768px) and (max-width: 1024px) {
-        flex: 1 1 45%;
-      }
-    // Laptops, Desktops
-      @media (min-width: 1025px) and (max-width: 1280px) {
-        flex: 1 1 45%;
-      }
-    // Desktops
-      @media (min-width: 1281px) {
-        flex: 1 1 45%;
-      }
-  }
-    .soc_text_container{
-    // Most Smartphones Mobiles (Portrait)
-      @media (min-width: 320px) and (max-width: 480px) {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 10px;
-      }
-    // Low Resolution Tablets, Mobiles (Landscape)
-      @media (min-width: 481px) and (max-width: 767px) {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 10px;
-      }
-    // Tablets, Ipads (portrait)
-      @media (min-width: 768px) and (max-width: 1024px) {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 10px;
-      }
-    // Laptops, Desktops
-      @media (min-width: 1025px) and (max-width: 1280px) {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 10px;
-      }
-    // Desktops
-      @media (min-width: 1281px) {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 10px;
-      }
-    }
-    .soc_text{
-      border: 1px black solid;
-      padding: 10px;
-      border-radius: 20px;
-      box-shadow: inset 0 0 10px #000000;
-      opacity: 0.8;
-      // Most Smartphones Mobiles (Portrait)
-        @media (min-width: 320px) and (max-width: 480px) {
-          font-size: 1em;
-        }
-      // Low Resolution Tablets, Mobiles (Landscape)
-        @media (min-width: 481px) and (max-width: 767px) {
-          font-size: 1em;
-        }
-      // Tablets, Ipads (portrait)
-        @media (min-width: 768px) and (max-width: 1024px) {
-          font-size: 1em;
-        }
-      // Laptops, Desktops
-        @media (min-width: 1025px) and (max-width: 1280px) {
-          font-size: 1em;
-        }
-      // Desktops
-        @media (min-width: 1281px) {
-          font-size: 1.2em;
-        }
-    }.soc_text:hover{
-      opacity: 1;
-    }
-
-    .social-link{
-      margin-right: 10px;
-      margin-left: 10px;
-    }
-    .social-image{
-      // Most Smartphones Mobiles (Portrait)
-        @media (min-width: 320px) and (max-width: 480px) {
-          margin-top: 3px;
-          margin-bottom: 3px;
-          max-width: 65px;
-          min-width: 65px;
-          max-height: 65px;
-          min-height: 65px;
-        }
-      // Low Resolution Tablets, Mobiles (Landscape)
-        @media (min-width: 481px) and (max-width: 767px) {
-          margin-top: 5px;
-          margin-bottom: 5px;
-          max-width: 75px;
-          min-width: 75px;
-          max-height: 75px;
-          min-height: 75px;
-        }
-      // Tablets, Ipads (portrait)
-        @media (min-width: 768px) and (max-width: 1024px) {
-          margin-top: 10px;
-          margin-bottom: 10px;
-          max-width: 90px;
-          min-width: 90px;
-          max-height: 90px;
-          min-height: 90px;
-        }
-      // Laptops, Desktops
-        @media (min-width: 1025px) and (max-width: 1280px) {
-          margin-top: 15px;
-          margin-bottom: 15px;
-          max-width: 105px;
-          min-width: 105px;
-          max-height: 105px;
-          min-height: 105px;
-        }
-      // Desktops
-        @media (min-width: 1281px) {
-          margin-top: 20px;
-          margin-bottom: 20px;
-          max-width: 120px;
-          min-width: 120px;
-          max-height: 120px;
-          min-height: 120px;
-        }
-    }
-      .social-image:hover{
-        animation: shine 1.5s ease-in-out;
-      }
-
-  @keyframes shine {
-    0% {
-      filter:brightness(100%);
-    }
-    20% {
-      filter:brightness(300%);
-    }
-    100% {
-      filter:brightness(100%);
-    }
-  }
-
 
 /* Projects Partial */
 #projects-wrapper{
@@ -1388,18 +1156,282 @@
     }
   // Low Resolution Tablets, Mobiles (Landscape)
     @media (min-width: 481px) and (max-width: 767px) {
-      height: 300px;
+      height: 400px;
     }
   // Tablets, Ipads (portrait)
     @media (min-width: 768px) and (max-width: 1024px) {
-      height: 450px;
+      height: 500px;
     }
   // Laptops, Desktops
     @media (min-width: 1025px) and (max-width: 1280px) {
-      height: 550px;
+      height: 600px;
     }
   // Desktops
     @media (min-width: 1281px) {
-      height: 600px;
+      height: 650px;
     }
 }
+
+
+/* Social Media */
+.social_container{
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      height: 625px;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      height: 725px;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      height: 550px;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      height: 575px;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      height: 650px;
+    }
+}
+
+#social_wrapper{
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: url('social_media_background.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.social_link_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // Most Smartphones Mobiles (Portrait)
+    @media (min-width: 320px) and (max-width: 480px) {
+      flex-flow: column wrap;
+    }
+  // Low Resolution Tablets, Mobiles (Landscape)
+    @media (min-width: 481px) and (max-width: 767px) {
+      flex-flow: column wrap;
+    }
+  // Tablets, Ipads (portrait)
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex-flow: row wrap;
+    }
+  // Laptops, Desktops
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      flex-flow: row wrap;
+    }
+  // Desktops
+    @media (min-width: 1281px) {
+      flex-flow: row wrap;
+    }
+}
+.opacity_layer_social{
+  background-color: rgba(125, 161, 205, 0.3);
+}
+  .soc_item{
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        flex: 1 1 95%;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        flex: 1 1 45%;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        flex: 1 1 45%;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        flex: 1 1 45%;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        flex: 1 1 45%;
+      }
+  }
+    .soc_text_container{
+    // Most Smartphones Mobiles (Portrait)
+      @media (min-width: 320px) and (max-width: 480px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 10px;
+      }
+    // Low Resolution Tablets, Mobiles (Landscape)
+      @media (min-width: 481px) and (max-width: 767px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 10px;
+      }
+    // Tablets, Ipads (portrait)
+      @media (min-width: 768px) and (max-width: 1024px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 10px;
+      }
+    // Laptops, Desktops
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 10px;
+      }
+    // Desktops
+      @media (min-width: 1281px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 10px;
+      }
+    }
+    .soc_text_title{
+      background: rgba(0, 0, 0, 0.73);
+      box-shadow: 5px 5px 3px #000000;
+      // Most Smartphones Mobiles (Portrait)
+        @media (min-width: 320px) and (max-width: 480px) {
+          font-size: 2em;
+          padding: 8px;
+          text-shadow: 1px 1px black;
+          border: 2px solid black;
+          margin-bottom: 15px;
+        }
+      // Low Resolution Tablets, Mobiles (Landscape)
+        @media (min-width: 481px) and (max-width: 767px) {
+          font-size: 2.5em;
+          padding: 10px;
+          text-shadow: 1px 1px black;
+          border: 2px solid black;
+          margin-bottom: 15px;
+        }
+      // Tablets, Ipads (portrait)
+        @media (min-width: 768px) and (max-width: 1024px) {
+          font-size: 3em;
+          padding: 12px;
+          text-shadow: 2px 2px black;
+          border: 2px solid black;
+          margin-bottom: 15px;
+        }
+      // Laptops, Desktops
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          font-size: 3.5em;
+          padding: 15px;
+          text-shadow: 2px 2px black;
+          border: 2px solid black;
+          margin-bottom: 15px;
+        }
+      // Desktops
+        @media (min-width: 1281px) {
+          font-size: 4em;
+          padding: 20px;
+          text-shadow: 2px 2px black;
+          border: 3px solid black;
+          margin-bottom: 15px;
+        }
+    }
+    .soc_text{
+      padding: 10px;
+      border: 2px solid black;
+      background: rgba(0, 0, 0, 0.73);
+      box-shadow: 5px 5px 3px #000000;
+      font-size: 1em;
+      // Most Smartphones Mobiles (Portrait)
+        @media (min-width: 320px) and (max-width: 480px) {
+          font-size: 1em;
+        }
+      // Low Resolution Tablets, Mobiles (Landscape)
+        @media (min-width: 481px) and (max-width: 767px) {
+          font-size: 1em;
+        }
+      // Tablets, Ipads (portrait)
+        @media (min-width: 768px) and (max-width: 1024px) {
+          font-size: 1em;
+        }
+      // Laptops, Desktops
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          font-size: 1em;
+        }
+      // Desktops
+        @media (min-width: 1281px) {
+          font-size: 1.2em;
+        }
+    }.soc_text:hover{
+      opacity: 1;
+    }
+
+    .social-link{
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .social-image{
+      // Most Smartphones Mobiles (Portrait)
+        @media (min-width: 320px) and (max-width: 480px) {
+          margin-top: 3px;
+          margin-bottom: 3px;
+          max-width: 65px;
+          min-width: 65px;
+          max-height: 65px;
+          min-height: 65px;
+        }
+      // Low Resolution Tablets, Mobiles (Landscape)
+        @media (min-width: 481px) and (max-width: 767px) {
+          margin-top: 5px;
+          max-width: 75px;
+          min-width: 75px;
+          max-height: 75px;
+          min-height: 75px;
+        }
+      // Tablets, Ipads (portrait)
+        @media (min-width: 768px) and (max-width: 1024px) {
+          margin-top: 10px;
+          max-width: 90px;
+          min-width: 90px;
+          max-height: 90px;
+          min-height: 90px;
+        }
+      // Laptops, Desktops
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          margin-top: 15px;
+          max-width: 105px;
+          min-width: 105px;
+          max-height: 105px;
+          min-height: 105px;
+        }
+      // Desktops
+        @media (min-width: 1281px) {
+          margin-top: 20px;
+          max-width: 120px;
+          min-width: 120px;
+          max-height: 120px;
+          min-height: 120px;
+        }
+    }
+      .social-image:hover{
+        animation: shine 1.5s ease-in-out;
+      }
+
+  @keyframes shine {
+    0% {
+      filter:brightness(100%);
+    }
+    20% {
+      filter:brightness(300%);
+    }
+    100% {
+      filter:brightness(100%);
+    }
+  }
