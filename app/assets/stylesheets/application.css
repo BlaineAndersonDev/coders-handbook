@@ -41,7 +41,7 @@ body, html {
 }
 #site_body_container{
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 }
 #site_foot_container{
    position: absolute;
