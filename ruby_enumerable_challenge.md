@@ -309,8 +309,112 @@ ___
     "1100101".to_i(16)       #=> 17826049
     ```
 
-#### Array Enumerable Examples
-  * [Ruby-Docs: Array Enumerables](http://ruby-doc.org/core-2.5.1/Array.html)
+#### [Array Enumerable](http://ruby-doc.org/core-2.5.1/Array.html) Examples:
+  * __[.any?](http://ruby-doc.org/core-2.5.1/String.html#method-i-any-3F)__
+    ```
+    # Passes each element of the collection over the given block.
+    # Returns true if block returns a value other than false or nil.
+    %w[ant bear cat].any? { |word| word.length >= 3 } #=> true
+    %w[ant bear cat].any? { |word| word.length >= 4 } #=> true
+    %w[ant bear cat].any?(/d/)                        #=> false
+    [nil, true, 99].any?(Integer)                     #=> true
+    [nil, true, 99].any?                              #=> true
+    [].any?                                           #=> false
+    ```
+
+  * __[.at](http://ruby-doc.org/core-2.5.1/String.html#method-i-at)__
+    ```
+    # Returns the element at index.
+    # A negative index counts from the end of self.
+    a = [ "a", "b", "c", "d", "e" ]
+    a.at(0)     #=> "a"
+    a.at(-1)    #=> "e"
+    ```
+
+  * __[.clear](http://ruby-doc.org/core-2.5.1/String.html#method-i-clear)__
+    ```
+    # Removes all elements from self.
+    a = [ "a", "b", "c", "d", "e" ]
+    a.clear    #=> [ ]
+    ```
+
+  * __[.collect](http://ruby-doc.org/core-2.5.1/String.html#method-i-collect)__
+    ```
+    # Invokes the given block once for each element of self.
+    # Creates a new array containing the values returned by the block.
+    a = [ "a", "b", "c", "d" ]
+    a.collect { |x| x + "!" }         #=> ["a!", "b!", "c!", "d!"]
+    ```
+
+  * __[.concat](http://ruby-doc.org/core-2.5.1/String.html#method-i-concat)__
+    ```
+    # Appends another array to self.
+    [ "a", "b" ].concat( ["c", "d"] ) #=> [ "a", "b", "c", "d" ]
+    [ "a" ].concat( ["b"], ["c", "d"] ) #=> [ "a", "b", "c", "d" ]
+    [ "a" ].concat #=> [ "a" ]
+
+    a = [ 1, 2, 3 ]
+    a.concat( [ 4, 5 ] )
+    a                                 #=> [ 1, 2, 3, 4, 5 ]
+
+    a = [ 1, 2 ]
+    a.concat(a, a)                    #=> [1, 2, 1, 2, 1, 2]
+    ```
+
+  * __[.count](http://ruby-doc.org/core-2.5.1/String.html#method-i-count)__
+    ```
+    # Returns the number of elements.
+    # If an argument is given, counts the number of elements which equal obj using ==.
+    # If a block is given, counts the number of elements for which the block returns a true value.
+    ary = [1, 2, 4, 2]
+    ary.count                  #=> 4
+    ary.count(2)               #=> 2
+    ary.count { |x| x%2 == 0 } #=> 3
+    ```
+
+  * __[.delete](http://ruby-doc.org/core-2.5.1/String.html#method-i-delete)__
+    ```
+    # Deletes all items from self that are equal to obj.
+    # Returns the last deleted item, or nil if no matching item is found.
+    a = [ "a", "b", "b", "b", "c" ]
+    a.delete("b")                   #=> "b"
+    a                               #=> ["a", "c"]
+    a.delete("z")                   #=> nil
+    a.delete("z") { "not found" }   #=> "not found"
+    ```
+
+  * __[.delete_at](http://ruby-doc.org/core-2.5.1/String.html#method-i-delete_at)__
+    ```
+    # Deletes the element at the specified index, returning that element, or nil if the index is out of range.
+    a = ["ant", "bat", "cat", "dog"]
+    a.delete_at(2)    #=> "cat"
+    a                 #=> ["ant", "bat", "dog"]
+    a.delete_at(99)   #=> nil
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
 
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
     ```
