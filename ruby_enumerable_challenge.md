@@ -20,8 +20,8 @@ ___
   > While the link above is not ruby-docs, I found this to be one of the most concise explanations on comparators.
   > For the ruby-docs version, [click here](https://ruby-doc.org/core-2.5.1/Object.html#method-i-eql-3F).
 
-  * The differences between `.eql?`, `.equal?` & '==':
-    * __.equal?__: only returns `true` if the two objects being compared are the EXACT same object.
+  * The differences between `.eql?`, `.equal?` & `==`:
+    * __`.equal?`__: only returns `true` if the two objects being compared are the EXACT same object.
       ```
       obj_1 = "unique"
       obj_2 = some_word # NOTE: This can't be a separate object of "unique". It MUST be the exact same object to return true.
@@ -33,7 +33,7 @@ ___
       obj_1.equal?(obj_2)     #=> false
       ```
 
-    * __.eql?__ & __==__: will return true if the objects have the same value, without requiring them to be the exact same object.
+    * __`.eql?`__ & __`==`__: will return true if the objects have the same value, without requiring them to be the exact same object.
       ```
       obj_1 = "word"
 
@@ -43,7 +43,7 @@ ___
       "word".eql? "word"       # true
       ```
 
-    * __==__: is more specific when matching than __.eql?__. Specifically, Number type conversions will automatically take place when using __==__ but not when using __.eql?__.
+    * __`==`__: is more specific when matching than __`.eql?`__. Specifically, Number type conversions will automatically take place when using __`==`__ but not when using __`.eql?`__.
       ```
       1 == 1       # true
       1.eql? 1     # true
