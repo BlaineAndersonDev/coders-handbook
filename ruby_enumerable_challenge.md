@@ -470,34 +470,58 @@ ___
     a.insert(-2, 1, 2, 3)   #=> ["a", "b", 99, "c", 1, 2, 3, "d"]
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.join](http://ruby-doc.org/core-2.5.1/String.html#method-i-join)__
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # Returns a string created by converting each element of the array to a string, separated by the given separator.
+    # If the separator is nil, it uses current $,.
+    # If both the separator and $, are nil, it uses an empty string.
+    [ "a", "b", "c" ].join        #=> "abc"
+    [ "a", "b", "c" ].join("-")   #=> "a-b-c"
+    # For nested arrays, join is applied recursively:
+    [ "a", [1, 2, [:x, :y]], "b" ].join("-")   #=> "a-1-2-x-y-b"
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.length](http://ruby-doc.org/core-2.5.1/String.html#method-i-length)__
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # Returns the number of elements in self. May be zero.
+    [ 1, 2, 3, 4, 5 ].length   #=> 5
+    [].length                  #=> 0
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+  * __[.map](http://ruby-doc.org/core-2.5.1/String.html#method-i-map)__
     ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
+    # Invokes the given block once for each element of self.
+    # Creates a new array containing the values returned by the block.
+    names = ['blaine', 'kelli']
+    names.map {|name| name.capitalize }      #=> ['Blaine', 'Kelli']
+    [1, 2, 3].map { |n| n * n }              #=> [1, 4, 9]
+    ```
+
+  * __[.pop](http://ruby-doc.org/core-2.5.1/String.html#method-i-pop)__
+    ```
+    # Removes the last element from self and returns it, or nil if the array is empty.
+    a = [ "a", "b", "c", "d" ]
+    a.pop     #=> "d"
+    a.pop(2)  #=> ["b", "c"]
+    a         #=> ["a"]
+    ```
+
+  * __[.push](http://ruby-doc.org/core-2.5.1/String.html#method-i-push)__
+    ```
+    # Append — Pushes the given object(s) on to the end of this array.
+    # This expression returns the array itself, so several appends may be chained together.
+    a = [ "a", "b", "c" ]
+    a.push("d", "e", "f")
+            #=> ["a", "b", "c", "d", "e", "f"]
+    [1, 2, 3].push(4).push(5)
+            #=> [1, 2, 3, 4, 5]
+
+    # Alternatively you can use << to push to the end of the array.
+    # Be aware: << only accepts a single argument at a time.
+    a = [ "a", "b", "c" ]
+    a << "d"    #=> [ "a", "b", "c", "d" ]
+    a << "e"    #=> [ "a", "b", "c", "d", "e" ]
+    a << "f"    #=> [ "a", "b", "c", "d", "e", "f" ]
     ```
 
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
