@@ -596,13 +596,6 @@ ___
     b.uniq { |s| s.first } # => [["student", "sam"], ["teacher", "matz"]]
     ```
 
-  * __[.to_s](http://ruby-doc.org/core-2.5.1/String.html#method-i-inspect)__
-    ```
-    # Creates a string representation of self.
-    # alias: .inspect
-    [ "a", "b", "c" ].to_s     #=> "[\"a\", \"b\", \"c\"]"
-    ```
-
 #### [Math Enumerable](http://ruby-doc.org/core-2.5.1/Math.html) Examples:
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
     ```

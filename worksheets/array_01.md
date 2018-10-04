@@ -195,131 +195,185 @@ ___
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+15.) Use an Enumerable to check if the element "a" is in the array below:
 
    `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   > Goal: `true`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr.include?("a")    #=> true
 
   </p></details>
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+16.) Use an Enumerable to add the element "d" between "c" & 25 in the array below:
 
    `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   > Goal: `["a", "b", "c", "d", 25]`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr.insert(3, "d")    #=> ["a", "b", "c", "d", 25]
 
   </p></details>
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+17.) Use an Enumerable to combine the string elements in the array below into a single string:
 
-   `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   `arr = ["a", "b", "c"]`
+   > Goal: `"abc"`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr.join    #=> "abc"
 
   </p></details>
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+18.) Use an Enumerable to find the amount of items in the array below:
 
-   `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   `arr = ["a", "b", "c", "d", "e"]`
+   > Goal: `5`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr.length    #=> 5
 
   </p></details>
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+19.) Use an Enumerable to multiply the integers in the array by themselves (I.E. 2 * 2 = 4):
 
-   `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   `arr = [1, 2, 4, 10]`
+   > Goal: `[1, 4, 16, 100]`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr..map { |int| int * int }      #=> [1, 4, 16, 100]
 
   </p></details>
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+20.) Use an Enumerable to remove the last element in the array below:
 
    `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   > Goal: `["a", "b", "c"]`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr.pop    #=> ["a", "b", "c"]
 
   </p></details>
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+21.) Use an Enumerable to add the element "d" to the back of the array below:
 
    `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   > Goal: `["a", "b", "c", 25, "d"]`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr.push("d")    #=> ["a", "b", "c", 25, "d"]
+    OR
+    arr << "d"    #=> ["a", "b", "c", 25, "d"]
 
   </p></details>
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+22.) Use an Enumerable to reverse the order of the array below:
 
    `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   > Goal: `[25, "c", "b", "a"]`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr.reverse    #=> [25, "c", "b", "a"]
 
   </p></details>
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+23.) Use an Enumerable to alter the order of the array below by 1:
 
    `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   > Goal: `["b", "c", 25, "a"]`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr.rotate    #=> ["b", "c", 25, "a"]
 
   </p></details>
 
   ___
 
-______.) Use an Enumerable to _______ in the array below:
+24.) Use an Enumerable to randomly pull a single element from the array below:
 
    `arr = ["a", "b", "c", 25]`
-   > Goal: `_____`
+   > Goal: `"a" OR "b" OR "c" OR 25`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    arr._____    #=> _____
+    arr.sample    #=> "a" OR "b" OR "c" OR 25
+
+  </p></details>
+
+  ___
+
+25.) Use an Enumerable to return only odd integers from the array below:
+
+   `arr = [1, 2, 3, 4, 5, 6]`
+   > Goal: `[1, 3, 5]`
+
+  <details><summary>Answer:</summary><p><!-- Spacing Required -->
+
+    arr.select { |int| int.odd? }    #=> [1, 3, 5]
+
+  </p></details>
+
+  ___
+
+26.) Use an Enumerable to remove the element at index location 2 in the array below:
+
+   `arr = ["a", "b", "c", 25]`
+   > Goal: `["a", "b", 25]`
+
+  <details><summary>Answer:</summary><p><!-- Spacing Required -->
+
+    arr.slice!(2)    #=> ["a", "b", 25]
+
+  </p></details>
+
+  ___
+
+27.) Use an Enumerable to sort the array below alphabetically:
+
+   `arr = ["c", "b", "d", "e", "a"]`
+   > Goal: `["a", "b", "c", "d", "e"]`
+
+  <details><summary>Answer:</summary><p><!-- Spacing Required -->
+
+    arr.sort    #=> ["a", "b", "c", "d", "e"]
+
+  </p></details>
+
+  ___
+
+28.) Use an Enumerable to return a single element for all duplicated elements in the array below:
+
+   `arr = ["a", "a", "b", "b", "c", "d", "c", "c"]`
+   > Goal: `["a", "b", "c", "d"]`
+
+  <details><summary>Answer:</summary><p><!-- Spacing Required -->
+
+    arr.uniq    #=> ["a", "b", "c", "d"]
 
   </p></details>
 
@@ -386,33 +440,60 @@ ______.) Use an Enumerable to _______ in the array below:
     arr = ["a", "b", "c", 25]
     arr._____  #=> 2
 
-  # _______.) Question
+  # 15.) Use an Enumerable to check if the element "a" is in the array below:
     arr = ["a", "b", "c", 25]
-    arr._____  #=> ____
+    arr._____  #=> true
 
-  # _______.) Question
+  # 16.) Use an Enumerable to add the element "d" between "c" & 25 in the array below:
     arr = ["a", "b", "c", 25]
-    arr._____  #=> ____
+    arr._____  #=> ["a", "b", "c", "d", 25]
 
-  # _______.) Question
+  # 17.) Use an Enumerable to combine the string elements in the array below into a single string:
+    arr = ["a", "b", "c"]
+    arr._____  #=> "abc"
+
+  # 18.) Use an Enumerable to find the amount of items in the array below:
+    arr = ["a", "b", "c", "d", "e"]
+    arr._____  #=> 5
+
+  # 19.) Use an Enumerable to multiply the integers in the array by themselves (I.E. 2 * 2 = 4) (Requires a block argument):
+    arr = [1, 2, 4, 10]
+    arr._____  #=> [1, 4, 16, 100]
+
+  # 20.) Use an Enumerable to remove the last element in the array below:
     arr = ["a", "b", "c", 25]
-    arr._____  #=> ____
+    arr._____  #=> ["a", "b", "c"]
 
-  # _______.) Question
+  # 21.) Use an Enumerable to add the element "d" to the back of the array below:
     arr = ["a", "b", "c", 25]
-    arr._____  #=> ____
+    arr._____  #=> ["a", "b", "c", 25, "d"]
 
-  # _______.) Question
+  # 22.) Use an Enumerable to reverse the order of the array below:
     arr = ["a", "b", "c", 25]
-    arr._____  #=> ____
+    arr._____  #=> [25, "c", "b", "a"]
 
-  # _______.) Question
+  # 23.) Use an Enumerable to alter the order of the array below by 1:
     arr = ["a", "b", "c", 25]
-    arr._____  #=> ____
+    arr._____  #=> ["b", "c", 25, "a"]
 
-  # _______.) Question
+  # 24.) Use an Enumerable to randomly pull a single element from the array below:
     arr = ["a", "b", "c", 25]
-    arr._____  #=> ____
+    arr._____  #=> "a" OR "b" OR "c" OR 25
 
+  # 25.) Use an Enumerable to return only odd integers from the array below (Requires a block argument & .odd? ):
+    arr = [1, 2, 3, 4, 5, 6]
+    arr._____  #=> [1, 3, 5]
+
+  # 26.) Use an Enumerable to remove the element at index location 2 in the array below:
+    arr = ["a", "b", "c", 25]
+    arr._____  #=> ["a", "b", 25]
+
+  # 27.) Use an Enumerable to sort the array below alphabetically:
+    arr = ["c", "b", "d", "e", "a"]
+    arr._____  #=> ["a", "b", "c", "d", "e"]
+
+  # 28.) Use an Enumerable to return a single element for all duplicated elements in the array below:
+    arr = ["a", "a", "b", "b", "c", "d", "c", "c"]
+    arr._____  #=> ["a", "b", "c", "d"]
 
   ```
