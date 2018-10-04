@@ -23,6 +23,8 @@ ___
 
   </p></details>
 
+  ___
+
 2.) Use an Enumerable to _______ the array below:
 
    `arr = ["a", "b", "c", 25]`
@@ -33,6 +35,8 @@ ___
     arr._____    #=> _____
 
   </p></details>
+
+  ___
 
 ## Local/[Repl.it](Repl.it) Answer Free Worksheet:
 
