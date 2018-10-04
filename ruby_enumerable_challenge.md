@@ -13,6 +13,7 @@
 | Difficulty | Type | Worksheet |
 | --- | --- | --- |
 | __Beginner__ | String | [string_01](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/worksheets/string_01.md) |
+| __Beginner__ | Array | [array_01](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/worksheets/array_01.md) |
 
 ___
 
