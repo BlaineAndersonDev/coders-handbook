@@ -1,4 +1,4 @@
-# Ruby Enumerable Challenges
+comparators# Ruby Enumerable Challenges
 > A small Ruby Enumerable worksheet I created to test myself daily for a few weeks, until I have all the common enumerable memorized (or at least committed to memory enough that I can mostly recall how to use them properly).
 
 | Enumerables | QuickLink |
@@ -16,6 +16,42 @@
 | __Beginner__ | Array | [array_01](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/worksheets/array_01.md) |
 
 ___
+#### [Comparator Basics](http://batsov.com/articles/2011/11/28/ruby-tip-number-1-demystifying-the-difference-between-equals-equals-and-eql/) Examples:
+  > While the link above is not ruby-docs, I found this to be one of the most concise explanations on comparators.
+  > For the ruby-docs version, [click here](https://ruby-doc.org/core-2.5.1/Object.html#method-i-eql-3F).
+
+  * The differences between `.eql?`, `.equal?` & '==':
+    * __.equal?__: only returns `true` if the two objects being compared are the EXACT same object.
+      ```
+      obj_1 = "unique"
+      obj_2 = some_word # NOTE: This can't be a separate object of "unique". It MUST be the exact same object to return true.
+      obj_1.equal?(obj_2)     #=> true
+
+      # By the same example, it will return false if it's a separate object.
+      obj_1 = "unique"
+      obj_2 = "unique"
+      obj_1.equal?(obj_2)     #=> false
+      ```
+
+    * __.eql?__ & __==__: will return true if the objects have the same value, without requiring them to be the exact same object.
+      ```
+      obj_1 = "word"
+
+      obj_1 == "word"          # true
+      obj_1.eql? "word"        # true
+      "word" == "word"         # true
+      "word".eql? "word"       # true
+      ```
+
+    * __==__: is more specific when matching than __.eql?__. Specifically, Number type conversions will automatically take place when using __==__ but not when using __.eql?__.
+      ```
+      1 == 1       # true
+      1.eql? 1     # true
+      1 == 1.0     # true
+      1.eql? 1.0   # false
+      1.0.eql? 1.0 # true
+      ```
+
 
 #### [String Enumerable](https://ruby-doc.org/core-2.5.1/String.html) Examples:
   * __[.capitalize](http://ruby-doc.org/core-2.5.1/String.html#method-i-capitalize)__
