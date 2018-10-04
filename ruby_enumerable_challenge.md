@@ -1,6 +1,12 @@
 # Ruby Enumerable Challenges
 > A small Ruby Enumerable worksheet I created to test myself daily for a few weeks, until I have all the common enumerable memorized (or at least committed to memory enough that I can mostly recall how to use them properly).
 
+| Enumerables | QuickLink |
+| --- | --- |
+| __String__ | [Quick Link](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/ruby_enumerable_challenge.md#string-enumerable-examples) |
+| __Array__ | [Quick Link](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/ruby_enumerable_challenge.md#array-enumerable-examples) |
+| __Math__ | In Progress |
+
 ## Enumerable Examples:
 > I've included a full set of examples here, as well as a number of different worksheets in the [worksheets](https://github.com/BlaineAndersonDev/coders-handbook/tree/master/worksheets) folder. They can also be accessed via the table below:
 
