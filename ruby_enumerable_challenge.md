@@ -392,6 +392,120 @@ ___
     a.delete_at(99)   #=> nil
     ```
 
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-delete_if)__
+    ```
+    # Deletes every element of self for which block evaluates to true.
+    # The array is changed instantly every time the block is called, not after the iteration is over.
+    scores = [ 97, 42, 75 ]
+    scores.delete_if {|score| score < 80 }   #=> [97]
+    ```
+
+  * __[.drop](http://ruby-doc.org/core-2.5.1/String.html#method-i-drop)__
+    ```
+    # Drops first n elements from ary and returns the rest of the elements in an array.
+    # If a negative number is given, raises an ArgumentError.
+    a = [1, 2, 3, 4, 5, 0]
+    a.drop(3)             #=> [4, 5, 0]
+    ```
+
+  * __[.each](http://ruby-doc.org/core-2.5.1/String.html#method-i-each)__
+    ```
+    # Calls the given block once for each element in self, passing that element as a parameter.
+    # Returns the array itself.
+    a = [ "a", "b", "c" ]
+    a.each {|x| print x, " -- " }     #=> a -- b -- c --
+    ```
+
+  * __[.each_index](http://ruby-doc.org/core-2.5.1/String.html#method-i-each_index)__
+    ```
+    # Same as #each, but passes the index of the element instead of the element itself.
+    # Returns the array itself.
+    a = [ "a", "b", "c" ]
+    a.each_index {|x| print x, " -- " }     #=> 0 -- 1 -- 2 --
+    ```
+
+  * __[.empty?](http://ruby-doc.org/core-2.5.1/String.html#method-i-empty-3F)__
+    ```
+    # Returns true if self contains no elements.
+    [].empty?   #=> true
+    ```
+
+  * __[.fetch](http://ruby-doc.org/core-2.5.1/String.html#method-i-fetch)__
+    ```
+    # Tries to return the element at position index, but throws an IndexError exception if the referenced index lies outside of the array bounds. This error can be prevented by supplying a second argument, which will act as a default value.
+    # Alternatively, if a block is given it will only be executed when an invalid index is referenced.
+    # Negative values of index count from the end of the array.
+    a = [ 11, 22, 33, 44 ]
+    a.fetch(1)               #=> 22
+    a.fetch(-1)              #=> 44
+    a.fetch(4, 'cat')        #=> "cat"
+    a.fetch(100) { |i| puts "#{i} is out of bounds" }
+                             #=> "100 is out of bounds"
+    ```
+
+  * __[.index](http://ruby-doc.org/core-2.5.1/String.html#method-i-index)__
+    ```
+    # Returns the index of the first object in ary such that the object is == to obj.
+    # If a block is given instead of an argument, returns the index of the first object for which the block returns true. Returns nil if no match is found.
+    a = [ "a", "b", "c" ]
+    a.index("b")              #=> 1
+    a.index("z")              #=> nil
+    a.index { |x| x == "b" }  #=> 1
+    ```
+
+  * __[.include?](http://ruby-doc.org/core-2.5.1/String.html#method-i-include-3F)__
+    ```
+    # Returns true if the given object is present in self (that is, if any element == object), otherwise returns false.
+    a = [ "a", "b", "c" ]
+    a.include?("b")   #=> true
+    a.include?("z")   #=> false
+    ```
+
+  * __[.insert](http://ruby-doc.org/core-2.5.1/String.html#method-i-insert)__
+    ```
+    # Inserts the given values before the element with the given index.
+    # Negative indices count backwards from the end of the array, where -1 is the last element.
+    a = %w{ a b c d }
+    a.insert(2, 99)         #=> ["a", "b", 99, "c", "d"]
+    a.insert(-2, 1, 2, 3)   #=> ["a", "b", 99, "c", 1, 2, 3, "d"]
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
+  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
+    ```
+    # ENUM_DESCRIPT
+    ENUM_EXAMPLES
+    ```
+
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
     ```
     # ENUM_DESCRIPT
