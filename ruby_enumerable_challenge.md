@@ -392,7 +392,7 @@ ___
     a.delete_at(99)   #=> nil
     ```
 
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-delete_if)__
+  * __[.delete_if](http://ruby-doc.org/core-2.5.1/String.html#method-i-delete_if)__
     ```
     # Deletes every element of self for which block evaluates to true.
     # The array is changed instantly every time the block is called, not after the iteration is over.
@@ -524,49 +524,96 @@ ___
     a << "f"    #=> [ "a", "b", "c", "d", "e", "f" ]
     ```
 
+  * __[.reverse](http://ruby-doc.org/core-2.5.1/String.html#method-i-reverse)__
+    ```
+    # Returns a new array containing self's elements in reverse order.
+    [ "a", "b", "c" ].reverse   #=> ["c", "b", "a"]
+    [ 1 ].reverse               #=> [1]
+    ```
+
+  * __[.rotate](http://ruby-doc.org/core-2.5.1/String.html#method-i-rotate)__
+    ```
+    # Returns a new array by rotating self so that the element at count is the first element of the new array.
+    # If count is negative then it rotates in the opposite direction, starting from the end of self where -1 is the last element.
+    a = [ "a", "b", "c", "d" ]
+    a.rotate         #=> ["b", "c", "d", "a"]
+    a                #=> ["a", "b", "c", "d"]
+    a.rotate(2)      #=> ["c", "d", "a", "b"]
+    a.rotate(-3)     #=> ["b", "c", "d", "a"]
+    ```
+
+  * __[.sample](http://ruby-doc.org/core-2.5.1/String.html#method-i-sample)__
+    ```
+    # Choose a random element or n random elements from the array.
+    # The elements are chosen by using random and unique indices into the array in order to ensure that an element doesn't repeat itself unless the array already contained duplicate elements.
+    # If the array is empty the first form returns nil and the second form returns an empty array.
+    a = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+    a.sample         #=> 7
+    a.sample(4)      #=> [6, 4, 2, 5]
+    ```
+
+  * __[.select](http://ruby-doc.org/core-2.5.1/String.html#method-i-select)__
+    ```
+    # Returns a new array containing all elements of array for which the given block returns a true value.
+    [1,2,3,4,5].select { |num|  num.even?  }   #=> [2, 4]
+
+    a = %w{ a b c d e f }
+    a.select { |v| v =~ /[aeiou]/ }  #=> ["a", "e"]
+    ```
+
+  * __[.slice!](http://ruby-doc.org/core-2.5.1/String.html#method-i-slice-21)__
+    ```
+    # Deletes the element(s) given by an index (optionally up to length elements) or by a range.
+    # Returns the deleted object (or objects), or nil if the index is out of range.
+    a = [ "a", "b", "c" ]
+    a.slice!(1)     #=> "b"
+    a               #=> ["a", "c"]
+    a.slice!(-1)    #=> "c"
+    a               #=> ["a"]
+    a.slice!(100)   #=> nil
+    a               #=> ["a"]
+    ```
+
+  * __[.sort](http://ruby-doc.org/core-2.5.1/String.html#method-i-sort)__
+    ```
+    # Returns a new array created by sorting self.
+    # Comparisons for the sort will be done using the <=> operator or using an optional code block.
+    # The block must implement a comparison between a and b and return an integer less than 0 when b follows a, 0 when a and b are equivalent, or an integer greater than 0 when a follows b.
+    ary = [ "d", "a", "e", "c", "b" ]
+    ary.sort                     #=> ["a", "b", "c", "d", "e"]
+    ary.sort { |a, b| b <=> a }  #=> ["e", "d", "c", "b", "a"]
+    ```
+
+  * __[.uniq](http://ruby-doc.org/core-2.5.1/String.html#method-i-uniq)__
+    ```
+    # Returns a new array by removing duplicate values in self.
+    # If a block is given, it will use the return value of the block for comparison.
+    # It compares values using their hash and eql? methods for efficiency.
+    # self is traversed in order, and the first occurrence is kept.
+    a = [ "a", "a", "b", "b", "c" ]
+    a.uniq   # => ["a", "b", "c"]
+
+    b = [["student","sam"], ["student","george"], ["teacher","matz"]]
+    b.uniq { |s| s.first } # => [["student", "sam"], ["teacher", "matz"]]
+    ```
+
+  * __[.to_s](http://ruby-doc.org/core-2.5.1/String.html#method-i-inspect)__
+    ```
+    # Creates a string representation of self.
+    # alias: .inspect
+    [ "a", "b", "c" ].to_s     #=> "[\"a\", \"b\", \"c\"]"
+    ```
+
+#### [Math Enumerable](http://ruby-doc.org/core-2.5.1/Math.html) Examples:
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
     ```
     # ENUM_DESCRIPT
     ENUM_EXAMPLES
     ```
 
+<!-- #### [ENUM Enumerable](http://ruby-doc.org/core-2.5.1/ENUM.html) Examples:
   * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
     ```
     # ENUM_DESCRIPT
     ENUM_EXAMPLES
-    ```
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-#### Math Enumerable Examples
-  * [Ruby-Docs: Math Enumerables](http://ruby-doc.org/core-2.5.1/Math.html)
-
-  * __[.ENUM](http://ruby-doc.org/core-2.5.1/String.html#method-i-ENUM)__
-    ```
-    # ENUM_DESCRIPT
-    ENUM_EXAMPLES
-    ```
-
-## Enumerable Worksheet string_01:
+    ``` -->
