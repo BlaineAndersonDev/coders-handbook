@@ -6,6 +6,8 @@
 
 > This worksheet is ordered exactly as the [Enumerable Notes](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/ruby_enumerable_challenge.md) section is and can be solved by walking through it hand in hand with the notes.
 
+> This worksheet is leveled: __Beginner__.
+
 ___
 
 ## Github Worksheet with Answers:
