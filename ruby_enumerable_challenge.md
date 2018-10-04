@@ -423,14 +423,6 @@ ___
     a.each {|x| print x, " -- " }     #=> a -- b -- c --
     ```
 
-  * __[.each_index](http://ruby-doc.org/core-2.5.1/String.html#method-i-each_index)__
-    ```
-    # Same as #each, but passes the index of the element instead of the element itself.
-    # Returns the array itself.
-    a = [ "a", "b", "c" ]
-    a.each_index {|x| print x, " -- " }     #=> 0 -- 1 -- 2 --
-    ```
-
   * __[.empty?](http://ruby-doc.org/core-2.5.1/String.html#method-i-empty-3F)__
     ```
     # Returns true if self contains no elements.
