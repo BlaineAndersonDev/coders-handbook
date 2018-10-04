@@ -12,14 +12,25 @@ ___
 
 ## Github Worksheet with Answers:
 
-2.) Use an Enumerable to _______ the sentence below:
+1.) Use an Enumerable to check if a number is in the array below:
 
-   `"hello world"`
-   > Goal: `"Hello"`
+   `arr = ["a", "b", "c", 25]`
+   > Goal: `true`
 
   <details><summary>Answer:</summary><p><!-- Spacing Required -->
 
-    "hello"._____    #=> "Hello"
+    arr.any?(Integer)    #=> true
+
+  </p></details>
+
+2.) Use an Enumerable to _______ the array below:
+
+   `arr = ["a", "b", "c", 25]`
+   > Goal: `_____`
+
+  <details><summary>Answer:</summary><p><!-- Spacing Required -->
+
+    arr._____    #=> _____
 
   </p></details>
 
