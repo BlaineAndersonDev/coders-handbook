@@ -1,5 +1,5 @@
-# Python Basics:
-  > Learning Python a little at a time.
+# Python Refresher:
+  > As of Oct 10th I began learning Python a little at a time. I've compiled the basics as well as some more complex uses of Python here for future reference.
 
 ### Basics:
 
