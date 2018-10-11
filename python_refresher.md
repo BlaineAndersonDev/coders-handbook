@@ -7,7 +7,6 @@ ___
   > This guide is one of many written by [Blaine Anderson](https://github.com/BlaineAndersonDev).
   > You can find this and the rest of his guides in a special Github repository called [The Coders Handbook](https://github.com/BlaineAndersonDev/coders-handbook).
 ___
-
 ### Basics:
 
 ##### Printing & Type Conversion:
