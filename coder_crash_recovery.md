@@ -1,11 +1,15 @@
 # Coder Crash Recovery
 ##### This Guide focus' on Rails & ReactJS + all associated technologies.
-
-##### Authors Note:
   > I wrote this guide for my future self. My Mac had a complete crash, forcing me to reinstall my OS.
   > I was mid-project and hadn't done a full fledged installation in about a year. While I did look for a straightforward guide to see me through, I was unable to fine a simple and easy one.  
   > So I wrote my own!
   > I hope this helps some poor unfortunate soul who just wants to get back to coding :)
+
+___
+##### Authors Note:
+  > This guide is one of many written by [Blaine Anderson](https://github.com/BlaineAndersonDev).
+  > You can find this and the rest of his guides in a special Github repository called [The Coders Handbook](https://github.com/BlaineAndersonDev/coders-handbook).
+___
 
 ### All Technologies:
   * This guide was based on:

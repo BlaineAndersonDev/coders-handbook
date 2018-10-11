@@ -1,5 +1,12 @@
 # Python Refresher:
-  > As of Oct 10th I began learning Python a little at a time. I've compiled the basics as well as some more complex uses of Python here for future reference.
+  > As of Oct 10th I began learning Python a little at a time.
+  > I've compiled the basics as well as some more complex uses of Python here for future reference.
+
+___
+##### Authors Note:
+  > This guide is one of many written by [Blaine Anderson](https://github.com/BlaineAndersonDev).
+  > You can find this and the rest of his guides in a special Github repository called [The Coders Handbook](https://github.com/BlaineAndersonDev/coders-handbook).
+___
 
 ### Basics:
 

@@ -1,5 +1,11 @@
 # Responsive Design Experiment:
- > See it in action: [Heroku]() 
+ > See it in action: [Live Site (Hosted by Heroku)](https://blaine-anderson-dev.herokuapp.com/overview)
+
+___
+##### Authors Note:
+ > This guide is one of many written by [Blaine Anderson](https://github.com/BlaineAndersonDev).
+ > You can find this and the rest of his guides in a special Github repository called [The Coders Handbook](https://github.com/BlaineAndersonDev/coders-handbook).
+___
 
 ## Copy & Paste Options:
 #### Blank Copy & Pastes:

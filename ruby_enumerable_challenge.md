@@ -1,4 +1,4 @@
-comparators# Ruby Enumerable Challenges
+# Ruby Enumerable Challenges
 > A small Ruby Enumerable worksheet I created to test myself daily for a few weeks, until I have all the common enumerable memorized (or at least committed to memory enough that I can mostly recall how to use them properly).
 
 | Enumerables | QuickLink |
@@ -15,6 +15,10 @@ comparators# Ruby Enumerable Challenges
 | __Beginner__ | String | [string_01](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/worksheets/string_01.md) |
 | __Beginner__ | Array | [array_01](https://github.com/BlaineAndersonDev/coders-handbook/blob/master/worksheets/array_01.md) |
 
+___
+##### Authors Note:
+  > This guide is one of many written by [Blaine Anderson](https://github.com/BlaineAndersonDev).
+  > You can find this and the rest of his guides in a special Github repository called [The Coders Handbook](https://github.com/BlaineAndersonDev/coders-handbook).
 ___
 #### [Comparator Basics](http://batsov.com/articles/2011/11/28/ruby-tip-number-1-demystifying-the-difference-between-equals-equals-and-eql/) Examples:
   > While the link above is not ruby-docs, I found this to be one of the most concise explanations on comparators.
