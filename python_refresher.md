@@ -230,24 +230,90 @@ ___
   #=> 125.00
   ```
 
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
+##### Lists (Arrays):
+  * A list is an ordered set of objects in Python. A List must include brackets `[]` and commas `,`. It is also considered good practice to add in spaces between commas, but is not required.
   ```
+  >>> heights = [61, 70, 67, 64]
   ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
+  * Lists can hold Integers, Strings and even additional Lists:
   ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
+  >>> heights = [['Jenny', 61], ['Alexus', 70], ['Sam', 67], ['Grace', 64], ["Vik", 68]]
   ```
 
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
+##### Using List Objects:
+  * Lists can be saved as a variable using `zip()`. The zipped object is saved in memory but is accessible by using `list()` on it.
   ```
+  >>> names = ['Jenny', 'Alexus', 'Sam', 'Grace']
+  >>> dogs_names = ['Elphonse', 'Dr. Doggy DDS', 'Carter', 'Ralph']
+
+  # Here we save the two different Lists as an object.
+  >>> names_and_dogs_names = zip(names, dogs_names)
+
+  # Printing now results in an object being returned. I.E: <zip object at 0x7feddcac5348>
+  >>> print(names_and_dogs_names)
+
+  # Printing this way results in a List being returned. I.E: [('Jenny', 'Elphonse'), ('Alexus', 'Dr. Doggy DDS'), ('Sam', 'Carter'), ('Grace', 'Ralph')]
+  >>> print(list(names_and_dogs_names))
+
+  # The list can be saved as a different and easily accessible List by using 'list()'
+  >>> list_of_names_and_dogs_names = list(names_and_dogs_names)
+  ```
+  * Lists can also be created empty for later use:
+  ```
+  empty_list_example = []
+  ```
+
+##### Updating List Objects:
+  * Using `.append()` we can add additional items to the end of a List.
+  ```
+  # Create a list
+  >>> my_list = [1, 2, 3]
+
+  # Append a number
+  >>> my_list.append(5)
+
+  >>> print(my_list)
+  [1, 2, 3, 5]
+  ```
+  * You can also combine Lists using `+`. Keep in mind this only works when combining two Lists.
+  ```
+  >>> orders = ['daisy', 'buttercup', 'snapdragon', 'gardenia', 'lily']
+  >>> print(orders)
+  ['daisy', 'buttercup', 'snapdragon', 'gardenia', 'lily']
+
+  # Create new orders here:
+  >>> new_orders = orders + ['lilac', 'iris']
+  >>> print(new_orders)
+  ['daisy', 'buttercup', 'snapdragon', 'gardenia', 'lily', 'lilac', 'iris']
+  ```
+  * In order to combine a single entry __not already in a list__ with another list you would need to surround the entry in brackets:
+  ```
+  broken_prices = [5, 3, 4, 5, 4] + [4]
+  #=> [5, 3, 4, 5, 4, 4]
+  ```
+
+##### Range
+  * `range()` allows Python to automatically create a List starting with 0 (default) and ending with the number __before__ the input.
+  ```
+  >>> my_range = range(10)
+  >>> print(my_range)
+  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  ```
+  * You can also use Ranges with two parameters to begin at a specific number:
+  ```
+  >>> my_list = range(2, 9)
+  >>> print(list(my_list))
+  [2, 3, 4, 5, 6, 7, 8]
+  ```
+  * Ranges can also have a third parameter which will skip that many numbers:
+  ```
+  >>> my_range2 = range(2, 9, 2)
+  >>> print(list(my_range2))
+  [2, 4, 6, 8]
+
+  >>> my_range3 = range(1, 100, 10)
+  >>> print(list(my_range3))
+  [1, 11, 21, 31, 41, 51, 61, 71, 81, 91]
   ```
 
 ##### SECTION_BLANK
