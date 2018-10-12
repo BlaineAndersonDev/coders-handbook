@@ -292,7 +292,7 @@ ___
   #=> [5, 3, 4, 5, 4, 4]
   ```
 
-##### Range
+##### Lists - Range
   * `range()` allows Python to automatically create a List starting with 0 (default) and ending with the number __before__ the input.
   ```
   >>> my_range = range(10)
@@ -314,6 +314,244 @@ ___
   >>> my_range3 = range(1, 100, 10)
   >>> print(list(my_range3))
   [1, 11, 21, 31, 41, 51, 61, 71, 81, 91]
+  ```
+
+##### Lists - Length
+  * `len(list)` allows us to find the number of items in the provided list.
+  ```
+  my_list = [1, 2, 3, 4, 5]
+  print(len(my_list))
+  #=> 5
+  ```
+
+##### Lists - Select by Index
+  * Lists in Python are 0-indexed.
+  * By using `[]` after the list object we can select the item at the given index.
+  ```
+  employees = ['Michael', 'Dwight', 'Jim', 'Pam', 'Ryan', 'Andy', 'Robert']
+  index4 = employees[4]
+  print(index4)
+  #=> Ryan
+  print(employees[0])
+  #=> Michael
+  ```
+  * We can also select items from the end of list using negative indexing:
+  ```
+  shopping_list = ['eggs', 'butter', 'milk', 'cucumbers', 'juice', 'cereal']
+  print(len(shopping_list))
+  #=> 6
+  last_element = shopping_list[-1]
+  element5 = shopping_list[5]
+  print(last_element, element5)
+  #=> cereal cereal
+  ```
+
+##### Lists - Slicing
+  * `list_name[start:end]` allows us to select a specific start & end index as well as everything inbetween.
+  * `start` is the index of the first element that we want to include in our selection.
+  * `end` is the index of __one more__ than the last index that we want to include.
+  ```
+  letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+  sublist = letters[1:6]
+  print(sublist)
+  #=> ['b', 'c', 'd', 'e', 'f']
+
+  suitcase = ['shirt', 'shirt', 'pants', 'pants', 'pajamas', 'books']
+  beginning = suitcase[0:4]
+  print(beginning)
+  #=> ['shirt', 'shirt', 'pants', 'pants']
+  middle = suitcase[2:4]
+  print(middle)
+  #=> ['pants', 'pants']
+  ```
+  * Slicing can also be used to select all items from the `start` to the `end` number. I.E.
+  ```
+  fruits = ['apple', 'banana', 'cherry', 'date']
+  print(fruits[:3]) # Omitting the start will select all items from the start up to the designated end point.
+  #=> ['apple', 'banana', 'cherry']
+  ```
+  * We can also do something similar to select the rest of the list from a single starting point. I.E.
+  ```
+  fruits = ['apple', 'banana', 'cherry', 'date']
+  print(fruits[2:]) # Omitting the end point will select all items from the start point to the end of the list.
+  #=> ['cherry' , 'date']
+  ```
+  * The same idea can be applied to selecting from the end of the list using negative indexing.
+  ```
+  fruits = ['apple', 'banana', 'cherry', 'date']
+  print(fruits[-3:]) # This will list everything from the negative index start to the end of the list.
+  #=> ['banana', 'cherry', 'date']
+  ```
+
+##### Lists - Counting
+  * Using `.count()` we can find out how many times a give parameter appears in a list.
+  ```
+  letters = ['m', 'i', 's', 's', 'i', 's', 's', 'i', 'p', 'p', 'i']
+  num_i = letters.count('i')
+  print(num_i)
+  #=> 4
+
+  votes = ['Jake', 'Jake', 'Laurie', 'Laurie', 'Laurie', 'Jake', 'Jake', 'Jake', 'Laurie', 'Cassie', 'Cassie', 'Jake', 'Jake', 'Cassie', 'Laurie', 'Cassie', 'Jake', 'Jake', 'Cassie', 'Laurie']
+  jake_votes = votes.count('Jake')
+  print(jake_votes)
+  #=> 9
+  ```
+
+##### Lists - Sorting
+  * `list.sort()` will sort the list its attached to either numerically or alphabetically depending on the contents. This will __overwrite__ the original list.
+  ```
+  names = ['Ron', 'Hermione', 'Harry', 'Albus', 'Sirius']
+  names.sort()
+  #=> ['Albus', 'Harry', 'Hermione', 'Ron', 'Sirius']
+
+  addresses = ['221 B Baker St.', '42 Wallaby Way', '12 Grimmauld Place', '742 Evergreen Terrace', '1600 Pennsylvania Ave', '10 Downing St.']
+  addresses.sort()
+  print(addresses)
+  #=> ['10 Downing St.', '12 Grimmauld Place', '1600 Pennsylvania Ave', '221 B Baker St.', '42 Wallaby Way', '742 Evergreen Terrace']
+  ```
+  * `new_list = sorted(list)` creates a new list with all the items sorted, while leaving the original list untouched.
+  ```
+  names = ['Xander', 'Buffy', 'Angel', 'Willow', 'Giles']
+  sorted_names = sorted(names)
+  print(names)
+  #=> ['Xander', 'Buffy', 'Angel', 'Willow', 'Giles']
+  print(sorted_names)
+  #=> ['Angel', 'Buffy', 'Giles', 'Willow', 'Xander']
+
+  games = ['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
+  games_sorted = sorted(games)
+  print(games)
+  #=> ['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
+  print(games_sorted)
+  #=> ['Minecraft', 'Pacman', 'Pokemon', 'Portal', 'Tetris', 'The Sims']
+  ```
+
+##### Large Lists Example up to this point:
+  * Example 1:
+  ```
+  inventory = ['twin bed', 'twin bed', 'headboard', 'queen bed', 'king bed', 'dresser', 'dresser', 'table', 'table', 'nightstand', 'nightstand', 'king bed', 'king bed', 'twin bed', 'twin bed', 'sheets', 'sheets', 'pillow', 'pillow']
+  inventory_len = len(inventory)
+  print(inventory_len)
+  #=> 19
+  first = inventory[0]
+  print(first)
+  #=> twin bed
+  last = inventory[-1]
+  print(last)
+  #=> pillow
+  inventory_2_6 = inventory[2:6]
+  print(inventory_2_6)
+  #=> ['headboard', 'queen bed', 'king bed', 'dresser']
+  first_3 = inventory[:3]
+  print(first_3)
+  #=> ['twin bed', 'twin bed', 'headboard']
+  twin_beds = inventory.count('twin bed')
+  print(twin_beds)
+  #=> 3
+  inventory.sort()
+  print(inventory)
+  #=> ['dresser', 'dresser', 'headboard', 'king bed', 'king bed', 'king bed', 'nightstand', 'nightstand', 'pillow', 'pillow', 'queen bed', 'sheets', 'sheets', 'table', 'table', 'twin bed', 'twin bed', 'twin bed', 'twin bed']
+  ```
+  * Example 2:
+  ```
+  toppings = ["pepperoni", "pineapple", "cheese", "sausage", "olives", "anchovies", "mushrooms"]
+  prices = [2, 6, 1, 3, 2, 7, 2]
+  num_pizzas = len(toppings)
+  print("We sell "+str(num_pizzas)+" different kinds of pizza!")
+  #=> We sell 7 different kinds of pizza!
+  pizzas = list(zip(prices, toppings))
+  print(pizzas)
+  #=> [('pepperoni', 2), ('pineapple', 6), ('cheese', 1), ('sausage', 3), ('olives', 2), ('anchovies', 7), ('mushrooms', 2)]
+  pizzas.sort()
+  print(pizzas)
+  #=> [(1, 'cheese'), (2, 'mushrooms'), (2, 'olives'), (2, 'pepperoni'), (3, 'sausage'), (6, 'pineapple'), (7, 'anchovies')]
+  cheapest_pizza = pizzas[0]
+  print(cheapest_pizza)
+  #=> (1, 'cheese')
+  priciest_pizza = pizzas[-1]
+  print(priciest_pizza)
+  #=> (7, 'anchovies')
+  three_cheapest = pizzas[:3]
+  print(three_cheapest)
+  #=> [(1, 'cheese'), (2, 'mushrooms'), (2, 'olives')]
+  num_two_dollar_slices = prices.count(2)
+  print(num_two_dollar_slices)
+  #=> 3
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK
+  * DESCRIPTION_BLANK
+  ```
   ```
 
 ##### SECTION_BLANK
