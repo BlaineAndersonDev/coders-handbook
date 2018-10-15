@@ -802,6 +802,92 @@ ___
     #=> 6
   ```
 
+##### Strings: ___ in ___ :
+  * This built in method allows you to check if the given letter or string is contained within the given strings. This will return either True or False.
+  ```
+  # ______ in ____
+  # letter in word
+
+  "e" in "blueberry"
+    #=> True
+  "a" in "blueberry"
+    #=> False
+
+  "blue" in "blueberry"
+    #=> True
+  "blue" in "strawberry"
+    #=> False
+
+  def contains(big_string, little_string):
+    if little_string in big_string:
+      return True
+    else:
+      return False
+
+  print(contains("watermelon", "melon"))
+  	#=> True
+  print(contains("watermelon", "berry"))
+  	#=> False
+
+  def common_letters(string_one, string_two):
+    common_list = []
+    for letter1 in string_one:
+      if letter1 in string_two:
+        if letter1 in common_list:
+          continue
+        else:
+  	      common_list.append(letter1)
+    return common_list
+
+  print(common_letters("banana", "cream"))
+  	#=> ['a']
+  ```
+
+##### SECTION_BLANK:
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK:
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK:
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK:
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK:
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK:
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK:
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK:
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
+##### SECTION_BLANK:
+  * DESCRIPTION_BLANK
+  ```
+  ```
+
 ##### SECTION_BLANK:
   * DESCRIPTION_BLANK
   ```
