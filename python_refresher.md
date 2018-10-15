@@ -479,87 +479,335 @@ ___
   #=> 3
   ```
 
-##### SECTION_BLANK
+##### Cheatsheet so far:
+  ```
+  print()
+  str()
+  True
+  False
+  def <function_name>(<params>):
+  return <value1> <value2>
+  and # Both are True
+  or # At least one is True
+  not # Reverses Boolean Value
+  if / elif / else
+  try / except
+  zip(<list1>, <list2>) # Combines 2 lists into a single object
+  list(zip(<list1>, <list2>))
+  .append()
+  new_list = list1 + [<item1>, <item2>]
+  range(<number>)
+  len()
+  list[index]
+  list[start:end]
+  list.count(<string or num>)
+  list.sort() # Sorts the original list
+  new_list = sorted(list) # Creates a new list and sorts it.
+  .index()
+  ```
+
+##### For Loops
+  * Loops allow you to perform an action on each item in a List. This is generally done with the same layout:
+  ```
+  for <temporary variable> in <list variable>:
+      <action>
+
+  # Example:
+  board_games = ['Settlers of Catan', 'Carcassone', 'Power Grid', 'Agricola', 'Scrabble']
+  for game in board_games:
+  print(game)
+  #=> Settlers of Catan
+  #=> Carcassone
+  #=> Power Grid
+  #=> Agricola
+  #=> Scrabble
+  ```
+  * Loops can also iterate a single action a certain number of times using `range`.
+  ```
+  promise = "I will not chew gum in class"
+  for n in range(5):
+    print(promise)
+  #=> I will not chew gum in class
+  #=> I will not chew gum in class
+  #=> I will not chew gum in class
+  #=> I will not chew gum in class
+  #=> I will not chew gum in class
+  ```
+  * Two lists can be combined into one by looping over a single loop and appending the item to the other List.
+  ```
+  students_period_A = ["Alex", "Briana", "Cheri", "Daniele"]
+  students_period_B = ["Dora", "Minerva", "Alexa", "Obie"]
+
+  for student in students_period_A:
+    students_period_B.append(student)
+
+  print(students_period_B)
+  #=> ["Dora", "Minerva", "Alexa", "Obie", "Alex", "Briana", "Cheri", "Daniele"]
+  ```
+
+##### For Loops - Breaks & Continues
+  * Breaks tell the loop it can stop working. This is usually used when a certain condition has been met and we no longer need to loop over the code anymore.
+  ```
+  items_on_sale = ["blue_shirt", "striped_socks", "knit_dress", "red_headband", "dinosaur_onesie"]
+
+  # we want to check if the item with ID "knit_dress" is on sale:
+  print("Checking the sale list!")
+  for item in items_on_sale:
+    print(item)
+    if item == "knit_dress":
+      break
+  print("End of search!")
+
+  #======================
+
+  dog_breeds_available_for_adoption = ['french_bulldog', 'dalmation', 'shihtzu', 'poodle', 'collie']
+  dog_breed_I_want = 'dalmation'
+
+  for breed in dog_breeds_available_for_adoption:
+    print(breed)
+    if breed == dog_breed_I_want:
+      print("They have the dog I want!")
+      break
+  ```
+  * Continues allow the code to move forward through the remainder of the loop if a condition is met.
+  ```
+  ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+  for age in ages:
+    if age < 21:
+      continue
+    print(age)
+  ```
+
+##### While Loops
+  * The while loop performs a set of code until some condition is reached.
+  ```
+  dog_breeds = ['bulldog', 'dalmation', 'shihtzu', 'poodle', 'collie']
+
+  index = 0
+  while index < len(dog_breeds):
+    print(dog_breeds[index])
+    index += 1
+
+  #=====================
+
+  all_students = ["Alex", "Briana", "Cheri", "Daniele", "Dora", "Minerva", "Alexa", "Obie", "Arius", "Loki"]
+  students_in_poetry = []
+
+  while len(students_in_poetry) < 6:
+    student = all_students.pop()
+    students_in_poetry.append(student)
+    print(students_in_poetry)
+  ```
+
+##### Looping within Loops
+  ```
+  project_teams = [["Ava", "Samantha", "James"], ["Lucille", "Zed"], ["Edgar", "Gabriel"]]
+  for team in project_teams:
+    for student in team:
+      print(student)
+  #=> Ava
+  #=> Samantha
+  #=> James
+  #=> Lucille
+  #=> Zed
+  #=> Edgar
+  #=> Gabriel
+
+  #=====================
+
+  sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+
+  scoops_sold = 0
+
+  for location in sales_data:
+    print(location)
+    for sales in location:
+      scoops_sold += sales
+      print(scoops_sold)
+  ```
+
+##### List Comprehension
+  * Shorthand for creating lists using a single line Python loop:
+  ```
+  new_list_name = [<element_to_append_to_new_list> for <each_element_in_old_list> in <old_list> if <conditional_expression>]
+
+  #=====================
+
+  words = ["@coolguy35", "#nofilter", "@kewldawg54", "reply", "timestamp", "@matchamom", "follow", "#updog"]
+  usernames = []
+
+  for word in words:
+    if word[0] == '@':
+      usernames.append(word)
+
+  print(usernames)
+  #=> ["@coolguy35", "@kewldawg54", "@matchamom"]
+
+  #=====================
+
+  usernames = [word for word in words if word[0] == '@']
+
+  #=====================
+
+  heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+
+  can_ride_coaster = [height for height in heights if height > 161]
+  print(can_ride_coaster)
+
+  #=====================
+
+  celsius = [0, 10, 15, 32, -5, 27, 3]
+  fahrenheit = [c * 9/5 + 32 for c in celsius]
+  print(fahrenheit)
+  #=> [32.0, 50.0, 59.0, 89.6, 23.0, 80.6, 37.4]
+  ```
+
+##### Additional Examples:
+  ```
+  # Using Range with Loops
+  single_digits = range(10)
+
+  # Basic for loop
+  for digit in single_digits:
+    print(digit)
+
+  # Basic for loop with an additional list.
+  squares = [] # New Empty List
+  for digit in single_digits:
+    squares.append(digit**2)
+  print(squares)
+
+  # List Comprehension
+  cubes = [cube ** 3 for cube in single_digits]
+  print(cubes)
+  ```
+
+### Strings
+##### Slicing Strings:
+  * When we slice a string we are creating a __new__ string that starts at __(and includes)__ the first_index and ends at __(but excludes)__ the last_index.
+  ```
+  string[first_index:last_index]
+      favorite_fruit = 'blueberry'
+      favorite_fruit[3:8]
+        #=> 'eberr'
+  ```
+  * We can also have open-ended selections:
+    * If we remove the first index, the slice starts at the beginning of the string:
+    ```
+    favorite_fruit = 'blueberry'
+    favorite_fruit[:4]
+      #=> 'blue'
+    ```
+    * If we remove the second index the slice continues to the end of the string.
+    ```
+    favorite_fruit = 'blueberry'
+    favorite_fruit[4:]
+      #=> 'berry'
+    ```
+
+##### Concatenating Strings:
+  * We can also concatenate two existing strings together into a new string.
+  * Note: You have to manually add in the spaces when concatenating strings if you want to include them.
+  ```
+  fruit_prefix = "blue"
+  fruit_suffix = "berries"
+
+  favorite_fruit = fruit_prefix + fruit_suffix # No whitespace added.
+  print(favorite_fruit)
+    #=> 'blueberries'
+
+  fruit_sentence = "My favorite fruit is " + favorite_fruit # Manually added whitespace.
+  print(fruit_sentence)
+    #=> 'My favorite fruit is blueberries.`
+  ```
+
+##### Length of Strings:
+  * We can get the length of a string using the `len()` built in method.
+  ```
+  favorite_fruit = "blueberry"
+  print(len(favorite_fruit))
+    #=> 9
+  ```
+  * If you are taking the length of a sentence the spaces are counted as well.
+  ```
+  fruit_sentence = "I love blueberries"
+  len(fruit_sentence)
+    #=> 18
+  ```
+
+##### Select by Indices(Index) in Strings:
+  * You can use indices to select a single letter or multiple letters from a string.
+  ```
+  fouth_letter = company_motto[3]
+  print(fouth_letter)
+    #=> e
+  first_four_letters = company_motto[:4]
+  print(first_four_letters)
+    #=> Cope
+  ```
+  * You can also use negative indices to select a single letter or multiple letters from the end of a string.
+  ```
+  company_motto = "Copeland's Corporate Company helps you capably cope with the constant cacophony of daily life"
+
+  second_to_last = company_motto[-2]
+  print(second_to_last)
+    #=> f
+  final_word = company_motto[-4:]
+  print(final_word)
+    #=> life
+  ```
+
+##### String Mutability:
+  * Strings in Python are __Immutable__, which means that each string object cannot be altered, but a new string object can be created from it.
+  ```
+  # THIS EXAMPLE WILL FAIL:
+  first_name = "Bob"
+  last_name = "Daily"
+
+  first_name[0] = "R"
+    #=> TypeError: 'str' object does not support item assignment
+
+  # THIS EXAMPLE IS THE PROPER WAY TO DO IT
+  first_name = "Bob"
+  last_name = "Daily"
+
+  fixed_first_name = "R" + first_name[1:]
+  print(fixed_first_name)
+    #=> Rob
+  ```
+
+##### String Escape Characters:
+  * When working with strings you may find that you want to include characters that already have a special meaning in python. This is where the escape character `\` comes in.
+  ```
+  # THIS EXAMPLE WILL FAIL:
+  favorite_fruit_conversation = "He said, "blueberries are my favorite!""
+    #=> SyntaxError: invalid syntax
+
+  # THIS EXAMPLE IS THE PROPER WAY TO DO IT
+  favorite_fruit_conversation = "He said, \"blueberries are my favorite!\""
+  print(favorite_fruit_conversation)
+    #=> He said, "blueberries are my favorite!"
+  ```
+
+##### Iterating through Strings:
+  * Because strings are lists, that means we can iterate through a string using for or while loops.
+  ```
+  def get_length(word):
+    amount = 0
+    for letter in word:
+      amount += 1
+    return amount
+  print(get_length("Blaine"))
+    #=> 6
+  ```
+
+##### SECTION_BLANK:
   * DESCRIPTION_BLANK
   ```
   ```
 
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
-  * DESCRIPTION_BLANK
-  ```
-  ```
-
-##### SECTION_BLANK
+##### SECTION_BLANK:
   * DESCRIPTION_BLANK
   ```
   ```
