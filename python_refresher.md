@@ -843,14 +843,66 @@ ___
   	#=> ['a']
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+##### Additional Examples:
   ```
+  def username_generator(first_name, last_name):
+    if len(first_name) < 3 or len(last_name) < 4:
+    	f3 = first_name
+    	l4 = last_name
+    else:
+      f3 = first_name[:3]
+      l4 = last_name[:4]
+    username = f3 + l4
+    return username
+  print(username_generator("Abe", "Simpson"))
+    #=> AbeSimp
+
+  def password_generator(username):
+    password = ""
+    password = password + username[-1]
+    for i in range(len(username)):
+    	password = password + username[i]
+    password = password[0:-1]
+    return password
+
+  print(password_generator(username_generator("Abe", "Simpson")))
+    #=> pAbeSim
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+### String Built-In Methods:
+  *  Including: `.upper()`, `.lower()`, `.title()`, `.split()`, `.join()`, and `.format()`.
   ```
+  # Uppercase all letters.
+  "Hello world".upper()
+    #=> "HELLO WORLD"
+
+  # Lowercase all letters.
+  "Hello world".lower()
+    #=> "hello world"
+
+  # Uppercase the first letter of each word.
+  "Hello world".title()
+    #=> "Hello World"
+
+  # Add each string into a list.
+  "Hello world".split()
+    #=> ["Hello", "world"]
+
+  # Join strings from a list into a single string.
+  " ".join(["Hello", "world"])
+    #=> "Hello world"
+
+  # Replaces all of the selected letter with the provided letter.
+  "Hello world".replace("H", "J")
+    #=> "Jello world"
+
+  # Removes all whitespace from a string.
+  "     Hello world     ".strip()
+    #=> "Hello world"
+
+  # Creates a string using parameters?
+  "{} {}".format("Hello", "world")
+    #=> "Hello world"
   ```
 
 ##### SECTION_BLANK:
