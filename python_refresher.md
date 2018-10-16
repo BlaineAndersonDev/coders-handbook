@@ -872,40 +872,51 @@ ___
 ### String Built-In Methods:
   * String Methods all maintain the same format to use: `string_name.string_method(arguments)`.
   ```
-  # Uppercase all characters.
+  # UPPER - Uppercase all characters.
   "Hello world".upper()
     #=> "HELLO WORLD"
 
-  # Lowercase all characters.
+  # LOWER - Lowercase all characters.
   "Hello world".lower()
     #=> "hello world"
 
-  # Uppercase the first character of each word.
+  # TITLE - Uppercase the first character of each word.
   "Hello world".title()
     #=> "Hello World"
 
-  # Add each string into a list.
+  # SPLIT - Add each string into a list.
   "Hello world".split()
     #=> ["Hello", "world"]
     # If you do not provide an argument for .split() it will default to splitting at spaces.
     "Hello world".split("o")
       #=> ['Hell', ' w', 'rld']
 
-  # Join strings from a list into a single string.
+  # JOIN - Join strings from a list into a single string.
   " ".join(["Hello", "world"])
     #=> "Hello world"
 
-  # Replaces all of the selected character with the provided character.
+  # REPLACE - Replaces all of the selected character with the provided character.
+  # string_name.replace(character_being_replaced, new_character)
   "Hello world".replace("H", "J")
     #=> "Jello world"
 
-  # Removes all whitespace from a string.
+  # STRIP - Removes all whitespace from a string.
   "     Hello world     ".strip()
     #=> "Hello world"
+    # If you provide an argument for .strip() it will not remove whitespace automatically.
+    "!!!     Hello world     !!!".strip("!")
+      #=> "     Hello world     "
 
-  # Creates a string using parameters?
+  # FORMAT - Creates a string using parameters?
   "{} {}".format("Hello", "world")
     #=> "Hello world"
+
+  # FIND - Find returns the first index value in the string for the search parameter.
+  "Hello world".find('l')
+    #=> 2
+    # If you provide a string it will return the index of the first letter.
+    "Hello world".find("world")
+      #=> 6
   ```
 
 ##### String Escape Sequences:
