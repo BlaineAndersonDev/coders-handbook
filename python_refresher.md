@@ -907,9 +907,12 @@ ___
     "!!!     Hello world     !!!".strip("!")
       #=> "     Hello world     "
 
-  # FORMAT - Creates a string using parameters?
+  # FORMAT - Format takes variables as an argument and includes them in the string that it is run on in order of parameters given.
   "{} {}".format("Hello", "world")
     #=> "Hello world"
+    # If you provide keywords for the parameters in the string then it can be out of order.
+    "{a} {b}".format(a="Hello", b="world")
+      #=> "Hello world"
 
   # FIND - Find returns the first index value in the string for the search parameter.
   "Hello world".find('l')
