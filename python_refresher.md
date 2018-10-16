@@ -870,29 +870,32 @@ ___
   ```
 
 ### String Built-In Methods:
-  *  Including: `.upper()`, `.lower()`, `.title()`, `.split()`, `.join()`, and `.format()`.
+  * String Methods all maintain the same format to use: `string_name.string_method(arguments)`.
   ```
-  # Uppercase all letters.
+  # Uppercase all characters.
   "Hello world".upper()
     #=> "HELLO WORLD"
 
-  # Lowercase all letters.
+  # Lowercase all characters.
   "Hello world".lower()
     #=> "hello world"
 
-  # Uppercase the first letter of each word.
+  # Uppercase the first character of each word.
   "Hello world".title()
     #=> "Hello World"
 
   # Add each string into a list.
   "Hello world".split()
     #=> ["Hello", "world"]
+    # If you do not provide an argument for .split() it will default to splitting at spaces.
+    "Hello world".split("o")
+      #=> ['Hell', ' w', 'rld']
 
   # Join strings from a list into a single string.
   " ".join(["Hello", "world"])
     #=> "Hello world"
 
-  # Replaces all of the selected letter with the provided letter.
+  # Replaces all of the selected character with the provided character.
   "Hello world".replace("H", "J")
     #=> "Jello world"
 
@@ -905,10 +908,25 @@ ___
     #=> "Hello world"
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
-  ```
-  ```
+##### String Escape Sequences:
+  * Escape sequences are used to indicate that we want to split by something in a string that is not necessarily a character.
+    * Newline or `\n` will allow us to split a multi-line string by line breaks
+    ```
+    smooth_chorus = \
+    """And if you said, "This life ain't good enough."
+    I would give my world to lift you up
+    I could change my life to better suit your mood
+    Because you're so smooth"""
+
+    chorus_lines = smooth_chorus.split('\n')
+
+    print(chorus_lines)
+      #=> ['And if you said, "This life ain\'t good enough."', 'I would give my world to lift you up', 'I could change my life to better suit your mood', "Because you're so smooth"]
+    ```
+    * Horizontal Tab or `\t` will allow us to split a string by tabs.
+      * `\t` is particularly useful when dealing with certain datasets because it is not uncommon for data points to be separated by tabs.
+    ```
+    ```
 
 ##### SECTION_BLANK:
   * DESCRIPTION_BLANK
