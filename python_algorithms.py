@@ -37,4 +37,19 @@
 #   #=> ABC
 # print(get_shortest_unique_substring(["A","B","C","E","K","I"], "KADOBECODEBANCDDDEI"))
 #   #=> ABCEKI
+#
 # =====================================================================
+# Given an array arr of distinct integers and a nonnegative integer k, write a function findPairsWithGivenDifference that returns an array of all pairs [x,y] in arr, such that x - y = k.
+# If no such pairs exist, return an empty array.
+# Note: the order of the pairs in the output array should maintain the order of the y element in the original array
+# ------------------------
+# Uncomment below to use:
+# ------------------------
+def find_pairs_with_given_difference(arr, k):
+#
+# =====================================================================
+print(find_pairs_with_given_difference([4,1], 3)
+print(find_pairs_with_given_difference([1,5,11,7], 4)
+print(find_pairs_with_given_difference([1,5,11,7], 6)
+print(find_pairs_with_given_difference([1,5,11,7], 10)
+print(find_pairs_with_given_difference([1,7,5,3,32,17,12], 17)
