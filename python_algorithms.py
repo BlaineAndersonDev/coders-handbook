@@ -45,11 +45,37 @@
 # ------------------------
 # Uncomment below to use:
 # ------------------------
-def find_pairs_with_given_difference(arr, k):
+# def find_pairs_with_given_difference(arr, k):
+#   # Iterate over each number, and then one number past it (x, x-1)
+#   pairs = []
+#   i = 0
+#   if arr[-1] - arr[0] == k:
+#     pairs.append([arr[-1], arr[0]])
+#   for i in range(0, (len(arr) - 1)):
+#     if i == 0 and arr[i+1] - arr[i] == k:
+#       pairs.append([arr[i+1], arr[i]])
+#     elif arr[i+1] - arr[i] == k:
+#       pairs.append([arr[i+1], arr[i]])
+#     i += 1
+#   i = 0
+#   for i in range(0, (len(arr) - 1)):
+#     if i == 0 and arr[i] - arr[i+1] == k:
+#       pairs.append([arr[i], arr[i+1]])
+#     elif arr[i] - arr[i+1] == k:
+#       pairs.append([arr[i], arr[i+1]])
+#     i += 1
+#   return pairs
 #
+# print(find_pairs_with_given_difference([0, -1, -2, 2, 1], 1))
+#   #=> [[1, 0], [0, -1], [-1, -2], [2, 1]]
+# print(find_pairs_with_given_difference([1, 7, 5, 3, 32, 17, 12], 17))
+#   #=> []
+# print(find_pairs_with_given_difference([4,1], 3))
+# #  #=> [[4,1]]
+# print(find_pairs_with_given_difference([1,5,11,7], 4))
+# #  # => [[5,1],[11,7]]
+# print(find_pairs_with_given_difference([1,5,11,7], 6))
+# #  #=> [[5, 1], [11, 7]]
+# print(find_pairs_with_given_difference([1,7,5,3,32,17,12], 17))
+# #  #=> []
 # =====================================================================
-print(find_pairs_with_given_difference([4,1], 3)
-print(find_pairs_with_given_difference([1,5,11,7], 4)
-print(find_pairs_with_given_difference([1,5,11,7], 6)
-print(find_pairs_with_given_difference([1,5,11,7], 10)
-print(find_pairs_with_given_difference([1,7,5,3,32,17,12], 17)
