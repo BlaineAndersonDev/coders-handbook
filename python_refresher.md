@@ -942,19 +942,55 @@ ___
     ```
     ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+##### Checking Class Types:
+  * Using `isinstance(<Param_to_check>, <Type_check>)` will return a boolean if the param is or is not that type. Types can be: `str`, `list`, & `int`.
   ```
+  # print(isinstance("a", str))
+    #=> True
+  # print(isinstance(["a"], list))
+    #=> True
+  # print(isinstance(5, int))
+    #=> True
+
+  # print(isinstance(["a", "b", "c"], str))
+    #=> False
+  # print(isinstance("a", list))
+    #=> False
+  # print(isinstance("5", int))
+    #=> False
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+### Modules:
+  * A module is a collection of Python declarations intended broadly to be used as a tool.
+  * Modules are also often referred to as "libraries" or "packages" — a package is really a directory that holds a collection of modules.
   ```
+  # Basic Syntax:
+  from module_name import object_name
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+##### Module - datatime:
+  * datetime captures the current datetime based on your computers date and time.
   ```
+  from datetime import datetime
+  current_time = datetime.now()
+  print(current_time)
+    #=> 2018-10-17 16:51:40.067074
+  ```
+
+##### Module - random:
+  * random which allows you to generate numbers or select items at random.
+  ```
+  import random
+
+  # Creating a list of numbers from 1 to 100 in a random order:
+  random_list = [random.randint(1,101) for i in range(101)]
+
+  # Selecting a single number at random from the provided list:
+  randomer_number = random.choice(random_list)
+
+  # Print randomer_number below:
+  print(randomer_number)
+    #=> {A Random Number Between 1 & 100}
   ```
 
 ##### SECTION_BLANK:
