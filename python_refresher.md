@@ -1042,25 +1042,65 @@ ___
   ```
   students_in_classes = {"software design": ["Aaron", "Delila", "Samson"], "cartography": ["Christopher", "Juan", "Marco"], "philosophy": ["Frederica", "Manuel"]}
   ```
-
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+  * It can even be a mixture of the above:
   ```
-  ```
-
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
-  ```
+  person = {"name": "Shuri", "age": 18, "siblings": ["T'Chaka", "Ramonda"]}
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+##### Dictionary - Creating & Filling:
+  * We can create an empty dictionary using `{}`
   ```
+  my_empty_dictionary = {}
+  ```
+  * In order to add values we follow the syntax: `my_dict["new_key"] = "new_value"`
+  ```
+  menu = {"oatmeal": 3, "avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2}
+
+  # Now we add an item.
+  menu["cheesecake"] = 8
+
+  print(menu)
+    #=> {"oatmeal": 3, "avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2, "cheesecake": 8}
+
+  #===============
+
+  animals_in_zoo = {}
+  animals_in_zoo["zebras"] = 8
+  animals_in_zoo["monkeys"] = 12
+  animals_in_zoo["dinosaurs"] = 0
+  print(animals_in_zoo)
+    #=> {'monkeys': 12, 'zebras': 8, 'dinosaurs': 0}
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+##### Dictionary - Adding multiple key:value pairs:
+  * Using `.update()` we can add more than one item at a time to a given dictionary.
   ```
+  sensors =  {"living room": 21, "kitchen": 23, "bedroom": 20}
+  sensors.update({"pantry": 22, "guest room": 25, "patio": 34})
+  print(sensors)
+    #=> {"living room": 21, "kitchen": 23, "bedroom": 20, "pantry": 22, "guest room": 25, "patio": 34}
+  ```
+
+##### Dictionary - Updating Values:
+  * We can update values using the same syntax as adding individual values.
+  ```
+  menu = {"oatmeal": 3, "avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2}
+  menu["oatmeal"] = 5
+  print(menu)
+    #=> {"oatmeal": 5, "avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2}
+  ```
+
+##### List Comprehensions to Dictionaries:
+  * Python allows you to create a dictionary using a list comprehension, with this syntax: `dictionary = {key:value for key, value in zip(list1, list2)}`
+  ```
+  drinks = ["espresso", "chai", "decaf", "drip"]
+  caffeine = [64, 40, 0, 120]
+
+  zipped_drinks = zip(drinks, caffeine)
+  drinks_to_caffeine = {key:value for key, value in zipped_drinks}
+
+  print(drinks_to_caffeine)
+    #=> {'drip': 120, 'chai': 40, 'decaf': 0, 'espresso': 64}
   ```
 
 ##### SECTION_BLANK:

@@ -1,4 +1,141 @@
 # =====================================================================
+# Recursion Practice:
+# ------------------------
+# This is "Iterative Present Delivery":
+#   This delivers in order: House1 -> House2 -> House3 -> House4 -> ...
+# houses = ["Eric's house", "Kenny's house", "Kyle's house", "Stan's house"]
+#
+# def deliver_presents_iteratively():
+#     for house in houses:
+#         print("Delivering presents to", house)
+#
+# deliver_presents_iteratively()
+# ------------------------
+# This is "Recursive Present Delivery":
+# In this example, we assign everything to a single elf, and additional titles and responsibilities are added based on the amount of houses each elf is required to deliver to.
+  # Appoint an elf and give all the work to him
+  # Assign titles and responsibilities to the elves based on the number of houses for which they are responsible:
+    # > 1 He is a manager and can appoint two elves and divide his work among them
+    # = 1 He is a worker and has to deliver the presents to the house assigned to him
+
+houses = ["Eric", "Kenny", "Kyle", "Stan", "Butter", "Wendy", "Token", "Clyde", "Tweek", "Coon", "Randy", "Shelia"]
+
+# Each function call represents an elf doing his work
+def deliver_presents_recursively(houses):
+    # Worker elf doing his work (Only 1 present)
+    if len(houses) == 1:
+        house = houses[0]
+        print("Delivering presents to " + house + "'s house")
+
+    # Manager elf doing his work (More than one presents)
+    else:
+        mid = len(houses) // 2
+        first_half = houses[:mid]
+        second_half = houses[mid:]
+
+        # Divides his work among two elves
+        deliver_presents_recursively(first_half)
+        deliver_presents_recursively(second_half)
+
+# deliver_presents_recursively(houses)
+
+#if ___ == 1:
+  #Perform Action Completion: Print/Append/Etc...
+#else:
+  #Perform Action Division: Length of list / 2: Assign variables for each half.
+  #Recall Self Function using new variables
+
+characters = ["Eric", "Kenny", "Kyle", "Stan", "Butters", "Wendy", "Token", "Clyde", "Tweek", "Coon", "Randy", "Shelia"]
+
+def characters_find_chinpokemon(characters):
+
+  if len(characters) == 1:
+    print(characters[0] + " found a chinpokemon!")
+  else:
+    center = len(characters) / 2
+    print("center index: " + str(center) + ". Center Char: " + characters[center])
+    front_half = characters[:center]
+    print("front_half: " + str(front_half))
+    back_half = characters[center:]
+    print("back_half: " + str(back_half))
+    characters_find_chinpokemon(front_half)
+    characters_find_chinpokemon(back_half)
+
+characters_find_chinpokemon(characters)
+
+# The Characters list has 12 names in it:
+# The Print statement only runs if there is ONE character in the given list.
+# Until there is only ONE character it will take the list of characters and find the center point, divide it into two lists, and RERUN the function using those new lists:
+  # Run 1:
+    # center index: 6. Center Char: Token
+    # front_half: ['Eric', 'Kenny', 'Kyle', 'Stan', 'Butters', 'Wendy']
+    # back_half: ['Token', 'Clyde', 'Tweek', 'Coon', 'Randy', 'Shelia']
+  # Run 2 (Run 1 Front Half):
+    # center index: 3. Center Char: Stan
+    # front_half: ['Eric', 'Kenny', 'Kyle']
+    # back_half: ['Stan', 'Butters', 'Wendy']
+  # Run 3 (Run 2 Front Half)
+    # center index: 1. Center Char: Kenny
+    # front_half: ['Eric']
+    # back_half: ['Kenny', 'Kyle']
+  # Run 4 (Run 3 Front Half) - ONE character run, it performs the print action.
+    # Eric found a chinpokemon!
+  # Run 5 (Run 3 Back End)
+    # center index: 1. Center Char: Kyle
+    # front_half: ['Kenny']
+    # back_half: ['Kyle']
+  # Run 6 (Run 5 Front Half) - ONE character run, it performs the print action.
+    # Kenny found a chinpokemon!
+  # Run 7 (Run 5 Back Half) - ONE character run, it performs the print action.
+    # Kyle found a chinpokemon!
+  # Run 8 (Run 2 Back End)
+    # center index: 1. Center Char: Butters
+    # front_half: ['Stan']
+    # back_half: ['Butters', 'Wendy']
+  # Run 9 (Run 8 Front Half) - ONE character run, it performs the print action.
+    # Stan found a chinpokemon!
+  # Run 9 (Run 8 Back Half)
+    # center index: 1. Center Char: Wendy
+    # front_half: ['Butters']
+    # back_half: ['Wendy']
+  # Run 10 (Run 9 Front Half) - ONE character run, it performs the print action.
+    # Butters found a chinpokemon!
+  # Run 11 (Run 9 Back Half) - ONE character run, it performs the print action.
+    # Wendy found a chinpokemon!
+  # Run 12 (Run 1 Back End)
+    # center index: 3. Center Char: Coon
+    # front_half: ['Token', 'Clyde', 'Tweek']
+    # back_half: ['Coon', 'Randy', 'Shelia']
+  # Run 13 (Run 12 Front End)
+    # center index: 1. Center Char: Clyde
+    # front_half: ['Token']
+    # back_half: ['Clyde', 'Tweek']
+  # Run 14 (Run 13 Front Half) - ONE character run, it performs the print action.
+    # Token found a chinpokemon!
+  # Run 15 (Run 13 Back End)
+    # center index: 1. Center Char: Tweek
+    # front_half: ['Clyde']
+    # back_half: ['Tweek']
+  # Run 16 (Run 15 Front Half) - ONE character run, it performs the print action.
+    # Clyde found a chinpokemon!
+  # Run 17 (Run 15 Back Half) - ONE character run, it performs the print action.
+    # Tweek found a chinpokemon!
+  # Run 18 (Run 12 Back End)
+    # center index: 1. Center Char: Randy
+    # front_half: ['Coon']
+    # back_half: ['Randy', 'Shelia']
+  # Run 19 (Run 18 Front Half) - ONE character run, it performs the print action.
+    # Coon found a chinpokemon!
+  # Run 20 (Run 18 Back Half)
+    # center index: 1. Center Char: Shelia
+    # front_half: ['Randy']
+    # back_half: ['Shelia']
+  # Run 21 (Run 20 Front Half) - ONE character run, it performs the print action.
+    # Randy found a chinpokemon!
+  # Run 22 (Run 20 Back Half) - ONE character run, it performs the print action.
+    # Shelia found a chinpokemon!
+
+# =====================================================================
 # Smallest Substring of All Characters
 # Given an array of unique characters arr and a string str, Implement a function getShortestUniqueSubstring that finds the smallest substring of str containing all the characters in arr.
 # Return "" if such a substring doesnt exist.
