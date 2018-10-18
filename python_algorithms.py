@@ -1,45 +1,4 @@
 # =====================================================================
-# Recursion Practice:
-# ------------------------
-# This is "Iterative Present Delivery":
-#   This delivers in order: House1 -> House2 -> House3 -> House4 -> ...
-# houses = ["Eric's house", "Kenny's house", "Kyle's house", "Stan's house"]
-#
-# def deliver_presents_iteratively():
-#     for house in houses:
-#         print("Delivering presents to", house)
-#
-# deliver_presents_iteratively()
-# ------------------------
-# This is "Recursive Present Delivery":
-# In this example, we assign everything to a single elf, and additional titles and responsibilities are added based on the amount of houses each elf is required to deliver to.
-  # Appoint an elf and give all the work to him
-  # Assign titles and responsibilities to the elves based on the number of houses for which they are responsible:
-    # > 1 He is a manager and can appoint two elves and divide his work among them
-    # = 1 He is a worker and has to deliver the presents to the house assigned to him
-
-houses = ["Eric", "Kenny", "Kyle", "Stan", "Butter", "Wendy", "Token", "Clyde", "Tweek", "Coon", "Randy", "Shelia"]
-
-# Each function call represents an elf doing his work
-def deliver_presents_recursively(houses):
-    # Worker elf doing his work (Only 1 present)
-    if len(houses) == 1:
-        house = houses[0]
-        print("Delivering presents to " + house + "'s house")
-
-    # Manager elf doing his work (More than one presents)
-    else:
-        mid = len(houses) // 2
-        first_half = houses[:mid]
-        second_half = houses[mid:]
-
-        # Divides his work among two elves
-        deliver_presents_recursively(first_half)
-        deliver_presents_recursively(second_half)
-
-# deliver_presents_recursively(houses)
-
-
 # Recursive Understanding Practice:
   # The base idea of how recursion works in function form:
       #if ___ == 1:
@@ -139,6 +98,28 @@ def characters_find_chinpokemon(characters):
       # Randy found a chinpokemon!
     # Run 22 (Run 20 Back Half) - ONE character run, it performs the print action.
       # Shelia found a chinpokemon!
+
+
+# Fibonacci Recursion:
+  # The Fibonacci Sequence is essentially
+    # A + B = C
+    # A = B
+    # B = C
+    # Repeat to the n'th time.
+
+def fibonacci_sequence(num_times, a=0, b=1):
+    print("Sequence a: " + str(a) + ", b: " + str(b))
+    c = 0
+    if b >= num_times:
+      print("END SEQUENCE")
+    else:
+      c = a + b
+      a = b
+      b = c
+      fibonacci_sequence(num_times, a, b)
+# Uncomment line below to run code:
+# fibonacci_sequence(14)
+
 
 # =====================================================================
 # Smallest Substring of All Characters
