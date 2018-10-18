@@ -997,19 +997,50 @@ ___
     #=> {A Random Number Between 1 & 100}
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+##### Module - Importing:
   ```
+  # from _____ import _____ as _____
+  # from <Library> import <Namespace/Function> as <Alias>
+  # Or
+  # import _____
+  # import <Library>
+
+  # Importing a library without an alias or namespace:
+  import codecademylib3_seaborn
+  import random
+
+  # Importing the "namespace" or function (pyplot) from the library (matplotlib) as the alias (plt).
+  from matplotlib import pyplot as plt
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+##### Module - Scope:
+  * Variables defined inside a function are not available outside of that function.
+  * Functions defined in a module are not available outside of that module.
+  * Modules are not available outside of itself.
+  * However, .py files are actually Modules and can be accessed from other .py module files by importing them.
   ```
+  # script.py
+  from library import always_three
+  print(always_three())
+
+  # library.py
+  def always_three():
+    return 3
   ```
 
-##### SECTION_BLANK:
-  * DESCRIPTION_BLANK
+##### Dictionary:
+  * A Python Dictionary is an unordered set of key:value pairs.
+  * A Dictionary is notable for beginning & ending with `{}`, for having a key & value separated by a `:`, and each key:value pair held inside being separated by a `,`.
   ```
+  menu = {"oatmeal": 3, "avocado toast": 6, "carrot juice": 5, "blueberry muffin": 2}
+  ```
+  * Dictionaries can also be entirely integers:
+  ```
+  subtotal_to_total = {20: 24, 10: 12, 5: 6, 15: 18}
+  ```
+  * The values in a Dictionary can be any type. You can use a string, a number, a list, or even another dictionary as the value associated with a key!
+  ```
+  students_in_classes = {"software design": ["Aaron", "Delila", "Samson"], "cartography": ["Christopher", "Juan", "Marco"], "philosophy": ["Frederica", "Manuel"]}
   ```
 
 ##### SECTION_BLANK:
