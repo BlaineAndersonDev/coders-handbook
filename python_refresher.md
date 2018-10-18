@@ -951,12 +951,16 @@ ___
     #=> True
   # print(isinstance(5, int))
     #=> True
+  # print(isinstance(2.0, float))
+    #=> True
 
   # print(isinstance(["a", "b", "c"], str))
     #=> False
   # print(isinstance("a", list))
     #=> False
   # print(isinstance("5", int))
+    #=> False
+  # print(isinstance(2, float))
     #=> False
   ```
 
